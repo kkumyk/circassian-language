@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabardian Alphabet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- link to the sound-up icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="alphabet.html">Kabardian Alphabet</a></li>
+        </ul>
+    </nav>
+    <body>
+        <div class="flexbox-container">
+                     
+            <div class="letter-container">
+                <audio id="playAudio" src=""></audio>
+                <p>А а</p>
+                <p>A а</p>
+                <div><i class="fas fa-volume-up audio-icon" onclick="playAudio('./assets/audio/a.mp3')"></i></div>
+            </div>
+
+            <div class="letter-container">
+                <audio id="playAudio" src=""></audio>
+                <p>Б б</p>
+                <p>B b</p>
+                <div><i class="fas fa-volume-up audio-icon" onclick="playAudio('./assets/audio/b.mp3')"></i></div>
+            </div>
+
+            <div class="letter-container">
+                <audio id="playAudio" src=""></audio>
+                <p>В в</p>
+                <p>V v</p>
+                <div><i class="fas fa-volume-up audio-icon" onclick="playAudio('./assets/audio/v.mp3')"></i></div>
+            </div>
+
+            <div class="letter-container">
+                <audio id="playAudio" src=""></audio>
+                <p>Г г</p>
+                <p>G g</p>
+                <div><i class="fas fa-volume-up audio-icon" onclick="playAudio('./assets/audio/g.mp3')"></i></div>
+            </div>
+
+            <div class="letter-container">
+                <audio id="playAudio" src=""></audio>
+                <p>Гу гу</p>
+                <p>Gw gw</p>
+                <div><i class="fas fa-volume-up audio-icon" onclick="playAudio('./assets/audio/gw.mp3')"></i></div>
+            </div>
+        </div>
+
+        <script>
+            function playAudio(audioPath) {
+                var playAudio = document.getElementById('playAudio');
+                playAudio.src = audioPath;
+                playAudio.play();
+            }
+        </script>
+    </body>
+</html>
