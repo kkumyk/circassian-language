@@ -23,40 +23,48 @@
     </nav>
     <body>
         <div class="flexbox-container">
-                     
-            <div class="letter-container">
-                <audio id="playAudio" src=""></audio>
-                <p>А а</p>
-                <p>A а</p>
-                <div><i class="fas fa-volume-up audio-icon" onclick="playAudio('./assets/audio/a.mp3')"></i></div>
-            </div>
+                
+                <div class="flip-card letter-container">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>А а</h2>
+                            <p>A а</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <i onclick="playAudio('./assets/letters/a.mp3')"><p>[a]</p></i>
+                            <i onclick="playAudio('./assets/words/father.mp3', 'father')"><p>адэ / ade</p></i>
+                            <p>father</p>
+                        </div>
+                    </div>
+                </div>
+
 
             <div class="letter-container">
                 <audio id="playAudio" src=""></audio>
                 <p>Б б</p>
                 <p>B b</p>
-                <div><i class="fas fa-volume-up audio-icon" onclick="playAudio('./assets/audio/b.mp3')"></i></div>
+                <div><i onclick="playAudio('./assets/letters/b.mp3')"></i></div>
             </div>
 
             <div class="letter-container">
                 <audio id="playAudio" src=""></audio>
                 <p>В в</p>
                 <p>V v</p>
-                <div><i class="fas fa-volume-up audio-icon" onclick="playAudio('./assets/audio/v.mp3')"></i></div>
+                <div><i onclick="playAudio('./assets/letters/v.mp3')"></i></div>
             </div>
 
             <div class="letter-container">
                 <audio id="playAudio" src=""></audio>
                 <p>Г г</p>
                 <p>G g</p>
-                <div><i class="fas fa-volume-up audio-icon" onclick="playAudio('./assets/audio/g.mp3')"></i></div>
+                <div><i onclick="playAudio('./assets/letters/g.mp3')"></i></div>
             </div>
 
             <div class="letter-container">
                 <audio id="playAudio" src=""></audio>
                 <p>Гу гу</p>
                 <p>Gw gw</p>
-                <div><i class="fas fa-volume-up audio-icon" onclick="playAudio('./assets/audio/gw.mp3')"></i></div>
+                <div><i onclick="playAudio('./assets/letters/gw.mp3')"></i></div>
             </div>
         </div>
 

@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #1b413f;
+    background-color: #2d706c;
     overflow: hidden;
 }
 
@@ -41,7 +41,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 30px auto;
 }
 
@@ -50,31 +50,81 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     background-color: #f7d4bb;
     border: 1px solid #ccc;
     border-radius: 1em;
-    padding: 10px;
+    /* padding: 1em; */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     color: #704214;
     font-size: 0.7em;
 }
 
-.audio-icon {
+/* .audio-icon {
     font-size: 14px;
     color: #704214;
     cursor: pointer;
-}
+} */
 
-.audio-icon:hover {
+/* .audio-icon:hover {
     color: #d98e59;
-}
+} */
+
+
 
 @media (max-width: 480px) {
     .letter-container {
         width: 80px;
         height: 100px;
     }
+} 
+
+.flip-card {
+    background-color: transparent;
+    width: 140px;
+    height: 140px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #f7d4bb;
+    color: #704214;
+}
+
+.flip-card-back {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("./assets/images/1.png");
+    background-size: 55%; /* set the size of the image */
+    background-position: 100% 100%; /* places the image on the right bottom side */
+    background-repeat: no-repeat;
+    color: #2d706c;
+    transform: rotateY(180deg);
+    text-align: left;
+    margin-left: -0.4em;
 }
