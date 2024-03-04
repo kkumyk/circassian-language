@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+   
+    <link type="text/css" rel="stylesheet" href="./assets/css/styles.css">
+    <script type="text/javascript" src="./assets/js/audio.js"></script>
 
     <!-- link to the sound-up icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
@@ -18,23 +20,28 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="alphabet.html">Kabardian Alphabet</a></li>
+            <li><a href="index.html">Kabardian Alphabet</a></li>
         </ul>
     </nav>
     <body>
         <div class="flexbox-container">
                 
                 <div class="flip-card letter-container">
+                    
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2>А а</h2>
                             <p>A а</p>
                         </div>
-                        <div class="flip-card-back">
-                            <i onclick="playAudio('./assets/letters/a.mp3')"><p>[a]</p></i>
-                            <i onclick="playAudio('./assets/words/father.mp3', 'father')"><p>адэ / ade</p></i>
+
+                        <div class="flip-card-back a">
+                            <i class="playLetter" onclick="playAudio('./assets/audio/letters/a.mp3')">
+                                <p>[a] <i class="fa fa-volume-up fa-1x" style="color:#935f2c;"></i></p>
+                            </i>
+                            <i class="playWord" onclick="playAudio('./assets/audio/words/father.mp3', 'father')"><p>адэ / ade</p></i>
                             <p>father</p>
                         </div>
+                        
                     </div>
                 </div>
 
@@ -43,37 +50,31 @@
                 <audio id="playAudio" src=""></audio>
                 <p>Б б</p>
                 <p>B b</p>
-                <div><i onclick="playAudio('./assets/letters/b.mp3')"></i></div>
+                <div><i onclick="playAudio('./assets/audio/letters/b.mp3')"></i></div>
             </div>
 
             <div class="letter-container">
                 <audio id="playAudio" src=""></audio>
                 <p>В в</p>
                 <p>V v</p>
-                <div><i onclick="playAudio('./assets/letters/v.mp3')"></i></div>
+                <div><i onclick="playAudio('./assets/audio/letters/v.mp3')"></i></div>
             </div>
 
             <div class="letter-container">
                 <audio id="playAudio" src=""></audio>
                 <p>Г г</p>
                 <p>G g</p>
-                <div><i onclick="playAudio('./assets/letters/g.mp3')"></i></div>
+                <div><i onclick="playAudio('./assets/audio/letters/g.mp3')"></i></div>
             </div>
 
             <div class="letter-container">
                 <audio id="playAudio" src=""></audio>
                 <p>Гу гу</p>
                 <p>Gw gw</p>
-                <div><i onclick="playAudio('./assets/letters/gw.mp3')"></i></div>
+                <div><i onclick="playAudio('./assets/audio/letters/gw.mp3')"></i></div>
             </div>
+        
         </div>
-
-        <script>
-            function playAudio(audioPath) {
-                var playAudio = document.getElementById('playAudio');
-                playAudio.src = audioPath;
-                playAudio.play();
-            }
-        </script>
+        
     </body>
 </html>
