@@ -62,24 +62,13 @@ body {
     font-size: 0.7em;
 }
 
-/* .audio-icon {
-    font-size: 14px;
-    color: #704214;
-    cursor: pointer;
-} */
-
-/* .audio-icon:hover {
-    color: #d98e59;
-} */
-
-
 
 @media (max-width: 480px) {
     .letter-container {
         width: 80px;
         height: 100px;
     }
-} 
+}
 
 .flip-card {
     background-color: transparent;
@@ -117,9 +106,19 @@ body {
     color: #704214;
 }
 
+.playLetter,
+.playWord {
+    font-style: normal;
+}
+
+.playLetter:hover,
+.playWord:hover {
+    text-decoration: none;
+    color: #704214;
+}
+
 .flip-card-back {
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("./assets/images/1.png");
     background-size: 50%; /* set the size of the image */
     background-position: 100% 100%; /* places the image on the right bottom side */
     background-repeat: no-repeat;
@@ -127,4 +126,9 @@ body {
     transform: rotateY(180deg);
     text-align: left;
     margin-left: -0.4em;
+
+}
+
+div.flip-card-back.a {
+    background-image: url("/assets/images/1.png");
 }
