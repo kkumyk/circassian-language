@@ -120,7 +120,7 @@ body {
 .flip-card-back {
     background-color: rgba(0, 0, 0, 0);
     background-image: url("./assets/images/1.png");
-    background-size: 55%; /* set the size of the image */
+    background-size: 50%; /* set the size of the image */
     background-position: 100% 100%; /* places the image on the right bottom side */
     background-repeat: no-repeat;
     color: #2d706c;
