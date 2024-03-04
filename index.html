@@ -25,9 +25,9 @@
     </nav>
     <body>
         <div class="flexbox-container">
+            <audio id="playAudio" src=""></audio>
                 
                 <div class="flip-card letter-container">
-                    
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <h2>А а</h2>
@@ -35,45 +35,53 @@
                         </div>
 
                         <div class="flip-card-back a">
+                            
                             <i class="playLetter" onclick="playAudio('./assets/audio/letters/a.mp3')">
                                 <p>[a] <i class="fa fa-volume-up fa-1x" style="color:#935f2c;"></i></p>
                             </i>
                             <i class="playWord" onclick="playAudio('./assets/audio/words/father.mp3', 'father')"><p>адэ / ade</p></i>
                             <p>father</p>
                         </div>
-                        
+                    </div>
+                </div>
+
+                <div class="flip-card letter-container">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Б б</h2>
+                            <p>B b</p>
+                        </div>
+
+                        <div class="flip-card-back b">
+                            <i class="playLetter" onclick="playAudio('./assets/audio/letters/b.mp3')">
+                                <p>[b] <i class="fa fa-volume-up fa-1x" style="color:#935f2c;"></i></p>
+                            </i>
+                            <i class="playWord" onclick="playAudio('./assets/audio/words/fox.mp3', 'fox')"><p>бажэ / bazhe</p></i>
+                            <p>fox</p>
+                        </div>
+                    </div>
+                </div>
+        
+
+
+                <div class="flip-card letter-container">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2></h2>
+                            <p></p>
+                        </div>
+
+                        <div class="flip-card-back X">
+                            <i class="playLetter" onclick="playAudio('./assets/audio/letters/X.mp3')">
+                                <p>[] <i class="fa fa-volume-up fa-1x" style="color:#935f2c;"></i></p>
+                            </i>
+                            <i class="playWord" onclick="playAudio('./assets/audio/words/XXX.mp3', 'fox')"><p>XXX / XXX</p></i>
+                            <p>XXX</p>
+                        </div>
                     </div>
                 </div>
 
 
-            <div class="letter-container">
-                <audio id="playAudio" src=""></audio>
-                <p>Б б</p>
-                <p>B b</p>
-                <div><i onclick="playAudio('./assets/audio/letters/b.mp3')"></i></div>
-            </div>
-
-            <div class="letter-container">
-                <audio id="playAudio" src=""></audio>
-                <p>В в</p>
-                <p>V v</p>
-                <div><i onclick="playAudio('./assets/audio/letters/v.mp3')"></i></div>
-            </div>
-
-            <div class="letter-container">
-                <audio id="playAudio" src=""></audio>
-                <p>Г г</p>
-                <p>G g</p>
-                <div><i onclick="playAudio('./assets/audio/letters/g.mp3')"></i></div>
-            </div>
-
-            <div class="letter-container">
-                <audio id="playAudio" src=""></audio>
-                <p>Гу гу</p>
-                <p>Gw gw</p>
-                <div><i onclick="playAudio('./assets/audio/letters/gw.mp3')"></i></div>
-            </div>
-        
         </div>
         
     </body>
