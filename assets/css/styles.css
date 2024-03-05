@@ -36,7 +36,8 @@ body {
     font-size: 26px;
 }
 
-.flexbox-container {
+
+.alphabet-flexbox-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -62,13 +63,6 @@ body {
     font-size: 0.7em;
 }
 
-
-@media (max-width: 480px) {
-    .letter-container {
-        width: 80px;
-        height: 100px;
-    }
-}
 
 .flip-card {
     background-color: transparent;
@@ -97,7 +91,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
     backface-visibility: hidden;
 }
 
@@ -106,29 +100,53 @@ body {
     color: #704214;
 }
 
-.playLetter,
-.playWord {
+.ipa {
     font-style: normal;
+    font-size: 1em;
 }
 
-.playLetter:hover,
-.playWord:hover {
+.word-example {
+    font-style: normal;
+    font-size: 0.9em;
+}
+
+.en-translation {
+    font-style: italic;
+}
+.ipa:hover,
+.word-example:hover {
     text-decoration: none;
     color: #704214;
 }
 
 .flip-card-back {
     background-color: rgba(0, 0, 0, 0);
-    background-size: 50%; /* set the size of the image */
-    background-position: 100% 100%; /* places the image on the right bottom side */
+    background-size: 55%; /* set the size of the image */
+    background-position:  100%  100%;/* places the image on the right bottom side */
     background-repeat: no-repeat;
     color: #2d706c;
     transform: rotateY(180deg);
     text-align: left;
     margin-left: -0.4em;
-
+    margin-top: 0.1em;
 }
 
-div.flip-card-back.a {
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    background-color: #2d706c;
+}
+small {
+    color: white;
+    font-size: 0.5em;
+}
+
+
+section.flip-card-back.a {
     background-image: url("/assets/images/1.png");
 }
