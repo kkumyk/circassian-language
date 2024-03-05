@@ -1,88 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kabardian Alphabet</title>
+
+    <!-- links to Google Fonts using the "preconnect" hint for faster load (supported by Chrome, Opera, Firefox and Android browsers) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-   
+
+    <!-- links to the CSS and JS files -->
     <link type="text/css" rel="stylesheet" href="./assets/css/styles.css">
-    <script type="text/javascript" src="./assets/js/audio.js"></script>
-
+    <script src="./assets/js/audio.js"></script>
     <!-- link to the sound-up icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
 
-<body>
+  <body>
     <nav class="navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="index.html">Kabardian Alphabet</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Kabardian Alphabet</a></li>
+        <li><a href="#">Read Kabardian</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
     </nav>
-    <body>
-        <div class="flexbox-container">
-            <audio id="playAudio" src=""></audio>
-                
-                <div class="flip-card letter-container">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h2>А а</h2>
-                            <p>A а</p>
-                        </div>
 
-                        <div class="flip-card-back a">
-                            
-                            <i class="playLetter" onclick="playAudio('./assets/audio/letters/a.mp3')">
-                                <p>[a] <i class="fa fa-volume-up fa-1x" style="color:#935f2c;"></i></p>
-                            </i>
-                            <i class="playWord" onclick="playAudio('./assets/audio/words/father.mp3', 'father')"><p>адэ / ade</p></i>
-                            <p>father</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="alphabet-flexbox-container">
+      
+      <!-- Semantic Elements used in the card:
+        - <article> for the overall card
+        - <header> represents the heading of the card - the cyrillic and latin letters
+        - <section> contains the sound of the letter, an example word starting with this letter and its translation
+      -->
+      <div class="flip-card letter-container">
+        <article class="flip-card-inner">
+          <header class="flip-card-front">
+            <h1>А а</h1>
+            <p>A а</p>
+          </header>
+          <section class="flip-card-back a">
+            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/a.mp3')">
+              [a] <i class="fa fa-volume-up fa-1x" style="color: #935f2c"></i>
+            </h2>
+            <h3 class="word-example" onclick="playAudio('./assets/audio/words/father.mp3', 'father')"><span>адэ</span><br><span>ade</span></h3>
+            <p class="en-translation">father</p>
+          </section>
+        </article>
+      </div>
 
-                <div class="flip-card letter-container">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h2>Б б</h2>
-                            <p>B b</p>
-                        </div>
+      <div class="flip-card letter-container">
+        <article class="flip-card-inner">
+          <header class="flip-card-front">
+            <h1>Б б</h1>
+            <p>B b</p>
+          </header>
+          <section class="flip-card-back b">
+            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/b.mp3')">
+              [b] <i class="fa fa-volume-up fa-1x" style="color: #935f2c"></i>
+            </h2>
+            <h3 class="word-example" onclick="playAudio('./assets/audio/words/fox.mp3', 'fox')">бажэ / bazhe</h3>
+            <p class="en-translation">fox</p>
+          </section>
+        </article>
+      </div>
+  
+    </div>
 
-                        <div class="flip-card-back b">
-                            <i class="playLetter" onclick="playAudio('./assets/audio/letters/b.mp3')">
-                                <p>[b] <i class="fa fa-volume-up fa-1x" style="color:#935f2c;"></i></p>
-                            </i>
-                            <i class="playWord" onclick="playAudio('./assets/audio/words/fox.mp3', 'fox')"><p>бажэ / bazhe</p></i>
-                            <p>fox</p>
-                        </div>
-                    </div>
-                </div>
-        
+    <footer>
+      <small>
+        Copyright © 2024 Kabardian Alphabet.
+      </small>
+    </footer>
 
-
-                <div class="flip-card letter-container">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <h2></h2>
-                            <p></p>
-                        </div>
-
-                        <div class="flip-card-back X">
-                            <i class="playLetter" onclick="playAudio('./assets/audio/letters/X.mp3')">
-                                <p>[] <i class="fa fa-volume-up fa-1x" style="color:#935f2c;"></i></p>
-                            </i>
-                            <i class="playWord" onclick="playAudio('./assets/audio/words/XXX.mp3', 'fox')"><p>XXX / XXX</p></i>
-                            <p>XXX</p>
-                        </div>
-                    </div>
-                </div>
-
-
-        </div>
-        
-    </body>
+  </body>
 </html>
