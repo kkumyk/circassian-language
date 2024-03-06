@@ -127,17 +127,20 @@ body {
     position: relative;
 }
   
-.flip-card-back picture {
-    width: 100%; /* Set width to 100% to ensure the image takes the full width of the container */
+ /* .flip-card-back picture {
+    width: 100%; 
   }
-  
+   */
+/*
   .flip-card-back img {
     width: 50%;
     height: auto;
     position: absolute; 
     bottom: 10%;
     right:10%;
-  }
+  } */
+
+
 
   /* .flip-card-back img {
     width: 5%;
