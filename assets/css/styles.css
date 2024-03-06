@@ -86,7 +86,6 @@ body {
     transform: rotateY(180deg);
 }
 
-
 .flip-card-front,
 .flip-card-back {
     position: absolute;
@@ -121,14 +120,35 @@ body {
 
 .flip-card-back {
     background-color: rgba(0, 0, 0, 0);
-    background-size: 55%; /* set the size of the image */
-    background-position:  100%  100%;/* places the image on the right bottom side */
-    background-repeat: no-repeat;
     color: #2d706c;
     transform: rotateY(180deg);
     text-align: left;
     margin-left: -0.5rem;
+    position: relative;
 }
+  
+.flip-card-back picture {
+    width: 100%; /* Set width to 100% to ensure the image takes the full width of the container */
+  }
+  
+  .flip-card-back img {
+    width: 50%;
+    height: auto;
+    position: absolute; 
+    bottom: 10%;
+    right:10%;
+  }
+
+  /* .flip-card-back img {
+    width: 5%;
+    height: auto;
+    position:  100%  100%;
+  } */
+
+/* Adding images for words representing the letter */
+/* section.flip-card-back.a {
+    background-image: url("./assets/images/father.png");
+} */
 
 
 /* Footer Styling */
@@ -147,10 +167,6 @@ small {
     font-size: 1rem;
 }
 
-/* Adding images for words representing the letter */
-section.flip-card-back.a {
-    background-image: url("./assets/images/father.png");
-}
 
 /* Media Queries */
 
