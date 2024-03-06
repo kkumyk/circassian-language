@@ -2,6 +2,9 @@
 .navbar {
     background-color: #2d706c;
     overflow: hidden;
+    width: 100%
+    /* position: fixed;
+    z-index: 99; */
 }
 
 /* The list-style-type sets the marker of a list item element with the value "none", the marker won't be shown. */
@@ -146,7 +149,7 @@ small {
 
 /* Adding images for words representing the letter */
 section.flip-card-back.a {
-    background-image: url("/assets/images/father.png");
+    background-image: url("./assets/images/father.png");
 }
 
 /* Media Queries */
