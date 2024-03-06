@@ -1,8 +1,10 @@
+/* Navbar */
 .navbar {
     background-color: #2d706c;
     overflow: hidden;
 }
 
+/* The list-style-type sets the marker of a list item element with the value "none", the marker won't be shown. */
 .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -13,11 +15,13 @@
     float: left;
 }
 
+/* display: inline-block allows the navigation items to appear on the same line next to each other */
 .navbar a {
-    display: block;
+    display: inline-block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
 }
 
@@ -36,40 +40,33 @@ body {
     font-size: 26px;
 }
 
-
+/* Alphabet container */
 .alphabet-flexbox-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    max-width: 1000px;
-    margin: 30px auto;
+    gap: 0.5rem;
+    max-width: 1200px;
+    margin: 2rem auto; /* styles added to top | left and right */
 }
 
-.letter-container {
+.flip-card{
+    background-color: transparent;
+    width: 12rem;
+    height: 12rem;
+    perspective: 62.5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 140px;
-    height: 140px;
-    background-color: #f7d4bb;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-    /* padding: 1em; */
+    align-items: left;
+    justify-content: right;
+    border: 0.01rem solid #ccc;
+    border-radius: 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     color: #704214;
-    font-size: 0.7em;
+    font-size: 1.5rem;
 }
 
-
-.flip-card {
-    background-color: transparent;
-    width: 140px;
-    height: 140px;
-    perspective: 1000px;
-}
 
 .flip-card-inner {
     position: relative;
@@ -86,12 +83,12 @@ body {
     transform: rotateY(180deg);
 }
 
+
 .flip-card-front,
 .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* -webkit-backface-visibility: hidden; */
     backface-visibility: hidden;
 }
 
@@ -102,12 +99,12 @@ body {
 
 .ipa {
     font-style: normal;
-    font-size: 1em;
+    font-size: 1.5rem;
 }
 
 .word-example {
     font-style: normal;
-    font-size: 0.9em;
+    font-size: 1.5rem;
 }
 
 .en-translation {
@@ -127,26 +124,62 @@ body {
     color: #2d706c;
     transform: rotateY(180deg);
     text-align: left;
-    margin-left: -0.4em;
-    margin-top: 0.1em;
+    margin-left: -0.5rem;
 }
 
 
+/* Footer Styling */
 footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 5px;
+    padding: 0.5rem;
     background-color: #2d706c;
 }
+
 small {
     color: white;
-    font-size: 0.5em;
+    font-size: 1rem;
 }
 
-
+/* Adding images for words representing the letter */
 section.flip-card-back.a {
-    background-image: url("/assets/images/1.png");
+    background-image: url("/assets/images/father.png");
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    /* styles for smaller screens */
+    .navbar a {
+        font-size: 1rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .alphabet-flexbox-container {
+        margin: 1rem auto;
+    }
+
+    .flip-card {
+        width: 90%;
+    }
+
+    section.flip-card-back {
+        background-size: contain;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* styles for even smaller screens */
+    .navbar a {
+        font-size: 1rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    footer {
+        font-size: 0.5rem;
+        text-align: left;
+    }
 }
