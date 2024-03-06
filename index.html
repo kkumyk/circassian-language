@@ -23,8 +23,8 @@
     <nav class="navbar">
       <ul>
         <li><a href="index.html">Kabardian Alphabet</a></li>
+        <li><a href="#">About Kabardian</a></li>
         <li><a href="#">Reading Kabardian</a></li>
-        <li><a href="#">About</a></li>
       </ul>
     </nav>
 
@@ -35,7 +35,7 @@
         - <header> represents the heading of the card - the cyrillic and latin letters
         - <section> contains the sound of the letter, an example word starting with this letter and its translation
       -->
-      <div class="flip-card letter-container">
+      <div class="flip-card">
         <article class="flip-card-inner">
           <header class="flip-card-front">
             <h1>А а</h1>
@@ -45,13 +45,14 @@
             <h2 class="ipa" onclick="playAudio('./assets/audio/letters/a.mp3')">
               [a] <i class="fa fa-volume-up fa-1x" style="color: #935f2c"></i>
             </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/father.mp3')"><div>адэ</div><div>ade</div></h3>
+            <h3 class="word-example" onclick="playAudio('./assets/audio/words/father.mp3')"><span>адэ</span><br><span>ade</span></h3>
             <p class="en-translation">father</p>
           </section>
         </article>
       </div>
+      
 
-      <div class="flip-card letter-container">
+      <div class="flip-card">
         <article class="flip-card-inner">
           <header class="flip-card-front">
             <h1>Э э</h1>
@@ -61,13 +62,13 @@
             <h2 class="ipa" onclick="playAudio('./assets/audio/letters/X.mp3')">
               [] <i class="fa fa-volume-up fa-1x" style="color: #935f2c"></i>
             </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/XXX.mp3')"><div>дэ</div><div>dä</div></h3>
+            <h3 class="word-example" onclick="playAudio('./assets/audio/words/XXX.mp3')"><span>дэ</span><br><span>dä</span></h3>
             <p class="en-translation">nut</p>
           </section>
         </article>
       </div>
 
-      <div class="flip-card letter-container">
+      <div class="flip-card">
         <article class="flip-card-inner">
           <header class="flip-card-front">
             <h1>Б б</h1>
@@ -77,35 +78,11 @@
             <h2 class="ipa" onclick="playAudio('./assets/audio/letters/b.mp3')">
               [b] <i class="fa fa-volume-up fa-1x" style="color: #935f2c"></i>
             </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/fox.mp3')"><div>бажэ</div><div>bazhe</div></h3>
+            <h3 class="word-example" onclick="playAudio('./assets/audio/words/fox.mp3')"><span>бажэ</span><br><span>bazhe</span></h3>
             <p class="en-translation">fox</p>
           </section>
         </article>
       </div>
-
-
-
-
-
-      <!-- <div class="flip-card letter-container">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>X X</h1>
-            <p>X X</p>
-          </header>
-          <section class="flip-card-back X">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/X.mp3')">
-              X <i class="fa fa-volume-up fa-1x" style="color: #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/XXX.mp3')"><div>XXX</div><div>XXX</div></h3>
-            <p class="en-translation">XXX</p>
-          </section>
-        </article>
-      </div> -->
-
-
-
-
 
     </div>
 
@@ -117,3 +94,23 @@
 
   </body>
 </html>
+
+
+
+
+
+      <!-- <div class="flip-card">
+        <article class="flip-card-inner">
+          <header class="flip-card-front">
+            <h1>X X</h1>
+            <p>X X</p>
+          </header>
+          <section class="flip-card-back X">
+            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/X.mp3')">
+              X <i class="fa fa-volume-up fa-1x" style="color: #935f2c"></i>
+            </h2>
+            <h3 class="word-example" onclick="playAudio('./assets/audio/words/XXX.mp3')"><span>XXX</span><br><span>XXX</span></h3>
+            <p class="en-translation">XXX</p>
+          </section>
+        </article>
+      </div> -->
