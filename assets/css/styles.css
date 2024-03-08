@@ -2,9 +2,12 @@
 .navbar {
     background-color: #2d706c;
     overflow: hidden;
-    width: 100%
-    /* position: fixed;
-    z-index: 99; */
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 /* The list-style-type sets the marker of a list item element with the value "none", the marker won't be shown. */
@@ -23,10 +26,16 @@
     display: inline-block;
     color: white;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0.5rem 1rem;
     text-decoration: none;
 }
+
+
+/* .pnx-msg-icon pnx-icon-msg-warning {
+    width: 24px !important;
+    height: 24px !important;
+} */
 
 .navbar a:hover {
     background-color: #f7d4bb;
@@ -50,7 +59,7 @@ body {
     justify-content: center;
     gap: 0.5rem;
     max-width: 1200px;
-    margin: 2rem auto; /* styles added to top | left and right */
+    margin: 5rem auto; /* styles added to top | left and right */
 }
 
 .flip-card{
@@ -101,7 +110,7 @@ body {
 
 .ipa {
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .word-example {
@@ -158,16 +167,16 @@ body {
 footer {
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0.1%;
     width: 100%;
     text-align: center;
-    padding: 0.5rem;
     background-color: #2d706c;
+    padding: 0.1%;
 }
 
 small {
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 
@@ -182,10 +191,6 @@ small {
 
     .alphabet-flexbox-container {
         margin: 1rem auto;
-    }
-
-    .flip-card {
-        width: 90%;
     }
 
     section.flip-card-back {
