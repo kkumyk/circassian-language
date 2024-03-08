@@ -179,6 +179,9 @@ small {
     font-size: 1.5rem;
 }
 
+#underline_letter {
+    text-decoration: underline;
+}
 
 /* Media Queries */
 
