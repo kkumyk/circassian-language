@@ -60,6 +60,7 @@ body {
     gap: 0.5rem;
     max-width: 1200px;
     margin: 5rem auto; /* styles added to top | left and right */
+    padding: 1% 1% 1% 1%;
 }
 
 .flip-card{
@@ -209,7 +210,30 @@ small {
     }
 
     footer {
-        font-size: 0.5rem;
+        font-size: 5%;
         text-align: left;
+    }
+    
+    .alphabet-flexbox-container {
+        padding: 15% 10% 10% 10%;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+
+    .navbar, ul, a {
+        font-size: 1%;
+        padding: 0rem 0.1rem;
+        
+    }
+
+    small {
+        font-size: 5%;
+        text-align: left;
+    }
+    
+    .alphabet-flexbox-container {
+        padding: 15% 10% 10% 10%;
     }
 }
