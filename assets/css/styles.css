@@ -96,17 +96,39 @@ body {
     transform: rotateY(180deg);
 }
 
-.flip-card-front,
+.flip-card-front, .flip-card-back {
+    background-color: #f7d4bb;
+    color: #704214;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+    backface-visibility: hidden; /* Standard syntax */
+    -moz-backface-visibility: hidden; /* Firefox */   
+    transform: rotateY(0);
+}
+
+
+.flip-card-back {
+    background-color: rgba(0, 0, 0, 0);
+    color: #2d706c;
+    transform: rotateY(180deg);
+    text-align: left;
+    margin-left: -0.5rem;
+}
+
+
+/* .flip-card-front,
 .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-}
+} */
 
-.flip-card-front {
-    background-color: #f7d4bb;
-    color: #704214;
+.h1 {
+    backface-visibility: hidden;
 }
 
 .ipa {
@@ -128,19 +150,12 @@ body {
     color: #704214;
 }
 
-.flip-card-back {
-    background-color: rgba(0, 0, 0, 0);
-    color: #2d706c;
-    transform: rotateY(180deg);
-    text-align: left;
-    margin-left: -0.5rem;
-    position: relative;
-}
   
  /* .flip-card-back picture {
     width: 100%; 
   }
    */
+
 /*
   .flip-card-back img {
     width: 50%;
