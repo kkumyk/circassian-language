@@ -60,7 +60,7 @@ body {
     flex-wrap: wrap;
     justify-content: left;
     max-width: 1200px;
-    margin: 5rem auto; /* styles added to top | left and right */
+    margin: 10rem auto; /* styles added to top | left and right */
     padding: 1% 1% 1% 1%;
 }
 
