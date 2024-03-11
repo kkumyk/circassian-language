@@ -18,9 +18,12 @@
 }
 
 .navbar li {
-    float: left;
+    float: right;
 }
 
+#logo {
+    float: left;
+}
 /* display: inline-block allows the navigation items to appear on the same line next to each other */
 .navbar a {
     display: inline-block;
