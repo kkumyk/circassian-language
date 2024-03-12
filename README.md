@@ -1,4 +1,5 @@
-# Kabardian Alphabet (Cyrillic and Latin Scripts)
+# [Kabardian Alphabet (Cyrillic and Latin Scripts)](https://kkumyk.github.io/kabardian-alphabet/)
+
 
 ## Project Requirements
 
@@ -32,27 +33,13 @@ The site should:
     - CSS code passes through the official (Jigsaw) validator with no issues
 
 # TODO
-- add Адыгэбзэ to a logo in a circle
-
-- nav does not stick - why?
-
-- check if mobile friendly with light house
-
-- find sounds and words and map them to a google sheet
-
-- image to container plus alt
+- replace logo with Адыгэбзэ by click
 
 - add more favicons: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LRFX101+2023_Q2/courseware/e805068059af42af87681032aa64053f/7525117e5cd144daa2a7b0c57843bbee/?child=first
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
+- style nav bar so that it is clear where you are - on which page
 
-- optimise header / navbar:
-https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LRFX101+2023_Q2/courseware/e805068059af42af87681032aa64053f/7525117e5cd144daa2a7b0c57843bbee/?child=first
-
-https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LRFX101+2023_Q2/courseware/e805068059af42af87681032aa64053f/7525117e5cd144daa2a7b0c57843bbee/?child=first
-
-- optimise image in the picture tag
-- resize image in the bigger screens
-- remove footer when zooming in 
+- contact styles are not picked up in Chrome
