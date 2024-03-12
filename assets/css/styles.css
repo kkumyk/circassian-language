@@ -50,6 +50,15 @@ body {
     font-size: 26px;
 }
 
+.contact-flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    max-width: 1200px;
+    margin: 5rem auto; /* styles added to top | left and right */
+    padding: 1% 1% 1% 1%;
+}
+
 .about-flexbox-container {
     display: flex;
     flex-wrap: wrap;
@@ -204,13 +213,11 @@ small {
     }
 }
 
-
 @media only screen and (max-width: 320px) {
 
     .navbar, ul, a {
         font-size: 1%;
         padding: 0rem 0.1rem;
-        
     }
 
     small {
@@ -221,4 +228,127 @@ small {
     .alphabet-flexbox-container {
         padding: 15% 10% 10% 10%;
     }
+}
+
+/* Style contact form */
+
+.contact-container {
+    width: 90%;
+    min-height: 80vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background: 0 0;
+    position: absolute;
+    z-index: auto;
+}
+
+.contact-wrap {
+    width: 40%;
+    background-color: #f7d4bb;
+    border-radius: 1%;
+    position: relative;
+    margin-top: 5%;
+    box-shadow: 0 0.375em 2.5em 0 #ccc;
+    -moz-box-shadow: 0 0.375em 2.5em 0 #ccc;
+    -webkit-box-shadow: 0 0.375em 2.5em 0 #ccc;
+    -o-box-shadow: 0 0.375em 2.5em 0 #ccc;
+    -ms-box-shadow: 0 0.375em 2.5em 0 #ccc;
+}
+
+/* Vars */
+:root {
+    --rhythm: 3%;
+}
+
+/* Style the form container */
+.c-form {
+    display: block;
+    max-width: 90%;
+    margin: 1% auto;
+    padding: 3%;
+    background-color: #f7d4bb;
+    opacity: 90%;
+    border-radius: 0.5%;
+    margin: calc(var(--rhythm) * 2) auto;
+    /* border-color: #2d706c; */
+    /* border: none; */
+}
+
+.c-form__row {
+    & + & {
+        padding-top: var(--rhythm);
+    }
+
+    /* Make any field fill at least 2/3 */
+    [name] {
+        min-width: calc(2/3 * 100%);
+    }
+}
+
+.contact-form-btn:hover {
+    opacity: 80%;
+}
+
+/* Style the submit button */
+.contact-form-btn {
+    background-color: #2d706c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Style the form heading */
+  .c-form__heading {
+    font-size: 1.5em;
+    padding-bottom: 1%;
+    color: #704214;
+    line-height: 1.2;
+  }
+  
+  /* Style form rows */
+  .c-form__row {
+    margin-bottom: 3%;
+  }
+  
+  /* Style labels */
+  .c-label {
+    display: none; /* Hide labels visually */
+  }
+  
+  /* Style input fields */
+  .c-input-field {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  /* Style multiline input field */
+  .c-input-field--multiline {
+    resize: vertical;
+  }
+  
+input:focus { 
+    outline: none !important;
+    border-color: #2d706c;
+    box-shadow: 0 0 0.3rem #2d706c;
+}
+
+textarea:focus { 
+    outline: none !important;
+    border-color: #2d706c;
+    box-shadow: 0 0 0.3rem #2d706c;
 }

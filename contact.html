@@ -4,7 +4,7 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    
+
     <title>Contact</title>
     <meta name="description"  content="">
 
@@ -31,7 +31,35 @@
       </ul>
     </nav>
 
-    </div>
+      <div class="contact-container">
+        <div class="contact-wrap">
+
+          <form action="" method="post">
+              <fieldset class="c-form">
+                  <legend class="c-form__heading">Get in touch</legend>
+
+                  <div class="c-form__row">
+                      <label for="name" class="c-label"></label>
+                      <input type="text" name="name" id="name" class="c-input-field" value="" autocorrect="off" placeholder="Name" required />
+                  </div>
+
+                  <div class="c-form__row">
+                      <label for="email" class="c-label"></label>
+                      <input type="email" name="email" id="email" autocapitalize="none" autocorrect="off" class="c-input-field" placeholder="Email" required />
+                  </div>
+                  <div class="c-form__row">
+                      <label for="message" class="c-label"></label>
+                      <textarea name="message" id="message" class="c-input-field c-input-field--multiline" rows="10" placeholder="Message"></textarea>
+                  </div>
+                  <div class="c-form__row">
+                      <button class="contact-form-btn" type="submit">Send Message</button>    
+                  </div>
+              </fieldset>
+          </form>
+
+        </div>
+      </div>
+
 
     <footer>
       <small>
