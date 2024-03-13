@@ -60,12 +60,13 @@ body {
 }
 
 .about-flexbox-container {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
-    justify-content: left;
-    max-width: 1200px;
-    margin: 5rem auto; /* styles added to top | left and right */
-    padding: 1% 1% 1% 1%;
+    justify-content: center;
+    max-width: 100%;
+    margin: 1rem auto; /* styles added to top | left and right */
+    padding: 5rem 1rem 1rem 3rem;
+    /* 1% 1% 1% 1%; */
 }
 
 th, td { border: 1px solid rgb(98, 94, 94) }
@@ -94,7 +95,7 @@ th, td { border: 1px solid rgb(98, 94, 94) }
     border-radius: 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    color: #704214;
+    /* color: #704214; */
     font-size: 1.5rem;
 }
 
