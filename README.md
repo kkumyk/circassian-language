@@ -33,13 +33,20 @@ The site should:
     - CSS code passes through the official (Jigsaw) validator with no issues
 
 # TODO
+- style nav bar so that it is clear where you are - on which page
+- the nav jumps forward on the about page
 - replace logo with Адыгэбзэ by click
+- style logo to separate it from the other pages
+- url links on the about page need styling
 
 - add favicons for standard devices
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
-- style nav bar so that it is clear where you are - on which page
+- add 404
+- separate template code from the content code
 
-- contact styles are not picked up in Chrome
+## Tools Used
+[Nu Html Checker](https://validator.w3.org/nu/)
+[CSS Validation Service](https://jigsaw.w3.org/css-validator/)
