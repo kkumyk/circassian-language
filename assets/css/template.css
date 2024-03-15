@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Old Standard TT", serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #FFF1E5;
+    font-size: 26px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2d706c;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* The list-style-type sets the marker of a list item element with the value "none", the marker won't be shown. */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: right;
+}
+
+#logo {
+    float: left;
+}
+/* display: inline-block allows the navigation items to appear on the same line next to each other */
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #f7d4bb;
+    color: #704214;
+}
+
+
+/* Footer Styling */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #2d706c;
+    padding: 0.1%;
+}
+
+small {
+    color: white;
+    font-size: 1.5rem;
+}
