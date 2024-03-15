@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+h1, h2{
+    font-family: "Old Standard TT", serif;
+    text-transform: uppercase;
+    color: #2d706c;
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+}
+
+
+#hub-questions{
+    height: 600px;
+    padding: 10%;
+}
+
+#left-question{
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+}
+
+.left-question-heading {
+    width: 60%;
+    float: right;
+    line-height: 1.25rem;
+    clear: both;
+    margin-bottom: 50px;
+    color: #704214;
+    font-size: 1rem;
+    font-size: 1.25rem;
+}
+
+
+#right-question {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+}
+
+#center-container {
+    width: 33%;
+    margin: 0 auto;
+}
+
+hr {
+    border-top: 1px solid #2d706c;
+    width: 100%;
+    margin: 5px 0;
+}
+
+
+.right-question-heading {
+    width: 60%;
+    float: left;
+    line-height: 1.25rem;
+    clear: both;
+    margin-bottom: 50px;
+    color: #704214;
+    font-size: 1.25rem;
+}
+
+.right-question-heading p {
+    text-align: right;
+}
+
+.right-question-heading h2 {
+    text-align: right;
+}
+
+
+#main-question {
+    margin: 3% 0;
+    text-align: center;
+    font-size: 180%;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #704214;
+}
+
+#circle-container {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+#circle-cover-bg {
+    background: url('/assets/images/circassian.png') no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
