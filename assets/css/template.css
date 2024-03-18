@@ -44,6 +44,20 @@ h1 {
     color: white;
 }
 
+#menu {
+    font-size: 110%;
+    letter-spacing: 0.1rem;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1rem;
+} 
+
+.active {
+    border-bottom: 1px solid #704214;
+}
+
 main {
     background-color: lightblue;
     /* make main element to take up any surplus space to push footer down;
