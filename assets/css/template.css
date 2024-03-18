@@ -96,9 +96,24 @@ main {
     margin-top: 30%;
 }
 
+/* Footer Styling */
 footer {
     background-color: #2d706c;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    padding: 0.5%;
+    position: fixed;
 }
+
+small {
+    color: white;
+    font-size: 1rem;
+}
+
+
 
 
 /* Media queries */
