@@ -3,6 +3,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    border:0;
 }
 
 
@@ -27,13 +28,15 @@ body {
     /* Generic project styles */
     color: #704214;
     background-color: #FFF1E5;
+    font-family: "Old Standard TT", serif;
+    /* font-size: 1.5rem;  */
 }
 
 
 
 header a {
     text-decoration: none;
-    color: inherit;
+    color: white;
     display: inline-block;
     text-align: left;
     font-size: 1rem;
@@ -43,6 +46,7 @@ header a {
 
 h1 {
     font-family: "Old Standard TT", serif;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     color: white;
@@ -75,6 +79,7 @@ nav {
     display: none;
     top:100%;
 }
+
 
 /* Nav toggle */
 #nav-toggle:checked~nav {
