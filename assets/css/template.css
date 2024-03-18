@@ -19,7 +19,22 @@ body {
 
 /* Header */
 header {
-    background-color: lightcoral;
+    background-color: #2d706c;
+    /* add padding left and right to prevent our text from sticking to the side of the screen  */
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #704214;
+/* 
+
+    overflow: hidden;
+    
+    
+    
+    top: 0;
+    left: 0; */
+
 }
 
 h1 {
