@@ -1,28 +1,58 @@
-*{
-    margin:0;
-    padding:0;
-    border:0;
-}
-
+/* 
 h2{
     font-family: "Old Standard TT", serif;
     text-transform: uppercase;
     color: #2d706c;
-    letter-spacing: -1px; 
+    letter-spacing: -0.1rem; 
     font-size: 1.5rem;
 }
 
-
 #hub-questions{
-    height: 600px;
-    padding: 5%;
+    height: 100%;
+    padding: 2%;
+    margin: 3% 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
 }
 
-#left-question{
+p{
+    margin: 3% 0;
+}
+
+#main-question {
+    margin: 3% 0;
+    text-align: center;
+    font-size: 150%;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #704214;
+}
+
+#circle-container {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#circle-cover-bg {
+    background: url('./kabardian-alphabet/assets/images/circassian.png') no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+
+#left-questions{
     padding-top: 30px;
     width: 33%;
     float: left;
-}
+} 
 
 .left-question-heading {
     width: 60%;
@@ -33,7 +63,10 @@ h2{
     color: #704214;
     font-size: 1rem;
     font-size: 1.25rem;
-}
+} 
+
+
+
 
 .content a:link, .content a:visited {
     color:#704214;
@@ -55,10 +88,11 @@ a {
 
 
 
-#right-question {
+#right-questions {
     padding-top: 0;
     width: 33%;
     float: right;
+    
 }
 
 #center-container {
@@ -81,6 +115,8 @@ hr {
     margin-bottom: 50px;
     color: #704214;
     font-size: 1.25rem;
+    padding: 0 20px 0 20px;
+    min-width: 90%;
 }
 
 .right-question-heading p {
@@ -92,33 +128,18 @@ hr {
 }
 
 
-#main-question {
-    margin: 5% 0;
-    text-align: center;
-    font-size: 170%;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    color: #704214;
-}
+/* for mobile devices (mobile, 320%)  */
+/* @media screen and (min-width: 320px){
+    #circle-container {
+        width: 12rem;
+        height: 12rem;
+        padding: 15%;
+        border-style: solid;
+        border-color: #cccccc;
+        border-width: 0.1rem;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
 
 
-
-#circle-container {
-    width: 300px;
-    height: 300px;
-    padding: 30px;
-    border-style: solid;
-    border-color: #cccccc;
-    border-width: 1px;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-
-#circle-cover-bg {
-    background: url('./kabardian-alphabet/assets/images/circassian.png') no-repeat center center;
-    height: 100%;
-    border-radius: 50%;
-}
-
-
+} */
