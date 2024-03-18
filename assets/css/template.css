@@ -93,7 +93,7 @@ main {
     /* make main element to take up any surplus space to push footer down;
     the main content should not shrink when the screen is too small to show it all */
     flex: 1 0 auto;
-    margin-top: 99px;
+    margin-top: 97px;
 }
 
 footer {
@@ -125,6 +125,18 @@ footer {
 
     .nav-toggle-lable {
         display: none;
+    }
+
+    #logo {
+        font-size: 250%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /* push main content downl */
+        margin-top: 170px;
     }
 
 }
