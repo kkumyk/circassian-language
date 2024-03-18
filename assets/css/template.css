@@ -7,16 +7,6 @@
 
 
 /* General styles */
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* Generic project styles */
-    color: #704214;
-}
-
-
-/* Header */
 header {
     background-color: #2d706c;
     /* add padding left and right to prevent our text from sticking to the side of the screen  */
@@ -29,6 +19,17 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #704214;
+    background-color: #FFF1E5;
+}
+
+
 
 header a {
     text-decoration: none;
@@ -89,15 +90,14 @@ nav {
 }
 
 main {
-    background-color: lightblue;
     /* make main element to take up any surplus space to push footer down;
     the main content should not shrink when the screen is too small to show it all */
     flex: 1 0 auto;
-    margin-top: 97px;
+    margin-top: 30%;
 }
 
 footer {
-    background-color: orange;
+    background-color: #2d706c;
 }
 
 
@@ -135,7 +135,7 @@ footer {
 
     /* Main content */
     main {
-        /* push main content downl */
+        /* push main content down */
         margin-top: 170px;
     }
 
@@ -147,3 +147,5 @@ footer {
         border-bottom: 1px solid #704214;
     }
 }
+
+
