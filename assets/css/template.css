@@ -1,15 +1,32 @@
+/* Wildcard selector to override default styles added by the browser */
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
+
+/* General styles */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #704214;
+}
+
+
+/* Header */
 header {
     background-color: lightcoral;
 }
 
 main {
     background-color: lightblue;
+    /* make main element to take up any surplus space to push footer down;
+    the main content should not shrink when the screen is too small to show it all */
+    flex: 1 0 auto;
 }
 
 footer {
