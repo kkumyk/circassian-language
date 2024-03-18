@@ -1,15 +1,28 @@
+
+#logo {
+    float: left;
+    text-transform: uppercase;
+}
+
+/*
+Rem (short for “root-em”) units dictate an element's font size relative to the size of the root element.
+By default, most browsers use a font size value of 16px.
+So, if the root element is 16px, an element with the value 1rem will also equal 16px.
+*/
+
 body {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
+    border:0;
     font-family: "Old Standard TT", serif;
     font-weight: 500;
-    font-style: normal;
     background-color: #FFF1E5;
-    font-size: 26px;
+    font-size: 1.5rem; 
 }
 
 /* Navbar */
 .navbar {
+    padding: 0 0;
     background-color: #2d706c;
     overflow: hidden;
     width: 100%;
@@ -17,23 +30,21 @@ body {
     z-index: 99;
     top: 0;
     left: 0;
-    z-index: 1;
 }
 
 /* The list-style-type sets the marker of a list item element with the value "none", the marker won't be shown. */
 .navbar ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
+
 }
 
 .navbar li {
     float: right;
 }
 
-#logo {
-    float: left;
-}
+
 /* display: inline-block allows the navigation items to appear on the same line next to each other */
 .navbar a {
     display: inline-block;
@@ -48,7 +59,11 @@ body {
     background-color: #f7d4bb;
     color: #704214;
 }
-
+/* 
+.navbar a:visited {
+    background-color: #f7d4bb;
+    color: white;
+} */
 
 /* Footer Styling */
 footer {
@@ -58,10 +73,10 @@ footer {
     width: 100%;
     text-align: center;
     background-color: #2d706c;
-    padding: 0.1%;
+    /* padding: 0.1%; */
 }
 
 small {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
