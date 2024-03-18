@@ -93,8 +93,38 @@ main {
     /* make main element to take up any surplus space to push footer down;
     the main content should not shrink when the screen is too small to show it all */
     flex: 1 0 auto;
+    margin-top: 99px;
 }
 
 footer {
     background-color: orange;
+}
+
+
+/* Media queries */
+
+/* tablets and larger (768px and up) */
+@media screen and (min-width: 768px){
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-lable {
+        display: none;
+    }
+
 }
