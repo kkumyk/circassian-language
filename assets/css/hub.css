@@ -4,18 +4,18 @@
     border:0;
 }
 
-h1, h2{
+h2{
     font-family: "Old Standard TT", serif;
     text-transform: uppercase;
     color: #2d706c;
-    letter-spacing: -1px;
+    letter-spacing: -1px; 
     font-size: 1.5rem;
 }
 
 
 #hub-questions{
     height: 600px;
-    padding: 10%;
+    padding: 5%;
 }
 
 #left-question{
@@ -35,9 +35,28 @@ h1, h2{
     font-size: 1.25rem;
 }
 
+.content a:link, .content a:visited {
+    color:#704214;
+}
+
+
+.content a:focus, a:hover {
+  border-bottom: 0.1rem solid;
+}
+
+.content a:active {
+    color: #2d706c;
+  }
+
+a {
+    outline-color: transparent;
+    text-decoration: none;
+  }
+
+
 
 #right-question {
-    padding-top: 30px;
+    padding-top: 0;
     width: 33%;
     float: right;
 }
@@ -48,9 +67,9 @@ h1, h2{
 }
 
 hr {
-    border-top: 1px solid #2d706c;
+    border-top: 0.1rem solid #2d706c;
     width: 100%;
-    margin: 5px 0;
+    margin: 0.25rem 0;
 }
 
 
@@ -74,13 +93,15 @@ hr {
 
 
 #main-question {
-    margin: 3% 0;
+    margin: 5% 0;
     text-align: center;
-    font-size: 180%;
+    font-size: 170%;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     color: #704214;
 }
+
+
 
 #circle-container {
     width: 300px;
@@ -95,7 +116,7 @@ hr {
 
 
 #circle-cover-bg {
-    background: url('/kabardian-alphabet/assets/images/circassian.png') no-repeat center center;
+    background: url('./kabardian-alphabet/assets/images/circassian.png') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
