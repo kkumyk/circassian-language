@@ -22,6 +22,10 @@ header {
     background-color: lightcoral;
 }
 
+h1 {
+    font-family: "Old Standard TT", serif;
+}
+
 main {
     background-color: lightblue;
     /* make main element to take up any surplus space to push footer down;
