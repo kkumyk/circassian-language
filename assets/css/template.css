@@ -58,6 +58,19 @@ h1 {
     border-bottom: 1px solid #704214;
 }
 
+/* Navbar styles with dropdown toggle 
+with the absolute position, the nav bar will no longer be present in the header
+*/
+nav {
+    position: absolute;
+    background-color: #2d706c;
+    width: 100%;
+    left:0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #704214;
+    display: none;
+}
+
 main {
     background-color: lightblue;
     /* make main element to take up any surplus space to push footer down;
