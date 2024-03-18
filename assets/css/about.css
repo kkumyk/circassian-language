@@ -1,4 +1,4 @@
-body{
+/* body{
     margin: 0;
     padding: 0;
     font-family: "Old Standard TT", serif;
@@ -8,17 +8,17 @@ body{
     font-size: 20px;
     color: #704214;
     padding: 5% 0;
-}
+} */
 
 p{
     margin-top: 0;
     margin-bottom: 20px;
 }
 
-.head{
+/* .head{
     text-align: center;
     position: relative;
-}
+} */
 
 .subhead{
     text-transform: uppercase;
@@ -36,7 +36,7 @@ p{
     line-height: 0;
     word-spacing: -.31em;
     display: inline-block;
-    margin: 30px 2% 0 2%;
+    margin: 2.5% 2% 0 2%;
     color: #704214;
 }
 
