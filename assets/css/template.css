@@ -7,7 +7,6 @@
 
 
 /* General styles */
-
 body {
     min-height: 100vh;
     display: flex;
@@ -26,19 +25,23 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #704214;
-/* 
+}
 
-    overflow: hidden;
+header a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    text-align: left;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
     
-    
-    
-    top: 0;
-    left: 0; */
-
 }
 
 h1 {
     font-family: "Old Standard TT", serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: white;
 }
 
 main {
