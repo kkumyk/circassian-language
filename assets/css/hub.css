@@ -3,6 +3,12 @@
     margin-top: 10%;
 }
 
+h2{
+    font-family: "Old Standard TT", serif;
+    text-transform: uppercase;
+    color: #2d706c;
+}
+
 #left-questions{
     padding-top: 30px;
     width: 33%;
