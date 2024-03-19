@@ -28,11 +28,10 @@ body {
     /* Generic project styles */
     color: #704214;
     background-color: #FFF1E5;
-    font-family: "Old Standard TT", serif;
-    /* font-size: 1.5rem;  */
+    font-family: "Old Standard TT", serif; 
+    font-weight: 500;
+    font-size: 1rem; 
 }
-
-
 
 header a {
     text-decoration: none;
@@ -40,30 +39,26 @@ header a {
     display: inline-block;
     text-align: left;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     
 }
 
-h1 {
-    font-family: "Old Standard TT", serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    color: white;
+.navbar a:hover {
+    background-color: #f7d4bb;
+    color: #704214;
+    border: none;
+    border-radius: 0.5rem;
 }
 
+
 #menu {
-    font-size: 110%;
+    font-size: 150%;
     letter-spacing: 0.1rem;
     list-style-type: none;
 }
 
 #menu > li {
-    margin-bottom: 1rem;
-} 
-
-.active {
-    border-bottom: 1px solid #704214;
+    margin-bottom: 0;
 }
 
 /* Navbar styles with dropdown toggle 
@@ -74,7 +69,7 @@ nav {
     background-color: #2d706c;
     width: 100%;
     left:0;
-    padding: 0 1rem;
+    padding: 0 0;
     box-shadow: 0 2px 2px #704214;
     display: none;
     top:100%;
