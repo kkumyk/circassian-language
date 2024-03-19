@@ -33,11 +33,12 @@ The site should:
     - CSS code passes through the official (Jigsaw) validator with no issues
 
 # TODO
+<hr>
+## Hub
+
 - style nav bar so that it is clear where you are - on which page
-- the nav jumps forward on the about page
-- replace logo with Адыгэбзэ by click
-- style logo to separate it from the other pages
-- url links on the about page need styling
+
+- add media queries: nav, logos, footer link sections
 
 - add favicons for standard devices
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -45,7 +46,6 @@ The site should:
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
 - add 404
-- separate template code from the content code
 
 ## Tools Used
 [Nu Html Checker](https://validator.w3.org/nu/)
