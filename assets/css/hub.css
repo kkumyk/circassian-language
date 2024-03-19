@@ -1,32 +1,59 @@
-/* 
-h2{
-    font-family: "Old Standard TT", serif;
-    text-transform: uppercase;
-    color: #2d706c;
-    letter-spacing: -0.1rem; 
-    font-size: 1.5rem;
-}
-
 #hub-questions{
-    height: 100%;
-    padding: 2%;
-    margin: 3% 0;
-    display: flex;
-    flex-direction: column;
-    min-width: 100%;
+    height: 600px;
+    margin-top: 10%;
 }
 
-p{
-    margin: 3% 0;
+#left-questions{
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+}
+
+#right-questions {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+}
+
+#center {
+    width: 33%;
+    margin: 0 auto;
+}
+
+hr {
+    border-top: 1px solid #cccccc;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.left-question-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-question-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-question-heading p {
+    text-align: right;
+}
+
+.right-question-heading h2 {
+    text-align: right;
 }
 
 #main-question {
-    margin: 3% 0;
+    margin: 5% 0;
     text-align: center;
-    font-size: 150%;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    color: #704214;
+    font-size: 280%;
 }
 
 #circle-container {
@@ -40,106 +67,106 @@ p{
     margin: 0 auto;
 }
 
-#circle-cover-bg {
-    background: url('./kabardian-alphabet/assets/images/circassian.png') no-repeat center center;
+#circle-cover {
+    background: url('/assets/images/circassian.png') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
 
 
 
-#left-questions{
-    padding-top: 30px;
-    width: 33%;
-    float: left;
-} 
-
-.left-question-heading {
-    width: 60%;
-    float: right;
-    line-height: 1.25rem;
-    clear: both;
-    margin-bottom: 50px;
-    color: #704214;
-    font-size: 1rem;
-    font-size: 1.25rem;
-} 
-
-
-
-
-.content a:link, .content a:visited {
+.content-link a:link, .content-link a:visited {
     color:#704214;
 }
 
 
-.content a:focus, a:hover {
+/* .content-link a:focus, a:hover {
   border-bottom: 0.1rem solid;
-}
+} */
 
-.content a:active {
+.content-link a:active {
     color: #2d706c;
   }
-
+/* 
 a {
     outline-color: transparent;
     text-decoration: none;
-  }
+  } */
 
 
 
-#right-questions {
-    padding-top: 0;
-    width: 33%;
-    float: right;
-    
-}
 
-#center-container {
-    width: 33%;
-    margin: 0 auto;
-}
+/* Media queries */
 
-hr {
-    border-top: 0.1rem solid #2d706c;
-    width: 100%;
-    margin: 0.25rem 0;
-}
-
-
-.right-question-heading {
-    width: 60%;
-    float: left;
-    line-height: 1.25rem;
-    clear: both;
-    margin-bottom: 50px;
-    color: #704214;
-    font-size: 1.25rem;
-    padding: 0 20px 0 20px;
-    min-width: 90%;
-}
-
-.right-question-heading p {
-    text-align: right;
-}
-
-.right-question-heading h2 {
-    text-align: right;
-}
-
-
-/* for mobile devices (mobile, 320%)  */
-/* @media screen and (min-width: 320px){
-    #circle-container {
-        width: 12rem;
-        height: 12rem;
-        padding: 15%;
-        border-style: solid;
-        border-color: #cccccc;
-        border-width: 0.1rem;
-        border-radius: 50%;
+/* For large to medium screens sizes from 1200px wide and down */
+@media screen and (max-width: 1200px){
+    #hub-questions{
+        width: 65%;
+        height: 1200px;
         margin: 0 auto;
     }
 
+    #main-question {
+        padding: 30px 0;
+        margin-top: 0;
+    }
 
-} */
+    #left-questions, #right-questions {
+        width:100%;
+        float:left;
+        padding: 0;
+    }
+
+    #center{
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+
+    hr {
+        display: none;
+    }
+}
+
+/* For medium screens sizes from 950px wide and down */
+@media screen and (max-width: 950px){
+
+
+    #hub-questions{
+        width:90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-question-heading, .right-question-heading{
+        width: inherit;
+    }
+
+    .left-question-heading h2, .right-question-heading h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-question-heading p, .right-question-heading p{
+        text-align: center;
+        padding: 0 20px 0 20px;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+
+    #hub-questions{
+        width:100%;
+        height: 600px;
+        margin-top: 20%;
+        /* margin: 0 auto; */
+    }
+
+    #circle-container {
+        display: none;
+    }
+    
+}
