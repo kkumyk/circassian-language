@@ -146,6 +146,7 @@ small {
     }
 
     /* Main content */
+    
     main {
         /* push main content down */
         margin-top: 170px;
@@ -155,9 +156,8 @@ small {
 
 /* Larges devices (laptops and desktops, 992px and up)  */
 @media screen and (min-width: 992px){
-    #menu a:hover{
-        border-bottom: 1px solid #704214;
-    }
+
+
 }
 
 
