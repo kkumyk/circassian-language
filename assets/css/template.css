@@ -6,7 +6,6 @@
     border:0;
 }
 
-
 /* General styles */
 header {
     background-color: #2d706c;
@@ -99,21 +98,19 @@ main {
 /* Footer Styling */
 footer {
     background-color: #2d706c;
-    font-size: 1.5rem;
     width: 100%;
     text-align: center;
     left: 0;
     bottom: 0;
-    padding: 0.5%;
+    padding: 0.3%;
     position: fixed;
+    letter-spacing: 0.1rem;
 }
 
 small {
     color: white;
     font-size: 1rem;
 }
-
-
 
 
 /* Media queries */
