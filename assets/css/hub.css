@@ -187,42 +187,24 @@ hr {
 }
 
 
-
 @media only screen and (max-width: 576px) {
-    main {
-        /* Add margin at the top to prevent content from being covered by the header */
-        margin-top: 47%;
+    #hub-questions{
+        width:100%;
+        margin-top: 35%;
     }
 
     #main-question {
         font-size: 2.5rem;
     }
 }
+
 
 @media screen and (max-width: 320px){
 
     #hub-questions{
-        width:100%;
-        margin-top: 50%;
+        margin-top: 25%;
     }
     #main-question {
         font-size: 2.5rem;
     }
 }
-
-
-
-/* Media Queries */
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Extra small devices (phones, 576px and down) wide or less */
-@media only screen and (max-width: 576px) {}
-
