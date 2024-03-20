@@ -102,30 +102,35 @@ textarea:focus {
 @media only screen and (min-width: 600px) {}
 
 /* Extra small devices (phones, 576px and down) wide or less */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
 
     main {
-        /* Enlarge main element to push footer down*/
-        /* flex: 1 0 auto; */
+        margin-top: 10%;
+    }
+    .contact-form {
+        min-width: 90%;
+    }
+    .contact-input-field--multiline {
+        height: 25rem; 
+    }
+}
+
+/* small to medium devices */
+@media only screen and (max-width: 768px) {
+    main {
         /* Add margin at the top to prevent content from being covered by the header */
-        margin-top: 1%;
-        /* Enable flex properties for child elements */
-        display: flex;
-        flex-direction: column;
+        margin-top: 27%;
     }
     .contact-form {
         min-width: 100%;
-        margin: 7% auto;
-        padding: 1%;
     }
     .contact-input-field--multiline {
-        resize: vertical;
-        height: 25rem; 
-        line-height: 1.5rem;
-        overflow: hidden;
-    }
-
-    .contact-input-field--multiline {
-        height: 20rem; 
+        height: 15rem; 
     }
 }
