@@ -89,38 +89,6 @@ textarea:focus {
     padding: 0 5px;
 }
 
-
-/* Media Queries */
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Extra small devices (phones, 576px and down) wide or less */
-@media only screen and (max-width: 576px) {}
-
-
-
-
-
-@media only screen and (min-width: 768px) {
-
-    main {
-        margin-top: 10%;
-    }
-    .contact-form {
-        min-width: 90%;
-    }
-    .contact-input-field--multiline {
-        height: 25rem; 
-    }
-}
-
 /* small to medium devices */
 @media only screen and (max-width: 768px) {
     main {
@@ -132,5 +100,28 @@ textarea:focus {
     }
     .contact-input-field--multiline {
         height: 15rem; 
+    }
+}
+
+/* medium devices */
+@media only screen and (min-width: 768px) {
+    main {
+        margin-top: 10%;
+    }
+    .contact-form {
+        min-width: 80%;
+    }
+    .contact-input-field--multiline {
+        height: 25rem; 
+    }
+}
+
+/* large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main {
+        margin-top: 5%;
+    }
+    .contact-form {
+        min-width: 40%;
     }
 }
