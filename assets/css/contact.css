@@ -1,62 +1,13 @@
-/* Style contact form */
-
-.contact-container {
-    width: 100%;
-    min-height: 80vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 10% 5%;
-    background: 0 0;
-    position: absolute;
-    z-index: auto;
-}
-
-.contact-wrap {
-    width: 40%;
-    background-color: #f7d4bb;
-    border-radius: 1%;
-    position: relative;
-    box-shadow: 0 0.375em 2.5em 0 #ccc;
-    -moz-box-shadow: 0 0.375em 2.5em 0 #ccc;
-    -webkit-box-shadow: 0 0.375em 2.5em 0 #ccc;
-    -o-box-shadow: 0 0.375em 2.5em 0 #ccc;
-    -ms-box-shadow: 0 0.375em 2.5em 0 #ccc;
-}
-
-/* Vars */
-:root {
-    --rhythm: 3%;
-}
-
 /* Style the form container */
-.c-form {
+.contact-form {
     display: block;
-    max-width: 90%;
+    max-width: 35%;
     margin: 1% auto;
-    padding: 3%;
+    padding: 0.7%;
     background-color: #f7d4bb;
     opacity: 90%;
     border-radius: 0.5%;
-    margin: calc(var(--rhythm) * 2) auto;
-    /* border-color: #2d706c; */
-    /* border: none; */
-}
-
-.c-form__row {
-    &+& {
-        padding-top: var(--rhythm);
-    }
-
-    /* Make any field fill at least 2/3 */
-    [name] {
-        min-width: calc(2/3 * 100%);
-    }
+    border-color: #2d706c;
 }
 
 .contact-form-btn:hover {
@@ -76,28 +27,31 @@
 }
 
 /* Style the form heading */
-.c-form__heading {
-    font-size: 1.5em;
-    padding-bottom: 1%;
+.contact-heading {
+    font-size: 1.3rem;
     color: #704214;
-    line-height: 1.2;
 }
 
+.contact-heading h2 {
+    margin-top: 50%;
+}
+
+
 /* Style form rows */
-.c-form__row {
-    margin-bottom: 3%;
+.form-row {
+    margin-bottom: 1%;
 }
 
 /* Style labels */
-.c-label {
+.contact-label {
     display: none;
     /* Hide labels visually */
 }
 
 /* Style input fields */
-.c-input-field {
-    width: 80%;
-    padding: 10px;
+.contact-input-field {
+    width: 100%;
+    padding: 1%;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -105,8 +59,11 @@
 }
 
 /* Style multiline input field */
-.c-input-field--multiline {
+.contact-input-field--multiline {
     resize: vertical;
+    height: 20rem; 
+    line-height: 1.5rem;
+    overflow: hidden;
 }
 
 input:focus {
@@ -130,11 +87,14 @@ textarea:focus {
 
 @media only screen and (max-width: 320px) {
 
-    .contact-wrap {
-        width: 100%;
-        margin-top: 35%;
-
+    .contact-form {
+        max-width: 97%;
+        margin: -10% auto;
+        padding: 1%;
     }
 
+    .contact-heading h2 {
+        margin-top: 30%;
+    }
 
 }
