@@ -61,7 +61,7 @@
 /* Style multiline input field */
 .contact-input-field--multiline {
     resize: vertical;
-    height: 20rem; 
+    height: 25rem; 
     line-height: 1.5rem;
     overflow: hidden;
 }
@@ -78,23 +78,54 @@ textarea:focus {
     box-shadow: 0 0 0.3rem #2d706c;
 }
 
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
 
 /* Media Queries */
 
-@media only screen and (max-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
 
-@media only screen and (max-width: 480px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
 
-@media only screen and (max-width: 320px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
 
+/* Extra small devices (phones, 576px and down) wide or less */
+@media only screen and (max-width: 576px) {
+
+    main {
+        /* Enlarge main element to push footer down*/
+        /* flex: 1 0 auto; */
+        /* Add margin at the top to prevent content from being covered by the header */
+        margin-top: 1%;
+        /* Enable flex properties for child elements */
+        display: flex;
+        flex-direction: column;
+    }
     .contact-form {
-        max-width: 97%;
-        margin: -10% auto;
+        min-width: 100%;
+        margin: 7% auto;
         padding: 1%;
     }
-
-    .contact-heading h2 {
-        margin-top: 30%;
+    .contact-input-field--multiline {
+        resize: vertical;
+        height: 25rem; 
+        line-height: 1.5rem;
+        overflow: hidden;
     }
 
+    .contact-input-field--multiline {
+        height: 20rem; 
+    }
 }
