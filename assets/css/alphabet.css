@@ -16,7 +16,7 @@
     perspective: 62.5rem;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    /* align-items: left; */
     justify-content: right;
     border: 0.01rem solid #ccc;
     border-radius: 1rem;
