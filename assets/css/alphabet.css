@@ -90,9 +90,60 @@
 
 /* Media Queries */
 
+@media screen and (min-width: 992px){
+    
+    main {
+        margin-top: 3%;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    
+    main {
+        margin-top: 5%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    
+    main {
+        margin-top: 15%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    main {
+        margin-top: 25%;
+    }
+}
+
 @media only screen and (max-width: 320px) {
 
-    .alphabet-flexbox-container {
-        padding: 10%;
+    main {
+        margin-top: 35%;
     }
+} 
+
+
+/* Media Queries */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Extra small devices (phones, 576px and down) wide or less */
+@media only screen and (max-width: 576px) {}
+
+
+/* Larges devices (laptops and desktops, 992px and up)  */
+@media screen and (min-width: 992px){
 }
