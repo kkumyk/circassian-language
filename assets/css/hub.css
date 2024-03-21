@@ -79,8 +79,6 @@ hr {
     border-radius: 50%;
 }
 
-
-
 .content-link a:link, .content-link a:visited {
     color:#704214;
 }
@@ -96,19 +94,16 @@ hr {
 
     #hub-questions{
         width: 85%;
-        height: 1200px;
         margin: 0 auto;
         margin-top: -10%;
     }
 }
-
 
 /* For large to medium screens sizes from 1200px wide and down */
 @media screen and (max-width: 1200px){
 
     #hub-questions{
         width: 65%;
-        height: 1200px;
         margin: 0 auto;
         margin-top: -10%;
     }
@@ -142,7 +137,6 @@ hr {
 
     #hub-questions{
         width:90%;
-        height: 1200px;
         margin: 0 auto;
     }
 
