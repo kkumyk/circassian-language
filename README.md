@@ -1,4 +1,4 @@
-# [Kabardian Alphabet (Cyrillic and Latin Scripts)](https://kkumyk.github.io/kabardian-alphabet/)
+# [Circassian language 2024 ](https://kkumyk.github.io/circassian-language/)
 
 
 ## Project Requirements
@@ -32,20 +32,23 @@ The site should:
     - HTML code passes through the official W3C validator with no issues
     - CSS code passes through the official (Jigsaw) validator with no issues
 
-# TODO
-<hr>
-## Hub
+## TODO
+
+- remove unused CSS
+- validate html
+- validate css
+- run lighthouse report
+- document results on the readme page
+- add comment to the CSS files
+
 
 - style nav bar so that it is clear where you are - on which page
-
-- add media queries: nav, logos, footer link sections
-
 - add favicons for standard devices
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-
 - add 404
+- add animation to the hub page: the logo text and the text in the circle will be switching between them to indicate that this is the same text written in different languages
 
 ## Tools Used
 [Nu Html Checker](https://validator.w3.org/nu/)
