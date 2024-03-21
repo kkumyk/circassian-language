@@ -1,4 +1,4 @@
-# [Circassian language 2024 ](https://kkumyk.github.io/circassian-language/)
+# [Circassian Language 2024 ](https://kkumyk.github.io/circassian-language/)
 
 
 ## Project Requirements
