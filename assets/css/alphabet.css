@@ -22,7 +22,7 @@
     border-radius: 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    /* color: #704214; */
+    color: #704214;
     font-size: 1.5rem;
 }
 
@@ -61,6 +61,15 @@
     margin-left: -0.5rem;
 }
 
+.flip-card-front h1 {
+    margin-top: 4rem;
+}
+
+.flip-card-front p {
+    margin-top: 3.7rem;
+}
+
+
 .h1 {
     backface-visibility: hidden;
 }
@@ -91,7 +100,6 @@
 /* Media Queries */
 
 @media screen and (min-width: 992px){
-    
     main {
         margin-top: 3%;
     }
@@ -99,7 +107,6 @@
 }
 
 @media screen and (max-width: 992px){
-    
     main {
         margin-top: 5%;
     }
@@ -107,7 +114,6 @@
 }
 
 @media screen and (max-width: 768px){
-    
     main {
         margin-top: 15%;
     }
@@ -115,35 +121,13 @@
 }
 
 @media only screen and (max-width: 600px) {
-
     main {
         margin-top: 25%;
     }
 }
 
 @media only screen and (max-width: 320px) {
-
     main {
         margin-top: 35%;
     }
-} 
-
-
-/* Media Queries */
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Extra small devices (phones, 576px and down) wide or less */
-@media only screen and (max-width: 576px) {}
-
-
-/* Larges devices (laptops and desktops, 992px and up)  */
-@media screen and (min-width: 992px){
 }
