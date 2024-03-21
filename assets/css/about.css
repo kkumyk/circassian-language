@@ -189,8 +189,11 @@ iframe {
     padding-bottom: 6.25%;
 }
 
-@media only all and (min-width: 1200px) {
+main {
+    margin-top: auto;
+}
 
+@media only all and (min-width: 1200px) {
     .subhead {
         margin-top: 7%;
     }
@@ -198,7 +201,6 @@ iframe {
 
 
 @media only all and (max-width: 1200px) {
-
     .subhead {
         margin-top: 12%;
     }
