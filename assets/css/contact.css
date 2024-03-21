@@ -119,7 +119,7 @@ textarea:focus {
 /* large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     main {
-        margin-top: 5%;
+        margin-top: 4%;
     }
     .contact-form {
         min-width: 40%;
