@@ -1,67 +1,68 @@
 # [Circassian Language](https://kkumyk.github.io/circassian-language/)
 
-
-<details>
-  <summary>HTML/CSS Essentials Project Requirements</summary>
-  <strong>The site should:</strong>
+Circassian Language is created for two purposes:
 <ol>
-    <li>have a main navigation menu and a structured layout</li>
-    <li>meet accessibility guidelines, e.g.: contrast between background and foreground colours, as well as alt text for images</li>
-    <li>have at least three pages</li>
-    <li>have custom HTML code that passes through the official W3C validator with no issues</li>
-    <li>custom CSS code that passes through the official (Jigsaw) validator with no issues</li>
-    <li>have documentation, e.g.: README.md and the purpose of the application is clearly there:key project goals, target audience</li>
-    <li>have images that are of sufficient resolution to not appear pixelated or stretched</li>
-    <li>have code all external links to open in a separate tab when clicked</li>
-    <li>use CSS media queries to adjust to different device screen sizes</li>
-    <li>use Semantic markup to structure HTML code</li>
-    <li>be deployed to a Cloud platform</li>
-    <li>not have commented-out code in its final version</li>
-    <li>bit have no broken internal links</li>
-    <li>have README file and contain screenshots of the finished project in it</li>
-    <li>have explanations about site's purpose, the value that it provides to its users, and the deployment procedure</li>
-    <li>have HTML and CSS code organised into well-defined and commented sections</li>
-    <li>have code that meets at least minimum standards for readability (consistent indentation, blank lines only appear individually or, at most, in pairs)</li>
-    <li>be fully responsive</li>
-    <li>demonstrate the characteristics of clean code:
-    <ul>
-        <li>no unnecessary repeated blank lines (and never more than 2)</li>
-        <li>ID/class/attribute names clearly indicate their purpose</li>
-        <li>CSS code is split into well-defined and commented sections</li>
-        <li>Semantic markup is used to structure HTML code</li>
-        <li>include relevant comments explaining the purpose of code</li>
-        <li>HTML code passes through the official W3C validator with no issues</li>
-        <li>CSS code passes through the official (Jigsaw) validator with no issues</li>
-    </ul>
+<li>to raise awareness about an endangered language of Circassian, and
+ </li>
+<li>to create an interactive alphabet as an alternative to the static alphabet pages available online.</li>
 </ol>
-</details>
+This project was created using HTML, CSS and JavaScript.
 
 
-<details>
-  <summary>TODO list</summary>
+![Circassian Language - different devices view](doc/testing//circassian-on-different-devices.webp)
 
-    - remove unused CSS
-    - validate html
-    - validate css
-    - run lighthouse report
-    - document results on the readme page
-    - add comment to the CSS files
 
-</details>
+## Table of Contents
 
-<details>
-  <summary>Further Improvements</summary>
 
-    - style nav bar so that it is clear where you are - on which page
-    - add favicons for standard devices
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    - add 404 page
-    - add animation to the hub: the logo text and the text in the circle will be switching to indicate that this is the same text
-</details>
+## User Experience
 
-![Circassian Language site - different devices view](doc/testing//circassian-on-different-devices.webp)
+### User Stories
+The site has two users in mind:
+<ol>
+<li>Users that know about the existence of the Circassian language.</li>
+These are native speakers that for different reasons stopped speaking this language and are looking for an online material to get re-engaged with it.
+
+<li>Users that don't know anything about it.</li>
+In this case, the goal of the landing page is to help them to quickly of orientate themselves on the site by delivering the main information about the topic. Subheadings in the question format are used for this purpose.
+</oi>
+
+
+## Design
+
+### Main Colours
+The colours chosen for this project are related to the colours characteristic for Circassian people. E.g.: green is the colour of the <a href="https://en.wikipedia.org/wiki/Circassian_flag#:~:text=It%20consists%20of%20a%20green,the%20designer%20of%20the%20flag.">Circassian flag</a>. It also represents these peoples' connection to nature and the role it is playing in their culture. For this purpose, many words chosen for the alphabet are related to nature, such as animal names.
+
+<div style="background-color: #2d706c"><h3 style="color:white">#2d706c</h3></div>
+<div style="background-color: #704214"><h3 style="color:white">#704214</h3></div>
+<div style="background-color: #f7d4bb"><h3 style="color:#3d3a37">#f7d4bb</h3></div>
+<div style="background-color: #FFF1E5"><h3 style="color:#3d3a37">#FFF1E5</h3></div>
+
+## Features
+
+### Hub Page
+The purpose of the Hub page is to give an overview of the site's contents.
+<img src="doc/features/doc-hub.jpg" style="width:798px;"/>
+
+The About page is created in a newspaper style featuring the main challenges the Circassian language is currently facing. 
+<img src="doc/features/doc-about.jpg" style="width:798px;"/>
+
+The Kabardian Alphabet page introduces one of the standards used for the Circassian language - the Kabardian - and lists the letters and word examples in both, Cyrillic and Latin, accompanied by their sounds.
+
+<img src="doc/features/doc-alphabet.jpg" style="width:798px;"/>
+
+The Contact page provides an option to to connect with people concerned with the challenged the Circassian language is facing and share feedback and ideas.
+<img src="doc/features/doc-contact.jpg" style="width:798px;"/>
+
+## Future Features
+Two features are planned for the site:
+<ol>
+  <li>an option to navigate through the letters groups starting with the same latin letter on the Alphabet page with the keyboard</li>
+  <li>an interactive page with a poem in Kabardian that will allow to take user's voice input and compare it with the recording done by a native speaker; the result of this interaction will be a calculated score that will represent the pronunciation accuracy.</li>
+</ol>
+
+
+
 
 ## HTML Validation
 <img src="doc/testing/hub-page-html-validation.jpg" alt="Hub page HTML Validation" style="width:800px;"/>
@@ -104,3 +105,14 @@ The CSS error on the alphabet page is coming from the imported <strong><italic>c
 - [Nu Html Checker](https://validator.w3.org/nu/)
 - [CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 
+<details>
+  <summary>Further Improvements</summary>
+
+    - style nav bar so that it is clear where you are - on which page
+    - add favicons for standard devices
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    - add 404 page
+    - add animation to the hub: the logo text and the text in the circle will be switching to indicate that this is the same text
+</details>
