@@ -61,6 +61,8 @@
     - add animation to the hub: the logo text and the text in the circle will be switching to indicate that this is the same text
 </details>
 
+![Circassian Language site - different devices view](assets/images/doc/circassian-on-different-devices.webp)
+
 ## HTML Validation
 <img src="assets/images/doc/hub-page-html-validation.jpg" alt="Hub page HTML Validation" style="width:800px;"/>
 </br>
