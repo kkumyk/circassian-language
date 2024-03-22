@@ -61,42 +61,42 @@
     - add animation to the hub: the logo text and the text in the circle will be switching to indicate that this is the same text
 </details>
 
-![Circassian Language site - different devices view](assets/images/doc/circassian-on-different-devices.webp)
+![Circassian Language site - different devices view](doc/testing//circassian-on-different-devices.webp)
 
 ## HTML Validation
-<img src="assets/images/doc/hub-page-html-validation.jpg" alt="Hub page HTML Validation" style="width:800px;"/>
+<img src="doc/testing/hub-page-html-validation.jpg" alt="Hub page HTML Validation" style="width:800px;"/>
 </br>
-<img src="assets/images/doc/about-html-validation.jpg" alt="About HTML Validation" style="width:800px;"/>
+<img src="doc/testing//about-html-validation.jpg" alt="About HTML Validation" style="width:800px;"/>
 </br>
-<img src="assets/images/doc/alphabet-html-validation.jpg" alt="Alphabet HTML Validation" style="width:800px;"/>
+<img src="doc/testing//alphabet-html-validation.jpg" alt="Alphabet HTML Validation" style="width:800px;"/>
 </br>
-<img src="assets/images/doc/contact-html-validation.jpg" alt="Contact HTML Validation" style="width:800px;"/>
+<img src="doc/testing//contact-html-validation.jpg" alt="Contact HTML Validation" style="width:800px;"/>
 
 #### Comments
 The warnings on the [Kabardian Alphabet](https://kkumyk.github.io/circassian-language/kabardian-alphabet.html) about special characters needing to be replaced with the Unicode are taken notes of and will be added at the later stage. 
 
 ## CSS Validation
 
-<img src="assets/images/doc/hub-page-css-validation.jpg" alt="Hub page CSS Validation" style="width:798px;"/>
+<img src="doc/testing//hub-page-css-validation.jpg" alt="Hub page CSS Validation" style="width:798px;"/>
 </br>
-<img src="assets/images/doc/about-css-validation.jpg" alt="About CSS Validation" style="width:800px;"/>
+<img src="doc/testing//about-css-validation.jpg" alt="About CSS Validation" style="width:800px;"/>
 </br>
-<img src="assets/images/doc/alphabet-css-validation.jpg" alt="Alphabet CSS Validation" style="width:800px;"/>
+<img src="doc/testing//alphabet-css-validation.jpg" alt="Alphabet CSS Validation" style="width:800px;"/>
 </br>
-<img src="assets/images/doc/contact-css-validation.jpg" alt="Contact CSS Validation" style="width:800px;"/>
+<img src="doc/testing//contact-css-validation.jpg" alt="Contact CSS Validation" style="width:800px;"/>
 
 #### Comments
 The CSS error on the alphabet page is coming from the imported <strong><italic>css/all.min.css</italic></strong> file that is used to load the sound favicon.
 
 ## Lighthouse Reports
 
-<img src="assets/images/doc/lighthouse-hub.jpg" alt="Hub page CSS Validation" style="width:798px;"/>
+<img src="doc/testing//lighthouse-hub.jpg" alt="Hub page CSS Validation" style="width:798px;"/>
 </br>
-<img src="assets/images/doc/lighthouse-about.jpg" alt="About CSS Validation" style="width:800px;"/>
+<img src="doc/testing//lighthouse-about.jpg" alt="About CSS Validation" style="width:800px;"/>
 </br>
-<img src="assets/images/doc/lighthouse-alphabet.jpg" alt="Contact CSS Validation" style="width:800px;"/>
+<img src="doc/testing//lighthouse-alphabet.jpg" alt="Contact CSS Validation" style="width:800px;"/>
 </br>
-<img src="assets/images/doc/lighthouse-contact.jpg" alt="Alphabet CSS Validation" style="width:800px;"/>
+<img src="doc/testing//lighthouse-contact.jpg" alt="Alphabet CSS Validation" style="width:800px;"/>
 
 
 ## Tools Used
