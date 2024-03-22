@@ -89,7 +89,7 @@ textarea:focus {
     padding: 0 5px;
 }
 
-/* small to medium devices */
+/* For small to medium devices */
 @media only screen and (max-width: 768px) {
     main {
         /* Add margin at the top to prevent content from being covered by the header */
@@ -103,7 +103,7 @@ textarea:focus {
     }
 }
 
-/* medium devices */
+/* For medium devices */
 @media only screen and (min-width: 768px) {
     main {
         margin-top: 10%;
@@ -116,7 +116,7 @@ textarea:focus {
     }
 }
 
-/* large devices (laptops/desktops, 992px and up) */
+/* For large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     main {
         margin-top: 2.5%;
