@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Kabardian Alphabet</title>
-    <meta name="description"  content="Kabardian alphabet with sounds and word examples in Cyrillic and Latin Scripts.">
+    <meta name="description"  content="Kabardian alphabet with letter sounds and word examples in Cyrillic and Latin Scripts.">
 
     <!-- links to Google Fonts using the "preconnect" hint for faster load (supported by Chrome, Opera, Firefox and Android browsers) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,12 +20,11 @@
     <!-- link to the sound-up icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- link to the favicon image -->
+    <!-- link to the favicon icon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
   </head>
 
   <body>
-    
     <header>
         <a href="index.html">
             <h1 id="logo" >Circassian</h1>
@@ -42,1043 +41,1040 @@
             </ul>
         </nav>
     </header>
+
     <main>
-    <div class="alphabet-flexbox-container">
-      
-      <!-- Semantic Elements used in the flip card:
-        - <article> for the overall card
-        - <header> represents the heading of the card - the cyrillic and latin    
-        - <section> contains the sound of the letter, an example word starting with this letter and its translation
-      -->
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>А а</h1>
-            <p>A а</p>
-          </header>
+      <div class="alphabet-flexbox-container">
+        
+        <!-- Semantic Elements used in the flip card:
+          - <article> for the overall card
+          - <header> represents the heading of the card - letters in both - cyrillic and latin
+          - <section> contains the sound of the letter, an example word and its translation
+        -->
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>А а</h1>
+              <p>A а</p>
+            </header>
 
-          <section class="flip-card-back">
-            <picture>
-              <!-- <source media="(min-width: 1400rem)" srcset="assets/images/father.png" /> -->
-              <!-- style="width:3em; height:4em;"  -->
-              <img style="position: absolute; width: 50%; height:auto; bottom:10%;right:10%;" src="./assets/images/father.png" alt="Father">
-            </picture>
+            <section class="flip-card-back">
+              <picture>
+                <img style="position: absolute; width: 50%; height:auto; bottom:10%;right:10%;" src="./assets/images/father.png" alt="Father">
+              </picture>
 
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/a.mp3')">
-              [a] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/father.mp3')"><span>адэ</span> <i class="fa fa-volume-up fa-1x" style="color: #935f2c"></i>
-              <br><span>a d ä</span></h3>
-            <p class="en-translation">father</p>
-          </section>
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/a.mp3')">
+                [a] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/father.mp3')"><span>адэ</span> <i class="fa fa-volume-up fa-1x" style="color: #935f2c"></i>
+                <br><span>a d ä</span></h3>
+              <p class="en-translation">father</p>
+            </section>
 
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Э э</h1>
-            <p>Ä ä</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ae.mp3')">
-              [ɛ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/grandma.mp3')"><span>нан</span><span id="underline_letter">э</span> <i class="fa fa-volume-up fa-1x" style="color: #935f2c"></i>
-              <br><span>n a n ä</span></h3>
-            <p class="en-translation">grandma</p>
-          </section>
-        </article>
-      </div>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Э э</h1>
+              <p>Ä ä</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ae.mp3')">
+                [ɛ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/grandma.mp3')"><span>нан</span><span id="underline_letter">э</span> <i class="fa fa-volume-up fa-1x" style="color: #935f2c"></i>
+                <br><span>n a n ä</span></h3>
+              <p class="en-translation">grandma</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Б б</h1>
-            <p>B b</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/b.mp3')">
-              [b] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/fox.mp3')"><span>бажэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>b a zh ä</span></h3>
-            <p class="en-translation">fox</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Б б</h1>
+              <p>B b</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/b.mp3')">
+                [b] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/fox.mp3')"><span>бажэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>b a zh ä</span></h3>
+              <p class="en-translation">fox</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>В в</h1>
-            <p>V v</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/v.mp3')">
-              [v] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/shoes.mp3')"><span>вакъэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>v a q’ ä</span></h3>
-            <p class="en-translation">shoes</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>В в</h1>
+              <p>V v</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/v.mp3')">
+                [v] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/shoes.mp3')"><span>вакъэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>v a q’ ä</span></h3>
+              <p class="en-translation">shoes</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Г г</h1>
-            <p>G g</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/g.mp3')">
-              [g][ɣ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/parsnip.mp3')"><span>гыныху</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>g y2 n y2 khw</span></h3>
-            <p class="en-translation">parsnip</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Г г</h1>
+              <p>G g</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/g.mp3')">
+                [g][ɣ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/parsnip.mp3')"><span>гыныху</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>g y2 n y2 khw</span></h3>
+              <p class="en-translation">parsnip</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Гу гу</h1>
-            <p>Gw gw</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/gw.mp3')">
-              [ɡʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/heart.mp3')"><span>гу</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>gw</span></h3>
-            <p class="en-translation">heart</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Гу гу</h1>
+              <p>Gw gw</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/gw.mp3')">
+                [ɡʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/heart.mp3')"><span>гу</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>gw</span></h3>
+              <p class="en-translation">heart</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Гъ гъ</h1>
-            <p>Gh gh</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/gh.mp3')">
-              [ʁ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/spring.mp3')"><span>гъатхэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>gh a t kh ä</span></h3>
-            <p class="en-translation">spring</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Гъ гъ</h1>
+              <p>Gh gh</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/gh.mp3')">
+                [ʁ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/spring.mp3')"><span>гъатхэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>gh a t kh ä</span></h3>
+              <p class="en-translation">spring</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Гъу гъу</h1>
-            <p>Ghw ghw</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ghw.mp3')">
-              [ʁʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/road.mp3')"><span>гъуэгу</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>ghw ä gw</span></h3>
-            <p class="en-translation">road</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Гъу гъу</h1>
+              <p>Ghw ghw</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ghw.mp3')">
+                [ʁʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/road.mp3')"><span>гъуэгу</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>ghw ä gw</span></h3>
+              <p class="en-translation">road</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Д д</h1>
-            <p>D d</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/d.mp3')">
-              [d] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/sun.mp3')"><span>дыгъэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>d y2 gh ä</span></h3>
-            <p class="en-translation">sun</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Д д</h1>
+              <p>D d</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/d.mp3')">
+                [d] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/sun.mp3')"><span>дыгъэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>d y2 gh ä</span></h3>
+              <p class="en-translation">sun</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Дж дж</h1>
-            <p>J j</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/j.mp3')">
-              [dʒ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/cat.mp3')"><span>джэду</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>j ä d w</span></h3>
-            <p class="en-translation">cat</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Дж дж</h1>
+              <p>J j</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/j.mp3')">
+                [dʒ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/cat.mp3')"><span>джэду</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>j ä d w</span></h3>
+              <p class="en-translation">cat</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Дз дз</h1>
-            <p>Dz dz</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/dz.mp3')">
-              [dz] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/tooth.mp3')"><span>дзэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>dz ä</span></h3>
-            <p class="en-translation">tooth</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Дз дз</h1>
+              <p>Dz dz</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/dz.mp3')">
+                [dz] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/tooth.mp3')"><span>дзэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>dz ä</span></h3>
+              <p class="en-translation">tooth</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Е е</h1>
-            <p>E e</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/e.mp3')">
-              [je] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/pupil.mp3')"><span>еджакIуэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>e j a kw’ ä</span></h3>
-            <p class="en-translation">pupil</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Е е</h1>
+              <p>E e</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/e.mp3')">
+                [je] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/pupil.mp3')"><span>еджакIуэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>e j a kw’ ä</span></h3>
+              <p class="en-translation">pupil</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ё ё</h1>
-            <p>Ë ë</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ee.mp3')">
-              [jo] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/hedgehog.mp3')"><span>ёжик</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>ё zh i k</span></h3>
-            <p class="en-translation">hedgehog</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ж ж</h1>
-            <p>Zh zh</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/zh.mp3')">
-              [ʒ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/tree.mp3')"><span>жыг</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>zh y2 g</span></h3>
-            <p class="en-translation">tree</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Жь жь</h1>
-            <p>Ź ź</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/z-acute.mp3')">
-              [ʑ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/owl.mp3')"><span>жьынду</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>ź y2 n d w</span></h3>
-            <p class="en-translation">owl</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ё ё</h1>
+              <p>Ë ë</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ee.mp3')">
+                [jo] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/hedgehog.mp3')"><span>ёжик</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>ё zh i k</span></h3>
+              <p class="en-translation">hedgehog</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ж ж</h1>
+              <p>Zh zh</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/zh.mp3')">
+                [ʒ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/tree.mp3')"><span>жыг</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>zh y2 g</span></h3>
+              <p class="en-translation">tree</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Жь жь</h1>
+              <p>Ź ź</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/z-acute.mp3')">
+                [ʑ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/owl.mp3')"><span>жьынду</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>ź y2 n d w</span></h3>
+              <p class="en-translation">owl</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>З з</h1>
-            <p>Z z</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/z.mp3')">
-              [z] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/one.mp3')"><span>зы</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>z y2</span></h3>
-            <p class="en-translation">one</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>З з</h1>
+              <p>Z z</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/z.mp3')">
+                [z] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/one.mp3')"><span>зы</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>z y2</span></h3>
+              <p class="en-translation">one</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>И и</h1>
-            <p>I i</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/i.mp3')">
-              [i] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/big.mp3')"><span>ин</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>i n</span></h3>
-            <p class="en-translation">big</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>И и</h1>
+              <p>I i</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/i.mp3')">
+                [i] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/big.mp3')"><span>ин</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>i n</span></h3>
+              <p class="en-translation">big</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Й й</h1>
-            <p>Y y</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/y.mp3')">
-              [j] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/iodine.mp3')"><span>йод</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>y o d</span></h3>
-            <p class="en-translation">iodine</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>К к</h1>
-            <p>K k</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/k.mp3')">
-              [k] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/cornbread.mp3')"><span>кыржын</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>k y2 r zh y2 n</span></h3>
-            <p class="en-translation">cornbread</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ку ку</h1>
-            <p>Kw kw</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/kw.mp3')">
-              [kʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/gate.mp3')"><span>куэбжэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>kw ä b zh ä</span></h3>
-            <p class="en-translation">gate</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Й й</h1>
+              <p>Y y</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/y.mp3')">
+                [j] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/iodine.mp3')"><span>йод</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>y o d</span></h3>
+              <p class="en-translation">iodine</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>К к</h1>
+              <p>K k</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/k.mp3')">
+                [k] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/cornbread.mp3')"><span>кыржын</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>k y2 r zh y2 n</span></h3>
+              <p class="en-translation">cornbread</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ку ку</h1>
+              <p>Kw kw</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/kw.mp3')">
+                [kʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/gate.mp3')"><span>куэбжэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>kw ä b zh ä</span></h3>
+              <p class="en-translation">gate</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>КӀ кӏ</h1>
-            <p>K’ k’</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/k-apo.mp3')">
-              [kʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/squirrel.mp3')"><span>кӏэпхъ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>k’ ä p x</span></h3>
-            <p class="en-translation">squirrel</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>КӀ кӏ</h1>
+              <p>K’ k’</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/k-apo.mp3')">
+                [kʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/squirrel.mp3')"><span>кӏэпхъ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>k’ ä p x</span></h3>
+              <p class="en-translation">squirrel</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>КӀу кӏу</h1>
-            <p>Kw’ kw’</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/kw-apo.mp3')">
-              [kʷʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/go.mp3')"><span>кIуэн</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>kw’ ä n</span></h3>
-            <p class="en-translation">go: walk, drive</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>КӀу кӏу</h1>
+              <p>Kw’ kw’</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/kw-apo.mp3')">
+                [kʷʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/go.mp3')"><span>кIуэн</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>kw’ ä n</span></h3>
+              <p class="en-translation">go: walk, drive</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Къ къ</h1>
-            <p>Q’ q’</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/q-apo.mp3')">
-              [q] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/welcome.mp3')"><span>къеблагъэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>q’ e b l a gh ä</span></h3>
-            <p class="en-translation">welcome!</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Къу къу</h1>
-            <p>Qw’ qw’</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/qw-apo.mp3')">
-              [qʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/hen.mp3')"><span>къурт</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>qw’ r t</span></h3>
-            <p class="en-translation">hen</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Кхъ кхъ</h1>
-            <p>Q q</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/q.mp3')">
-              [qχ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/please.mp3')"><span>кхъыIэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>q y2 ’ ä</span></h3>
-            <p class="en-translation">please</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Къ къ</h1>
+              <p>Q’ q’</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/q-apo.mp3')">
+                [q] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/welcome.mp3')"><span>къеблагъэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>q’ e b l a gh ä</span></h3>
+              <p class="en-translation">welcome!</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Къу къу</h1>
+              <p>Qw’ qw’</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/qw-apo.mp3')">
+                [qʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/hen.mp3')"><span>къурт</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>qw’ r t</span></h3>
+              <p class="en-translation">hen</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Кхъ кхъ</h1>
+              <p>Q q</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/q.mp3')">
+                [qχ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/please.mp3')"><span>кхъыIэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>q y2 ’ ä</span></h3>
+              <p class="en-translation">please</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Кхъу кхъу</h1>
-            <p>Qw qw</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/qw.mp3')">
-              [qχʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/pear.mp3')"><span>кхъужь</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>qw w ź</span></h3>
-            <p class="en-translation">pear</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Кхъу кхъу</h1>
+              <p>Qw qw</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/qw.mp3')">
+                [qχʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/pear.mp3')"><span>кхъужь</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>qw w ź</span></h3>
+              <p class="en-translation">pear</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Л л</h1>
-            <p>L l</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/l.mp3')">
-              [l] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/meat.mp3')"><span>лы</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>l y2</span></h3>
-            <p class="en-translation">meat</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Л л</h1>
+              <p>L l</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/l.mp3')">
+                [l] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/meat.mp3')"><span>лы</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>l y2</span></h3>
+              <p class="en-translation">meat</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Лъ лъ</h1>
-            <p>Lh lh</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/lh.mp3')">
-              [ɬ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/blood.mp3')"><span>лъы</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>lh y2</span></h3>
-            <p class="en-translation">blood</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>ЛӀ лӏ</h1>
-            <p>L’ l’</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/l-apo.mp3')">
-              [ɬʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/old-man.mp3')"><span>лIыжь</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>l’ y2 ź</span></h3>
-            <p class="en-translation">old man</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>М м</h1>
-            <p>M m</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/m.mp3')">
-              [m] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/bear.mp3')"><span>мыщэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>m y2 ś ä</span></h3>
-            <p class="en-translation">bear</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Лъ лъ</h1>
+              <p>Lh lh</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/lh.mp3')">
+                [ɬ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/blood.mp3')"><span>лъы</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>lh y2</span></h3>
+              <p class="en-translation">blood</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>ЛӀ лӏ</h1>
+              <p>L’ l’</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/l-apo.mp3')">
+                [ɬʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/old-man.mp3')"><span>лIыжь</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>l’ y2 ź</span></h3>
+              <p class="en-translation">old man</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>М м</h1>
+              <p>M m</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/m.mp3')">
+                [m] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/bear.mp3')"><span>мыщэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>m y2 ś ä</span></h3>
+              <p class="en-translation">bear</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Н н</h1>
-            <p>N n</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/n.mp3')">
-              [n] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/face.mp3')"><span>напэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>n a p ä</span></h3>
-            <p class="en-translation">face</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Н н</h1>
+              <p>N n</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/n.mp3')">
+                [n] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/face.mp3')"><span>напэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>n a p ä</span></h3>
+              <p class="en-translation">face</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>О о</h1>
-            <p>O o</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/o.mp3')">
-              [o] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/queue.mp3')"><span>очырэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>o ch y2 r ä</span></h3>
-            <p class="en-translation">queue</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>О о</h1>
+              <p>O o</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/o.mp3')">
+                [o] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/queue.mp3')"><span>очырэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>o ch y2 r ä</span></h3>
+              <p class="en-translation">queue</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>П п</h1>
-            <p>P p</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/p.mp3')">
-              [p] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/nose.mp3')"><span>пэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>p ä</span></h3>
-            <p class="en-translation">nose</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>ПӀ пӏ</h1>
-            <p>P’ p’</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/p-apo.mp3')">
-              [pʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/bed.mp3')"><span>пӏэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>p' ä</span></h3>
-            <p class="en-translation">bed</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Р р</h1>
-            <p>R r</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/r.mp3')">
-              [r] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/rose.mp3')"><span>розэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>r o s ä</span></h3>
-            <p class="en-translation">rose</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>П п</h1>
+              <p>P p</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/p.mp3')">
+                [p] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/nose.mp3')"><span>пэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>p ä</span></h3>
+              <p class="en-translation">nose</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>ПӀ пӏ</h1>
+              <p>P’ p’</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/p-apo.mp3')">
+                [pʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/bed.mp3')"><span>пӏэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>p' ä</span></h3>
+              <p class="en-translation">bed</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Р р</h1>
+              <p>R r</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/r.mp3')">
+                [r] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/rose.mp3')"><span>розэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>r o s ä</span></h3>
+              <p class="en-translation">rose</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>С с</h1>
-            <p>S s</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/s.mp3')">
-              [s] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/child.mp3')"><span>сабий</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>s a b i y</span></h3>
-            <p class="en-translation">child, baby</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>С с</h1>
+              <p>S s</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/s.mp3')">
+                [s] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/child.mp3')"><span>сабий</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>s a b i y</span></h3>
+              <p class="en-translation">child, baby</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Т т</h1>
-            <p>T t</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/t.mp3')">
-              [t] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/calf.mp3')"><span>танэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>t a n ä</span></h3>
-            <p class="en-translation">calf</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Т т</h1>
+              <p>T t</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/t.mp3')">
+                [t] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/calf.mp3')"><span>танэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>t a n ä</span></h3>
+              <p class="en-translation">calf</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>ТӀ тӏ</h1>
-            <p>T’ t’</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/t-apo.mp3')">
-              [tʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/two.mp3')"><span>тӏу</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>t' w</span></h3>
-            <p class="en-translation">two</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>У у</h1>
-            <p>W, U1 / w, u1</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/wu1.mp3')">
-              [u] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/house.mp3')"><span>унэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>u n ä</span></h3>
-            <p class="en-translation">house</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ф ф</h1>
-            <p>F f</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/f.mp3')">
-              [f] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/national-costume.mp3')"><span>фащэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>f a ś ä</span></h3>
-            <p class="en-translation">traditional costume</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>ТӀ тӏ</h1>
+              <p>T’ t’</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/t-apo.mp3')">
+                [tʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/two.mp3')"><span>тӏу</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>t' w</span></h3>
+              <p class="en-translation">two</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>У у</h1>
+              <p>W, U1 / w, u1</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/wu1.mp3')">
+                [u] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/house.mp3')"><span>унэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>u n ä</span></h3>
+              <p class="en-translation">house</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ф ф</h1>
+              <p>F f</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/f.mp3')">
+                [f] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/national-costume.mp3')"><span>фащэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>f a ś ä</span></h3>
+              <p class="en-translation">traditional costume</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>ФӀ фӏ</h1>
-            <p>F’ f’</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/f-apo.mp3')">
-              [fʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/black.mp3')"><span>фӏыцӏэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>f' y2 ts' ä</span></h3>
-            <p class="en-translation">black</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>ФӀ фӏ</h1>
+              <p>F’ f’</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/f-apo.mp3')">
+                [fʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/black.mp3')"><span>фӏыцӏэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>f' y2 ts' ä</span></h3>
+              <p class="en-translation">black</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Х х</h1>
-            <p>Kh kh</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/kh.mp3')">
-              [x] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/garden.mp3')"><span>хадэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>h a d ä</span></h3>
-            <p class="en-translation">garden</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Х х</h1>
+              <p>Kh kh</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/kh.mp3')">
+                [x] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/garden.mp3')"><span>хадэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>h a d ä</span></h3>
+              <p class="en-translation">garden</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ху ху</h1>
-            <p>Khw khw</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/khw.mp3')">
-              [xʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/warm.mp3')"><span>хуабэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>khw a b ä</span></h3>
-            <p class="en-translation">warm</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Хь хь</h1>
-            <p>H̱ ẖ</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/h-under.mp3')">
-              [ħ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/dog.mp3')"><span>хьэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>ẖ ä</span></h3>
-            <p class="en-translation">dog</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Хъ хъ</h1>
-            <p>X x</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/x.mp3')">
-              [χ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/girl.mp3')"><span>хъыджэбз</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>x y2 j ä b z</span></h3>
-            <p class="en-translation">girl</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ху ху</h1>
+              <p>Khw khw</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/khw.mp3')">
+                [xʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/warm.mp3')"><span>хуабэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>khw a b ä</span></h3>
+              <p class="en-translation">warm</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Хь хь</h1>
+              <p>H̱ ẖ</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/h-under.mp3')">
+                [ħ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/dog.mp3')"><span>хьэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>ẖ ä</span></h3>
+              <p class="en-translation">dog</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Хъ хъ</h1>
+              <p>X x</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/x.mp3')">
+                [χ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/girl.mp3')"><span>хъыджэбз</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>x y2 j ä b z</span></h3>
+              <p class="en-translation">girl</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Хъу хъу</h1>
-            <p>Xw xw</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/xw.mp3')">
-              [χʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/ant.mp3')"><span>хъумпӏэцӏэдж</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>xw m p' ä ts' ä j</span></h3>
-            <p class="en-translation">ant</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Хъу хъу</h1>
+              <p>Xw xw</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/xw.mp3')">
+                [χʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/ant.mp3')"><span>хъумпӏэцӏэдж</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>xw m p' ä ts' ä j</span></h3>
+              <p class="en-translation">ant</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ц ц</h1>
-            <p>Ts ts</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ts.mp3')">
-              [ts] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/sweater.mp3')"><span>цыджанэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>ts y2 j a n ä</span></h3>
-            <p class="en-translation">sweater</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ц ц</h1>
+              <p>Ts ts</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ts.mp3')">
+                [ts] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/sweater.mp3')"><span>цыджанэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>ts y2 j a n ä</span></h3>
+              <p class="en-translation">sweater</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>ЦӀ цӏ</h1>
-            <p>Ts’ ts’</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ts-apo.mp3')">
-              [tsʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/beetle.mp3')"><span>цIыв</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>ts' y2 v</span></h3>
-            <p class="en-translation">beetle</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>ЦӀ цӏ</h1>
+              <p>Ts’ ts’</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ts-apo.mp3')">
+                [tsʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/beetle.mp3')"><span>цIыв</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>ts' y2 v</span></h3>
+              <p class="en-translation">beetle</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ч ч</h1>
-            <p>Ch ch</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ch.mp3')">
-              [tʃ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/top.mp3')"><span>чын</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>ch y2 n</span></h3>
-            <p class="en-translation">spinning top</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ш ш</h1>
-            <p>Sh sh</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/sh.mp3')">
-              [ʃ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/horse.mp3')"><span>шы</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>sh y2</span></h3>
-            <p class="en-translation">horse</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Щ щ</h1>
-            <p>Ś ś</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/s-acute.mp3')">
-              [ɕ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/three.mp3')"><span>щы</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>ś y2</span></h3>
-            <p class="en-translation">three</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ч ч</h1>
+              <p>Ch ch</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ch.mp3')">
+                [tʃ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/top.mp3')"><span>чын</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>ch y2 n</span></h3>
+              <p class="en-translation">spinning top</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ш ш</h1>
+              <p>Sh sh</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/sh.mp3')">
+                [ʃ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/horse.mp3')"><span>шы</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>sh y2</span></h3>
+              <p class="en-translation">horse</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Щ щ</h1>
+              <p>Ś ś</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/s-acute.mp3')">
+                [ɕ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/three.mp3')"><span>щы</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>ś y2</span></h3>
+              <p class="en-translation">three</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>ЩӀ щӏ</h1>
-            <p>Ś’ ś’</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/s-acute-apo.mp3')">
-              [ɕʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/guy.mp3')"><span>щIалэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>ś’ a l ä</span></h3>
-            <p class="en-translation">guy</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>ЩӀ щӏ</h1>
+              <p>Ś’ ś’</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/s-acute-apo.mp3')">
+                [ɕʼ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/guy.mp3')"><span>щIалэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>ś’ a l ä</span></h3>
+              <p class="en-translation">guy</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ы ы</h1>
-            <p>y2</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/y2.mp3')">
-              [ə] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/oh.mp3')"><span>ыхь</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>y2 ẖ</span></h3>
-            <p class="en-translation">oh</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ъ ъ</h1>
-            <p>’’2</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/apo-apo2.mp3')">
-              ′ <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example">tvjórdyj znak</h3>
-            <p class="en-translation"><a href="https://en.wikipedia.org/wiki/Hard_sign" target="_blank">hard sign</a></p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ы ы</h1>
+              <p>y2</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/y2.mp3')">
+                [ə] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/oh.mp3')"><span>ыхь</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>y2 ẖ</span></h3>
+              <p class="en-translation">oh</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ъ ъ</h1>
+              <p>’’2</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/apo-apo2.mp3')">
+                ′ <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example">tvjórdyj znak</h3>
+              <p class="en-translation"><a href="https://en.wikipedia.org/wiki/Hard_sign" target="_blank">hard sign</a></p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ь ь</h1>
-            <p>’2</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/apo2.mp3')">
-              ′ <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example">myagkiy znak</h3>
-            <p class="en-translation"><a href="https://en.wikipedia.org/wiki/Soft_sign" target="_blank">soft sign</a></p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ь ь</h1>
+              <p>’2</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/apo2.mp3')">
+                ′ <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example">myagkiy znak</h3>
+              <p class="en-translation"><a href="https://en.wikipedia.org/wiki/Soft_sign" target="_blank">soft sign</a></p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Э э</h1>
-            <p>Ä ä</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ae2.mp3')">
-              [ɛ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/epos.mp3')"><span>эпос</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>ä p o s</span></h3>
-            <p class="en-translation">epos</p>
-          </section>
-        </article>
-      </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ю ю</h1>
-            <p>Yu yu</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/yu.mp3')">
-              [ju] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/lawyer.mp3')"><span>юрист</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>yu r i s t</span></h3>
-            <p class="en-translation">lawyer</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Э э</h1>
+              <p>Ä ä</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ae2.mp3')">
+                [ɛ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/epos.mp3')"><span>эпос</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>ä p o s</span></h3>
+              <p class="en-translation">epos</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ю ю</h1>
+              <p>Yu yu</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/yu.mp3')">
+                [ju] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/lawyer.mp3')"><span>юрист</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>yu r i s t</span></h3>
+              <p class="en-translation">lawyer</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Я я</h1>
-            <p>Ya ya</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ya.mp3')">
-              [ja] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/first.mp3')"><span>япэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>ya p ä</span></h3>
-            <p class="en-translation">first</p>
-          </section>
-        </article>
-      </div>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Я я</h1>
+              <p>Ya ya</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ya.mp3')">
+                [ja] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/first.mp3')"><span>япэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>ya p ä</span></h3>
+              <p class="en-translation">first</p>
+            </section>
+          </article>
+        </div>
 
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ӏ ӏ</h1>
-            <p>’</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/1.mp3')">
-              [ʔ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/arm.mp3')"><span>ӏэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>’ ä</span></h3>
-            <p class="en-translation">arm</p>
-          </section>
-        </article>
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ӏ ӏ</h1>
+              <p>’</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/1.mp3')">
+                [ʔ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/arm.mp3')"><span>ӏэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>’ ä</span></h3>
+              <p class="en-translation">arm</p>
+            </section>
+          </article>
+        </div>
+        
+        <div class="flip-card">
+          <article class="flip-card-inner">
+            <header class="flip-card-front">
+              <h1>Ӏу ӏу</h1>
+              <p>’w</p>
+            </header>
+            <section class="flip-card-back">
+              <h2 class="ipa" onclick="playAudio('./assets/audio/letters/1y.mp3')">
+                [ʔʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+              </h2>
+              <h3 class="word-example" onclick="playAudio('./assets/audio/words/thread.mp3')"><span>ӏуданэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
+                <br><span>’w d a n ä</span></h3>
+              <p class="en-translation">thread</p>
+            </section>
+          </article>
+        </div>
       </div>
-      
-      <div class="flip-card">
-        <article class="flip-card-inner">
-          <header class="flip-card-front">
-            <h1>Ӏу ӏу</h1>
-            <p>’w</p>
-          </header>
-          <section class="flip-card-back">
-            <h2 class="ipa" onclick="playAudio('./assets/audio/letters/1y.mp3')">
-              [ʔʷ] <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-            </h2>
-            <h3 class="word-example" onclick="playAudio('./assets/audio/words/thread.mp3')"><span>ӏуданэ</span> <i class="fa fa-volume-up fa-1x" style="color : #935f2c"></i>
-              <br><span>’w d a n ä</span></h3>
-            <p class="en-translation">thread</p>
-          </section>
-        </article>
-      </div>
-    </div>
-  </main>
-
-
+    </main>
 
   <footer>
     <small>
