@@ -1,15 +1,15 @@
-#hub-questions{
+#hub-questions {
     height: 600px;
     margin-top: 10%;
 }
 
-h2{
-    font-family: "Old Standard TT", serif;
-    text-transform: uppercase;
-    color: #2d706c;
+#main-question {
+    margin: 5% 0;
+    text-align: center;
+    font-size: 280%;
 }
 
-#left-questions{
+#left-questions {
     padding-top: 30px;
     width: 33%;
     float: left;
@@ -19,17 +19,6 @@ h2{
     padding-top: 30px;
     width: 33%;
     float: right;
-}
-
-#center {
-    width: 33%;
-    margin: 0 auto;
-}
-
-hr {
-    border-top: 1px solid #cccccc;
-    width: 100%;
-    margin: 5px 0;
 }
 
 .left-question-heading {
@@ -56,10 +45,31 @@ hr {
     text-align: right;
 }
 
-#main-question {
-    margin: 5% 0;
-    text-align: center;
-    font-size: 280%;
+hr {
+    border-top: 1px solid #cccccc;
+    width: 100%;
+    margin: 5px 0;
+}
+
+
+h2{
+    font-family: "Old Standard TT", serif;
+    text-transform: uppercase;
+    color: #2d706c;
+}
+
+.content-link a:link, .content-link a:visited {
+    color:#704214;
+}
+
+.content-link a:active {
+    color: #2d706c;
+}
+
+/* css rules for the circle image element */
+#center {
+    width: 33%;
+    margin: 0 auto;
 }
 
 #circle-container {
@@ -79,19 +89,11 @@ hr {
     border-radius: 50%;
 }
 
-.content-link a:link, .content-link a:visited {
-    color:#704214;
-}
-
-.content-link a:active {
-    color: #2d706c;
-}
-
 
 /* Media queries */
 
+/* For large screens with at least 1200px wide */
 @media screen and (min-width: 1200px){
-
     #hub-questions{
         width: 85%;
         margin: 0 auto;
@@ -101,67 +103,55 @@ hr {
 
 /* For large to medium screens sizes from 1200px wide and down */
 @media screen and (max-width: 1200px){
-
     #hub-questions{
         width: 65%;
         margin: 0 auto;
         margin-top: -10%;
     }
-
     #main-question {
         padding: 30px 0;
         margin-top: 0;
     }
-
     #left-questions, #right-questions {
         width:100%;
         float:left;
         padding: 0;
     }
-
     #center{
         clear: both;
         width: 100%;
         float: left;
         padding: 0;
     }
-
     hr {
         display: none;
     }
 }
 
-
 /* For medium screens sizes from 950px wide and down */
 @media screen and (max-width: 950px){
-
     #hub-questions{
         width:90%;
         margin: 0 auto;
     }
-
     .left-question-heading, .right-question-heading{
         width: inherit;
     }
-
     .left-question-heading h2, .right-question-heading h2{
         width: 100%;
         text-align: center;
     }
-
     .left-question-heading p, .right-question-heading p{
         text-align: center;
         padding: 0 20px 0 20px;
     }
-
     #circle-container {
         display: none;
     }
-
 }
 
+/* For devices with at least 768px wide and up*/
 @media only screen and (min-width: 768px) {
-
     main {
         margin-top: 17%;
     }
@@ -170,6 +160,7 @@ hr {
     }
 }
 
+/* For devices smaller than 768px */
 @media only screen and (max-width: 768px) {
     main {
         /* Add margin at the top to prevent content from being covered by the header */
@@ -180,21 +171,19 @@ hr {
     }
 }
 
-
+/* For devices smaller than 576px */
 @media only screen and (max-width: 576px) {
     #hub-questions{
         width:100%;
         margin-top: 35%;
     }
-
     #main-question {
         font-size: 2.5rem;
     }
 }
 
-
+/* For devices smaller than 320px */
 @media screen and (max-width: 320px){
-
     #hub-questions{
         margin-top: 25%;
     }
