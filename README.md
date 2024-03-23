@@ -35,7 +35,7 @@ The colours chosen for this project are related to the colours characteristic fo
 
 $\color{#2d706c}Colours \space \color{#2d706c}Used \space \color{#704214}On\space The \space \color{#FFF1E5}Site:$
 
-
+![alt text](doc/doc-colours.jpg)
 
 <img src="doc/doc-colours.jpg" style="width:798px;"/>
 
