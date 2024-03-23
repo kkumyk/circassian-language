@@ -33,12 +33,11 @@ In this case, the goal of the landing page is to help them to quickly of orienta
 ### Main Colours
 The colours chosen for this project are related to the colours characteristic for Circassian people. E.g.: green is the colour of the <a href="https://en.wikipedia.org/wiki/Circassian_flag#:~:text=It%20consists%20of%20a%20green,the%20designer%20of%20the%20flag.">Circassian flag</a>. It also represents these peoples' connection to nature and the role it is playing in their culture. For this purpose, many words chosen for the alphabet are related to nature, such as animal names.
 
-<!-- <img src="doc/doc-colours.jpg" style="width:798px;"/> -->
+$${\color{#2d706c}Colours \space \color{#2d706c}Used \space \color{#704214}On\space The\space \color{#f7d4bb}Circassian \space Language \space \color{#FFF1E5}Site:}$$
 
-<div style="background-color: #2d706c"><h3 style="color:white">#2d706c</h3></div>
-<div style="background-color: #704214"><h3 style="color:white">#704214</h3></div>
-<div style="background-color: #f7d4bb"><h3 style="color:#3d3a37">#f7d4bb</h3></div>
-<div style="background-color: #FFF1E5"><h3 style="color:#3d3a37">#FFF1E5</h3></div>
+<img src="doc/doc-colours.jpg" style="width:798px;"/>
+
+
 
 ## Features
 
