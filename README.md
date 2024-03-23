@@ -1,4 +1,4 @@
-# [Circassian Language](https://kkumyk.github.io/circassian-language/)
+# [Circassian / Адыгабзэ](https://kkumyk.github.io/circassian-language/)
 
 Circassian Language is created for two purposes:
 <ol>
