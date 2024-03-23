@@ -33,7 +33,7 @@ In this case, the goal of the landing page is to help them to quickly of orienta
 ### Main Colours
 The colours chosen for this project are related to the colours characteristic for Circassian people. E.g.: green is the colour of the <a href="https://en.wikipedia.org/wiki/Circassian_flag#:~:text=It%20consists%20of%20a%20green,the%20designer%20of%20the%20flag.">Circassian flag</a>. It also represents these peoples' connection to nature and the role it is playing in their culture. For this purpose, many words chosen for the alphabet are related to nature, such as animal names.
 
-$${\color{#2d706c}Colours \space \color{#2d706c}Used \space \color{#704214}On\space The\space \color{#f7d4bb}Circassian \space Language \space \color{#FFF1E5}Site:}$$
+<!-- $${\color{#2d706c}Colours \space \color{#2d706c}Used \space \color{#704214}On\space The\space \color{#f7d4bb}Circassian \space Language \space \color{#FFF1E5}Site:}$$ -->
 
 <img src="doc/doc-colours.jpg" style="width:798px;"/>
 
@@ -53,7 +53,7 @@ The Kabardian Alphabet page introduces one of the standards used for the Circass
 <img src="doc/features/doc-alphabet.jpg" style="width:798px;"/>
 
 The Contact page provides an option to to connect with people concerned with the challenged the Circassian language is facing and share feedback and ideas.
-<img src="doc/features/doc-contact.jpg" style="width:798px;"/>
+<img src="./doc/features/doc-contact.jpg" style="width:798px;"/>
 
 ## Future Features
 Two features are planned for the site:
