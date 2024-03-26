@@ -148,7 +148,7 @@ The score of 70 is given for the [Kabardian Alphabet page](https://kkumyk.github
 
 - The one image on the [Kabardian Alphabet](https://kkumyk.github.io/circassian-language/kabardian-alphabet.html) contains an alt tag. Images for the remaining letters are currently being worked on. Once these are added to the site, they will be supplied with the alt tags.
 
-- [https://developers.google.com/speed/webp#:~:text=WebP%20is%20a%20modern%20image,in%20size%20compared%20to%20PNGs.](https://convertio.co/webp-converter/) is used for images on the site.
+- [WEBP](https://developers.google.com/speed/webp) is used for images on the site.
 - The site is responsive to different screen sizes.
 - Semantic elements used throughout the site.
 
