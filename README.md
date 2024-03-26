@@ -30,7 +30,6 @@ This project was created using HTML, CSS and JavaScript.
 <li><a href="#further-testing">Further Testing</a></li>
 <li><a href="#accessibility">Accessibility</a></li>
 <li><a href="#bugs">Bugs</a></li>
-<li><a href="#"></a></li>
 </ul>
 <li><a href="#technologies">Technologies</a></li>
 <li><a href="#credits">Credits</a></li>
