@@ -51,7 +51,7 @@ These are native speakers that for different reasons stopped speaking the langua
 </ul>
 
 #### II. User that is unaware of the existence of the Circassian language
-These are users that most likely landed on the site by accidentally as they were not intentionally searching for it.
+The user did most likely land on the site by accident as this was not a result of an intentional search.
 <ul>
 <li>As a user, I want easily understand the main purpose of the website.</li>
 </ul>
@@ -60,23 +60,23 @@ These are users that most likely landed on the site by accidentally as they were
 ## Design
 
 ### Colours
-The colours chosen for this project are related to the colours characteristic for Circassian people. E.g.: green is the colour of the <a href="https://en.wikipedia.org/wiki/Circassian_flag#:~:text=It%20consists%20of%20a%20green,the%20designer%20of%20the%20flag.">Circassian flag</a>. It also represents these peoples' connection to nature and the role it is playing in their culture. For this purpose, many words chosen for the alphabet are related to nature, such as animal names.
+The main colour if the site is green as it is the colour of the <a href="https://en.wikipedia.org/wiki/Circassian_flag#:~:text=It%20consists%20of%20a%20green,the%20designer%20of%20the%20flag.">Circassian flag</a>. It also represents Circassians' connection to nature and the role it is playing in their culture. For this purpose, many words chosen for the alphabet are related to nature, such as animal names. 
 
 <img src="doc/doc-colours.jpg" style="width:798px;"/>
 
 ### Wireframes
 
 
-### Hub page desktop mockup
+### Hub page mockup
 <img src="doc/hub-mockup.jpg" style="width:798px;"/>
 
-### About page desktop mockup
+### About page mockup
 <img src="doc/about-mockup.jpg" style="width:798px;"/>
 
-### Alphabet page desktop mockup
+### Alphabet page mockup
 <img src="doc/alphabet-mockup.jpg" style="width:798px;"/>
 
-### Contact page desktop mockup
+### Contact page mockup
 <img src="doc/contact-mockup.jpg" style="width:798px;"/>
 
 ## Features
@@ -94,7 +94,7 @@ The Kabardian Alphabet page introduces one of the standards used for the Circass
 <img src="doc/features/doc-alphabet.jpg" style="width:798px;"/>
 
 ### Contact page
-The Contact page provides an option to to connect with people concerned with the challenged the Circassian language is facing and share feedback and ideas.
+The Contact page provides an option to connect with people concerned about the challenged the Circassian language is facing and share feedback and ideas.
 <img src="doc/features/doc-contact.jpg" style="width:798px;"/>
 
 
@@ -123,7 +123,7 @@ The warnings on the [Kabardian Alphabet page](https://kkumyk.github.io/circassia
 <img src="doc/testing//contact-css-validation.jpg" alt="Contact CSS Validation" style="width:800px;"/>
 
 #### Comments
-The CSS error on the alphabet page is coming from the imported <strong><italic>css/all.min.css</italic></strong> file that is used to load the sound favicon. 
+The CSS error on the alphabet page is coming from the imported <strong><italic>css/all.min.css</italic></strong> file that is used to load the sound icons. 
 
 ### Lighthouse Reports
 
@@ -135,6 +135,11 @@ The CSS error on the alphabet page is coming from the imported <strong><italic>c
 </br>
 <img src="doc/testing//lighthouse-contact.jpg" alt="Alphabet CSS Validation" style="width:800px;"/>
 
+#### Comments
+The score of 70 is given for the [Kabardian Alphabet page](https://kkumyk.github.io/circassian-language/kabardian-alphabet.html). The tool recommends to reduce the use of the imported CSS files and resize images used on the site. This had been noted and will be done at the next stages. There is currently only one image on the Alphabet page. When more images are added, the image sizing will be addressed for all of them in one go.
+
+
+
 ### Further Testing
 
 - The Website was tested on Google Chrome and Firefox.
@@ -144,14 +149,14 @@ The CSS error on the alphabet page is coming from the imported <strong><italic>c
 
 - The one image on the [Kabardian Alphabet](https://kkumyk.github.io/circassian-language/kabardian-alphabet.html) contains an alt tag. Images for the remaining letters are currently being worked on. Once these are added to the site, they will be supplied with the alt tags.
 
-- All images were [converted](https://convertio.co/webp-converter/) into WEBP format.
+- [https://developers.google.com/speed/webp#:~:text=WebP%20is%20a%20modern%20image,in%20size%20compared%20to%20PNGs.](https://convertio.co/webp-converter/) is used for images on the site.
 - The site is responsive to different screen sizes.
 - Semantic elements used throughout the site.
 
 ### Bugs
 
 - There is an extra space on the right site on the [About page](https://kkumyk.github.io/circassian-language/about.html) which should be removed in the later versions.
-- Responsiveness for smaller devices needs further adjustments for the [About page](https://kkumyk.github.io/circassian-language/about.html) as the subheading is partly covered by the menu dropdown. Alternatively, the main text can make fully invisible with JS when the dropdown menu is clicked and re-appear back agin after the user has chosen and clicked on the menu link, see [example on mobile](https://meduza.io/).
+- Responsiveness for smaller devices needs further adjustments for the [About page](https://kkumyk.github.io/circassian-language/about.html) as the subheading is partly covered by the menu dropdown. Alternatively, the main text can be made fully invisible with JS when the dropdown menu is clicked and re-appear back again after the user clicked on the menu link, see [example on mobile](https://meduza.io/).
 
 ## Technologies
 
@@ -183,6 +188,7 @@ The content on the About page is based on the sources below:
 - [A Grammar of the Kabardian Language by J Colarusso](https://library.oapen.org/bitstream/id/eb3cef03-30c0-4571-b5b3-11be2cd4f9e3/9781552386682.pdf)
 
 ### Code
+- Parts of the HTML and CSS was borrowed from the Code Institute's [Love Running](https://code-institute-org.github.io/love-running-2.0/index.html) main page.
 - [Newspaper Style Design by Silke V](https://codepen.io/silkine/pen/QWBxVX) was used on the About page.
 
 ## Future Features
@@ -206,4 +212,8 @@ Two features are planned for the site:
 
 <li>add 404 page</li>
 <li>add animation to the hub: the logo text and the text in the circle will be switching to indicate that this is the same text</li>
-</ul> images were (co
+
+<li>create and add the remaining images to the alphabet letters</li>
+
+<li>replace special characters with their corresponding unicodes</li>
+</ul>
