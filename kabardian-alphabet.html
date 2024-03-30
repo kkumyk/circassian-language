@@ -42,6 +42,7 @@
 
     <main>
       <div class="alphabet-flexbox-container">
+
         
         <!-- Semantic Elements used in the flip card:
           - <article> for the overall card
@@ -125,8 +126,12 @@
         <div class="flip-card">
           <article class="flip-card-inner">
             <header class="flip-card-front">
-              <h1>Г г</h1>
-              <p>G g</p>
+
+              <div data-key="71" class="key">
+                  <h1>Г г</h1>
+                  <p><kbd>G g</kbd></p>
+              </div>
+
             </header>
             <section class="flip-card-back">
               <h2 class="ipa" onclick="playAudio('./assets/audio/letters/g.mp3')">
@@ -139,11 +144,15 @@
           </article>
         </div>
 
-        <div class="flip-card">
+        <div class="flip-card" data-key="71" class="key">
           <article class="flip-card-inner">
             <header class="flip-card-front">
-              <h1>Гу гу</h1>
-              <p>Gw gw</p>
+
+              <div data-key="71" class="key">
+                <h1>Гу гу</h1>
+                <p><kbd>Gw gw</kbd></p>
+              </div>
+
             </header>
             <section class="flip-card-back">
               <h2 class="ipa" onclick="playAudio('./assets/audio/letters/gw.mp3')">
@@ -159,8 +168,10 @@
         <div class="flip-card">
           <article class="flip-card-inner">
             <header class="flip-card-front">
-              <h1>Гъ гъ</h1>
-              <p>Gh gh</p>
+              <div data-key="71" class="key">
+                <h1>Гъ гъ</h1>
+                <p><kbd>Gh gh</kbd></p>
+              </div>
             </header>
             <section class="flip-card-back">
               <h2 class="ipa" onclick="playAudio('./assets/audio/letters/gh.mp3')">
@@ -176,8 +187,10 @@
         <div class="flip-card">
           <article class="flip-card-inner">
             <header class="flip-card-front">
-              <h1>Гъу гъу</h1>
-              <p>Ghw ghw</p>
+              <div data-key="71" class="key">
+                <h1>Гъу гъу</h1>
+                <p><kbd>Ghw ghw</kbd></p>
+              </div>
             </header>
             <section class="flip-card-back">
               <h2 class="ipa" onclick="playAudio('./assets/audio/letters/ghw.mp3')">
@@ -193,8 +206,11 @@
         <div class="flip-card">
           <article class="flip-card-inner">
             <header class="flip-card-front">
-              <h1>Д д</h1>
-              <p>D d</p>
+              <div data-key="68" class="key">
+                <h1>Д д</h1>
+                <p><kbd>D d</kbd></p>
+              </div>
+
             </header>
             <section class="flip-card-back">
               <h2 class="ipa" onclick="playAudio('./assets/audio/letters/d.mp3')">
@@ -210,8 +226,11 @@
         <div class="flip-card">
           <article class="flip-card-inner">
             <header class="flip-card-front">
-              <h1>Дж дж</h1>
-              <p>J j</p>
+
+              <div data-key="68" class="key">
+                <h1>Дж дж</h1>
+                <p><kbd>J j</kbd></p>
+              </div>
             </header>
             <section class="flip-card-back">
               <h2 class="ipa" onclick="playAudio('./assets/audio/letters/j.mp3')">
@@ -227,8 +246,10 @@
         <div class="flip-card">
           <article class="flip-card-inner">
             <header class="flip-card-front">
-              <h1>Дз дз</h1>
-              <p>Dz dz</p>
+              <div data-key="68" class="key">
+                <h1>Дз дз</h1>
+                <p><kbd>Dz dz</kbd></p>
+              </div>
             </header>
             <section class="flip-card-back">
               <h2 class="ipa" onclick="playAudio('./assets/audio/letters/dz.mp3')">
@@ -1080,7 +1101,46 @@
     </small>
   </footer>
   
+    <script>
+
+      /*
+      - add an event listener to the keydown event on the document;
+      - when a key is pressed down, find any .key elements with a data-key attribute (keyboard key code values) matching the pressed key's code;
+      - if found,change the colour of the kbd element inside those .key elements to green;
+      - once the key is released, return to the original colour and font-size;
+      
+      Source: https://www.oreilly.com/library/view/javascript-dhtml/9780596514082/apb.html
+      */
+    
+      document.addEventListener('keydown', function(event) {
+        const keyPressed = event.keyCode;
+        const keys = document.querySelectorAll('.key');
+        
+        keys.forEach(key => {
+          const dataKey = parseInt(key.getAttribute('data-key'));
+          const kbd = key.querySelector('kbd');
+          
+          if (dataKey === keyPressed) {
+            kbd.style.color = '#2d706c';
+            kbd.style.fontSize = '1.9rem';
+          }
+        });
+      });
+  
+      document.addEventListener('keyup', function(event) {
+        const keys = document.querySelectorAll('.key');
+        
+        keys.forEach(key => {
+          const kbd = key.querySelector('kbd');
+          kbd.style.color = '';     // remove applied colour;
+          kbd.style.fontSize = '';  // remove applied font size;
+        });
+      });
+
+    </script>
+
     <!-- links to js file -->
     <script src="./assets/js/audio.js"></script>
+
   </body>
 </html>

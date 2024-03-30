@@ -62,11 +62,16 @@
 }
 
 .flip-card-front h1 {
-    margin-top: 4rem;
+    margin-top: 3rem;
+
 }
 
 .flip-card-front p {
-    margin-top: 3.7rem;
+    margin-top: 1rem;
+}
+
+kbd {
+    font-family: "Old Standard TT", serif;
 }
 
 .h1 {
