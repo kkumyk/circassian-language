@@ -48,7 +48,7 @@
 
             </br>
             <p>Гъатхэр къосри, удзхэр къокӀ.</p>
-            <p>Ghatkhä</p>
+            <p>Ghatkhär </p>
             </br>
             <p>ПцӀащхъуэ цӀыкӀухэр къолъэтэж.</p>
             <p>x</p>
@@ -89,7 +89,6 @@
 
     </main>
     
-
     <footer>
         <small>
             Circassian 2024
@@ -97,55 +96,69 @@
     </footer>
 
 
-    <script>
+<script>
+let myAudio = document.getElementById("myAudio");
+let isPlaying = false;
+let timeoutIDs = []; // array to store timeout IDs
 
-    let myAudio = document.getElementById("myAudio");
-    let isPlaying = false;
+// object to store original colours
+const originalColours = {};
 
-    // Object to store original colors
-    const originalColors = {};
-
-    function togglePlay() {
-        if (isPlaying) {
-            myAudio.pause();
-        } else {
-            myAudio.play();
-            const wordTimes = {
-                "word1-1": 1,
-                "word1-2": 2,
-                "word2-1": 3,
-                "word2-2": 4 
-            }; 
-            Object.entries(wordTimes).forEach(([wordId, seconds]) => {
-                const element = document.getElementById(wordId);
-                // Store original color
-                originalColors[wordId] = element.style.color;
-                setTimeout(function() {
-                    element.style.color = "#2d706c";
-                }, seconds * 1000); // Convert seconds to milliseconds
-            });
-        }
-    }
-
-    myAudio.onplaying = function() {
-        isPlaying = true;
-    };
-    myAudio.onpause = function() {
-        isPlaying = false;
-    };
-
-    function resetAudio() {
+function togglePlay() {
+    if (isPlaying) {
         myAudio.pause();
-        myAudio.currentTime = 0;
-        isPlaying = false;
-        
-        // Restore original colors
-        Object.entries(originalColors).forEach(([wordId, color]) => {
-            document.getElementById(wordId).style.color = color;
+        clearTimeouts(); // clear existing timeouts when pausing
+    } else {
+        myAudio.play();
+        const wordTimes = {
+            "word1-1": 1,
+            "word1-2": 2,
+            "word2-1": 3,
+            "word2-2": 4
+        };
+        Object.entries(wordTimes).forEach(([wordId, seconds]) => {
+            const element = document.getElementById(wordId);
+            // store original colour
+            originalColours[wordId] = element.style.color;
+            const timeoutID = setTimeout(function() {
+                element.style.color = "#2d706c";
+            }, (seconds - myAudio.currentTime) * 1000); // calculate remaining time
+            timeoutIDs.push(timeoutID); // store timeout ID
         });
     }
+    isPlaying = !isPlaying; // toggle isPlaying
+}
 
+// clear any existing timeouts when pausing the audio and create new timeouts when resuming the audio
+function clearTimeouts() {
+    // clear all stored timeouts
+    timeoutIDs.forEach(id => {
+        clearTimeout(id);
+    });
+    timeoutIDs = []; // clear the array
+}
+
+myAudio.onplaying = function() {
+    isPlaying = true;
+};
+
+myAudio.onpause = function() {
+    isPlaying = false;
+};
+
+function resetAudio() {
+    myAudio.pause();
+    myAudio.currentTime = 0;
+    isPlaying = false;
+    clearTimeouts(); // clear existing timeouts
+    
+    // restore original colours
+    Object.entries(originalColours).forEach(([wordId, color]) => {
+        document.getElementById(wordId).style.color = ""; // restore the default font colour
+    });
+}
 
 </script>
+
 </body>
 </html>
