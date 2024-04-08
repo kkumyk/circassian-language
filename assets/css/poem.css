@@ -43,9 +43,18 @@ span:hover .fa-refresh {
     padding: 0.1% 5%;
     font-size: 1.3rem;
   }
-  .cell-3 span {
-    padding: 10% 1%;
+
+  .cell-2 {
+    padding: 5% 5%;
   }
+
+  .cell-3 {
+    padding: 5% 5%;
+  }
+
+  /* .cell-3 span {
+    padding: 10% 1%;
+  } */
 
   @media (max-width: 500px) {
     main {
