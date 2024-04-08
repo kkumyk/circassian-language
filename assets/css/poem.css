@@ -1,29 +1,56 @@
-.poem-flexbox-container {
+.container {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 0.5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.2rem;
     max-width: 700px;
-    margin: 5rem auto; /* styles added to top | left and right */
+    margin: 0 auto; 
 }
 
-.box { 
-    height: 600px; 
-    background-color: #f7d4bb;
-    width: 50%;
+@media (max-width: 500px) {
+    .container { flex-wrap: nowrap; }
+    .cell { width: 100%; }
+    .cell-1 { order: 2; }
+    .cell-2 { order: 1; }
+    .cell-3 { order: 3; }
+ }
+ .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+  }
+  .cell {
+    background: #f7d4bb;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
-}
+    width: 50%;
+  }
+  .cell-1 {
+    flex-basis: 100%;
+  }
+  .cell-1 h1 {
+    padding: 3% 0.1% 0.5% 2%;
+  }
+  .cell-1 p {
+    padding: 0 0 0 3.7%;
+    font-size: 1.3rem;
+  }
+  @media (max-width: 500px) {
+    .container {
+      flex-wrap: nowrap;
+    }
+    .cell {
+      width: 100%;
+    }
+    .cell-1 {
+      order: 2;
+    }
+    .cell-2 {
+      order: 1;
+    }
+    .cell-3 {
+      order: 3;
+    }
+  }
 
-.box:nth-child(n+2) {
-    width: calc(25%);
-}
-
-.poem-flexbox-container h1 {
-    padding: 2%;
-}
-
-.poem-flexbox-container p {
-    padding: 1%;
-    font-size: 1.2rem;
-}
