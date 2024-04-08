@@ -1,8 +1,8 @@
+
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* gap: 0.2rem; */
     max-width: 700px;
     margin: 0 auto; 
 }
@@ -18,12 +18,10 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 600px;
+    height: 750px;
   }
   .cell {
     background: #f7d4bb;
-    /* border: 1px solid #ccc; */
-    /* border-radius: 0.5rem; */
     width: 55%;
   }
   .cell-1 {
@@ -42,6 +40,11 @@
   }
 
   @media (max-width: 500px) {
+    main {
+      flex: 1 0 auto;
+      margin-top: 18%;
+    }
+    
     .container {
       flex-wrap: nowrap;
     }
