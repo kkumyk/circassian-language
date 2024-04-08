@@ -1,10 +1,18 @@
-
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 700px;
     margin: 0 auto; 
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+span:hover .fa-volume-up,
+span:hover .fa-refresh {
+  color: #2d706c;
 }
 
 @media (max-width: 500px) {
