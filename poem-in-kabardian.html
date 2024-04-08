@@ -44,7 +44,8 @@
     <main>
         <div class="container">
             <div class="cell cell-1">
-              <h1>Пцӏащхъуэ цӏыкӏу.</h1>
+              <h1><span id="word1-1">Пцӏащ</span><span id="word1-2">хъуэ</span> <span id="word2-1">цӏы</span><span id="word2-2">кӏу.</span></h1>
+
             </br>
             <p>Гъатхэр къосри, удзхэр къокӀ.</p>
             <p>Ghatkhä</p>
@@ -71,15 +72,19 @@
             <p>x</p>
             </br>
             </div>
+
             <div class="cell cell-2">
                 <audio id="myAudio" src='./assets/audio/poem/swallow.mp3' preload="auto"></audio>
-                <h2 onClick="togglePlay()">Listen to Native Speaker <i class="fa fa-volume-up fa-1x" style="color: #935f2c"></i></h2> 
+                
+                <span onClick="togglePlay()" style="font-size: larger;">Listen to Native Speakers <i class="fa fa-volume-up fa-1x" style="color: #935f2c"></i></span>&nbsp;
+                <span onClick="resetAudio()"style="font-size: larger;"><i class="fa fa-refresh" aria-hidden="true"></i></span>
+                
+
             </div>
 
-
             <div class="cell cell-3">
-              <h2>Read and Record Your Voice</h2>
-                <p></p>
+                <p style="font-size: larger;">Read and Record Your Voice</p>
+
             </br>
             </div>
 
@@ -94,21 +99,56 @@
         </small>
     </footer>
 
+
     <script>
-        var myAudio = document.getElementById("myAudio");
-        var isPlaying = false;
 
-        function togglePlay() {
-        isPlaying ? myAudio.pause() : myAudio.play();
-        };
+    let myAudio = document.getElementById("myAudio");
+    let isPlaying = false;
 
-        myAudio.onplaying = function() {
+    // Object to store original colors
+    const originalColors = {};
+
+    function togglePlay() {
+        if (isPlaying) {
+            myAudio.pause();
+        } else {
+            myAudio.play();
+            const wordTimes = {
+                "word1-1": 1,
+                "word1-2": 2,
+                "word2-1": 3,
+                "word2-2": 4 
+            }; 
+            Object.entries(wordTimes).forEach(([wordId, seconds]) => {
+                const element = document.getElementById(wordId);
+                // Store original color
+                originalColors[wordId] = element.style.color;
+                setTimeout(function() {
+                    element.style.color = "#2d706c";
+                }, seconds * 1000); // Convert seconds to milliseconds
+            });
+        }
+    }
+
+    myAudio.onplaying = function() {
         isPlaying = true;
-        };
-        myAudio.onpause = function() {
+    };
+    myAudio.onpause = function() {
         isPlaying = false;
-        };
-    </script>
+    };
 
+    function resetAudio() {
+        myAudio.pause();
+        myAudio.currentTime = 0;
+        isPlaying = false;
+        
+        // Restore original colors
+        Object.entries(originalColors).forEach(([wordId, color]) => {
+            document.getElementById(wordId).style.color = color;
+        });
+    }
+
+
+</script>
 </body>
 </html>

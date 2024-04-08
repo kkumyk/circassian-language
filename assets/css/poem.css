@@ -30,12 +30,17 @@
     flex-basis: 100%;
   }
   .cell-1 h1 {
-    padding: 3% 0.1% 0.5% 2%;
+    padding: 1% 10%;
   }
   .cell-1 p {
-    padding: 0 0 0 3.7%;
+    /* top and bottom | left and right */
+    padding: 0.1% 5%;
     font-size: 1.3rem;
   }
+  .cell-3 span {
+    padding: 10% 1%;
+  }
+
   @media (max-width: 500px) {
     .container {
       flex-wrap: nowrap;
