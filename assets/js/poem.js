@@ -9,7 +9,7 @@ let is_recording = false;
 let recorder = null;
 let chunks = []; // store anything we record in segments of an array;
 
-// create a function that will have access to all mics using media api;
+// get access to user's mics using media api;
 function SetupAudio() {
     console.log("Setup");
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) { // checks if the media api is currently available;
@@ -26,8 +26,7 @@ function SetupAudio() {
 
 SetupAudio();
 
-// create a function to make the recorder to record the audio
-
+// record the audio
 function SetupStream(stream) {
     recorder = new MediaRecorder(stream);
 
@@ -42,4 +41,20 @@ function SetupStream(stream) {
         playback.src = audioURL;
     }
     can_record = true;
+}
+
+// start recording
+function ToggleMic() {
+    if (!can_record) return;
+
+    is_recording = !is_recording;
+
+    if (is_recording) {
+        recorder.start(); // this will make the recorder listening to our stream of data;
+        mic_btn.classList.add("is-recording");
+    } else {
+        recorder.stop();
+        mic_btn.classList.remove("is-recording");
+    }
+
 }
