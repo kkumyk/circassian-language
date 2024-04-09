@@ -25,3 +25,21 @@ function SetupAudio() {
 }
 
 SetupAudio();
+
+// create a function to make the recorder to record the audio
+
+function SetupStream(stream) {
+    recorder = new MediaRecorder(stream);
+
+    recorder.ondataavailable = e => {
+        chunks.push(e.data);
+    }
+
+    recorder.onstop = e => {
+        const blob = new Blob(chunks, { type: "audio/ogg; codecs=opus"});
+        chunks = [];
+        const audioURL = window.URL.createObjectURL(blob);
+        playback.src = audioURL;
+    }
+    can_record = true;
+}
