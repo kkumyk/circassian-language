@@ -44,19 +44,17 @@
     <main>
         <div class="container">
             <div class="cell cell-1">
-              <h1><span id="word1-1">Пцӏащ</span><span id="word1-2">хъуэ</span> <span id="word2-1">цӏы</span><span id="word2-2">кӏу.</span></h1>
-
-              <h1><span id="word1-3">Pts’aś</span><span id="word1-4">xwä</span> <span id="word2-3">ts’y2</span><span id="word2-4">kw’.</span></h1>
-
+              <h1><span id="line1-1">Пцӏащ</span><span id="line1-2">хъуэ</span> <span id="line1-3">цӏы</span><span id="line1-4">кӏу.</span></h1>
+              <h1><span id="line2-1">Pts’aś</span><span id="line2-2">xwä</span> <span id="line2-3">ts’y2</span><span id="line2-4">kw’.</span></h1>
             </br>
             <!-- 
-                <span id="word -"></span>
+                <span id="line -"></span>
             -->
+            <p><span id="line3-1">Гъат</span><span id="line3-2">хэр</span> <span id="line3-3">къос</span><span id="line3-4">ри</span>, 
+            <span id="line3-5">удз</span><span id="line3-6">хэр</span> <span id="line3-7">къо</span><span id="line3-8">кӀ.</span></p>
 
-            <p><span id="word5-1">Гъат</span><span id="word5-2">хэр</span> <span id="word5-3">къос</span><span id="word5-4">ри</span>, 
-                <span id="word5-5">удз</span><span id="word5-6">хэр</span> <span id="word5-7">къо</span><span id="word5-8">кӀ.</span></p>
-
-            <p>Ghatkhär q’osri, wdzkhär q’ok’.</p>
+            <p><span id="line4-1">Ghat</span><span id="line4-2">khär </span><span id="line4-3">q’os</span><span id="line4-4">ri, </span>
+                <span id="line4-5">wdz</span><span id="line4-6">khär </span><span id="line4-7">q’o</span><span id="line4-8">k’.</span></p>
             </br>
 
             <p>ПцӀащхъуэ цӀыкӀухэр къолъэтэж.</p>
@@ -72,7 +70,7 @@
             <p>Pts’aśxwä ts’y2kw’w zi bzär dakhä,</p>
             </br>
             <p>Хугу уэстынщи, уэрэд жыӀэ.</p>
-            <p>khwgw wästy2nśi, wäräd zhy2ä.</p>
+            <p>Khwgw wästy2nśi, wäräd zhy2ä.</p>
             </br>
             <p>ЩӀыпӀэ жыжьэм щыплъэгъуахэр</p>
             <p>Ś’y2p’ä zhy2źäm śy2plhäghwakhär</p>
@@ -120,27 +118,65 @@ function togglePlay() {
     } else {
         myAudio.play();
         const wordTimes = {
-            "word1-1": 1.6,
-            "word1-2": 2,
-            "word2-1": 2.5,
-            "word2-2": 2.7,
+            // Пцӏащхъуэ цӏыкӏу.
+            "line1-1": 1.6,
+            "line1-2": 2,
+            "line1-3": 2.5,
+            "line1-4": 2.7,
 
-            "word1-3": 4.5,
-            "word1-4": 5,
-            "word2-3": 5.5,
-            "word2-4": 5.6,
+            // Pts’aśxwä ts’y2kw’.
+            "line2-1": 4.5,
+            "line2-2": 5,
+            "line2-3": 5.5,
+            "line2-4": 5.6,
 
             // Гъатхэр къосри, удзхэр къокӀ.
-            "word5-1": 7.6,
-            "word5-2": 7.9,
-            "word5-3": 8.4,
-            "word5-4": 8.8,
-            "word5-5": 9.7,
-            "word5-6": 10,
-            "word5-7": 10.7,
-            "word5-8": 11
+            "line3-1": 7.6,
+            "line3-2": 7.9,
+            "line3-3": 8.6,
+            "line3-4": 9,
+            "line3-5": 9.7,
+            "line3-6": 10,
+            "line3-7": 10.7,
+            "line3-8": 11,
 
+            // Ghatkhär q’osri, wdzkhär q’ok’.
+            "line4-1": 13.4,
+            "line4-2": 13.7,
+            "line4-3": 14.4,
+            "line4-4": 14.9,
+            "line4-5": 15.5,
+            "line4-6": 15.9,
+            "line4-7": 16.2,
+            "line4-8": 16.6
 
+            // ПцӀащхъуэ цӀыкӀухэр къолъэтэж.
+
+            // Pts’aśxwä ts’y2kw’khär q’olhätäzh.
+
+            // ПцӀащхъуэ цӀыкӀухэр къытхуогуфӀэ,
+
+            // Pts’aśxwä ts’y2kw’khär q’y2tkhwogwf’ä,
+
+            // ПыгуфӀыкӀхэу къытхуосыж.
+
+            // Py2gwf’y2k’khäw q’y2tkhwosy2zh.
+
+            // ПцӀащхъуэ цӀыкӀуу зи бзэр дахэ,
+
+            // Pts’aśxwä ts’y2kw’w zi bzär dakhä,
+
+            // Хугу уэстынщи, уэрэд жыӀэ.
+
+            // Khwgw wästy2nśi, wäräd zhy2ä.
+
+            // ЩӀыпӀэ жыжьэм щыплъэгъуахэр
+
+            // Ś’y2p’ä zhy2źäm śy2plhäghwakhär
+
+            // Пэжагъ хэлъу къыджеӀэж.
+
+            // Päzhagh khälhw q’y2dzhe’äzh.
 
         };
         Object.entries(wordTimes).forEach(([wordId, seconds]) => {
