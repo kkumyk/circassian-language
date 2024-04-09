@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- links to css files: the template contains the styles for navbar and footer; about.css contains page specific styles-->
     <link type="text/css" rel="stylesheet" href="./assets/css/template.css">
@@ -83,13 +84,19 @@
             <div class="cell cell-2">
                 <audio id="myAudio" src='./assets/audio/poem/swallow.mp3' preload="auto"></audio>
             
-                <span onClick="togglePlay()" style="font-size: larger;">Listen to Native Speakers <i class="fa fa-volume-up fa-1x"></i></span>&nbsp;
+                <span onClick="togglePlay()" style="font-size: larger;">Listen to Natives <i class="fa fa-volume-up fa-1x"></i></span>&nbsp;
                 <span onClick="resetAudio()"style="font-size: larger;"><i class="fa fa-refresh" aria-hidden="true"></i></span>
                 
             </div>
 
             <div class="cell cell-3">
                 <p style="font-size: larger;">Read and Record Your Voice</p>
+
+                <button class="mic-toggle" id="mic">
+                    <span class="material-icons">mic</span>
+                </button>
+
+                <audio class="playback" controls></audio>
             </div>
 
           </div>
@@ -222,6 +229,9 @@ function resetAudio() {
 }
 
 </script>
+
+<!-- links to js file -->
+<script src="./assets/js/poem.js"></script>
 
 </body>
 </html>
