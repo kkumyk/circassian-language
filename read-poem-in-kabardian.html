@@ -45,8 +45,15 @@
     <main>
         <div class="container">
             <div class="cell cell-1">
-              <h1><span id="line1-1">Пцӏащ</span><span id="line1-2">хъуэ</span> <span id="line1-3">цӏы</span><span id="line1-4">кӏу.</span></h1>
-              <h1><span id="line2-1">Pts’aś</span><span id="line2-2">xwä</span> <span id="line2-3">ts’y2</span><span id="line2-4">kw’.</span></h1>
+              <h1><span id="line1-1">Пцӏащ</span><span id="line1-2">хъуэ</span> <span id="line1-3">цӏы</span><span id="line1-4">кӏу.</span>
+                <span onClick="togglePlay()"><i class="fa fa-volume-up fa-1x"></i></span>
+                </h1>
+
+
+              <h1><span id="line2-1">Pts’aś</span><span id="line2-2">xwä</span> <span id="line2-3">ts’y2</span><span id="line2-4">kw’.</span>
+                <span onClick="resetAudio()"><i class="fa fa-refresh" aria-hidden="true"></i></span>    
+            </h1>
+
             </br>
             <!-- 
                 <span id="line -"></span>
@@ -83,26 +90,34 @@
 
             <div class="cell cell-2">
                 <audio id="myAudio" src='./assets/audio/poem/swallow.mp3' preload="auto"></audio>
-            
-                <span onClick="togglePlay()" style="font-size: larger;">Listen to Natives <i class="fa fa-volume-up fa-1x"></i></span>&nbsp;
-                <span onClick="resetAudio()"style="font-size: larger;"><i class="fa fa-refresh" aria-hidden="true"></i></span>
+                
+                <!-- style="font-size: larger;" -->
+<!--                 
+                <span onClick="togglePlay()"> <i class="fa fa-volume-up fa-1x"></i></span>&nbsp;
+                <span onClick="resetAudio()"><i class="fa fa-refresh" aria-hidden="true"></i></span> -->
+<!-- 
+                <div>
+                    <span onClick="togglePlay()"><strong>Listen to Natives </strong><i class="fa fa-volume-up fa-1x"></i></span>
+                    <span onClick="resetAudio()"><i class="fa fa-refresh" aria-hidden="true"></i></span>
+                </div>
+
+                </br> -->
+
                 
             </div>
 
             <div class="cell cell-3">
-                <p style="font-size: larger;">Read and Record Your Voice</p>
-
+                <!-- <p style="font-size: larger;">Read and Record Your Voice</p> -->
+                <p>Read and Record Your Voice</p>
                 <button class="mic-toggle" id="mic">
                     <span class="material-icons">mic</span>
                 </button>
-
                 <audio class="playback" controls></audio>
             </div>
 
             <div class="cell cell-4">
                 <h1 style="font-size: larger;">Little Swallow</h1>
                 <p></p>
-
             </div>
 
           </div>
