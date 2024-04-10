@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 button {
   appearance: none;
   border: none;
@@ -15,22 +9,22 @@ button {
 .mic-toggle {
   position: relative;
   display: block;
-  width: 8rem;
-  height: 8rem;
+  width: 6.5rem;
+  height: 6.5rem;
   border-radius: 50%;
   background-color: #2d706c;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 2.7rem;
+  margin-bottom: 3.7rem;
 }
 
-.mic-toggle::after,
-.mic-toggle::before {
-  --pad:0rem;
-  content: "";
+.mic-toggle:after,
+.mic-toggle:before {
+  --pad: 0rem;
+  content: '';
   display: block;
   position: absolute;
   z-index: 0;
-  background-color: 220, 20, 60, 0.2;
+  background-color: rgba(45, 112, 108, 0.2); 
   top: var(--pad);
   left: var(--pad);
   right: var(--pad);
@@ -38,11 +32,11 @@ button {
   border-radius: 50%;
 }
 
-.mic-toggle::after {
+.mic-toggle:after {
   transition: 0.4s;
 }
 
-.mic-toggle::before {
+.mic-toggle:before {
   transition: 0.2s;
 }
 
@@ -50,7 +44,7 @@ button {
   --pad: -1rem;
 }
 
-.mic-toggle:hover::after {
+.mic-toggle:hover:after {
   --pad: -2rem;
 }
 
@@ -104,7 +98,7 @@ button {
 
 .playback {
   margin-bottom: 1rem;
-  box-shadow: 0px 0px 1rem rgba(0,0,0,2);
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 2);
   border-radius: 999px;
 }
 
@@ -160,19 +154,30 @@ span:hover .fa-refresh {
   }
 
   .cell-2 {
-    padding: 4% 13%; 
+    padding: 2%;
+    font-size: 1.1rem;
   }
 
+
+
   .cell-3 {
-    padding: 2rem 2rem;
+    /* padding: 1rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
 
   }
 
+  .cell-3 p {
+    /* padding: 1% 0.1%; */
+    font-size: 1.4rem;
+    font-style: oblique;
+  }
+
   .cell-4 {
+
     height: 42.4%;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
