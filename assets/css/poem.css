@@ -185,6 +185,11 @@ span:hover .fa-refresh {
     /* align-items: center; */
   }
 
+  #author {
+    text-align: right;
+    padding: 0.1rem 3.5rem;
+  }
+
   @media (max-width: 500px) {
     main {
       flex: 1 0 auto;
