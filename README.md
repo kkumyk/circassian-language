@@ -217,3 +217,97 @@ Two features are planned for the site:
 
 <li>replace special characters with their corresponding unicodes</li>
 </ul>
+
+<details>
+  <summary>WIP</summary>
+  
+https://stackoverflow.com/questions/62846354/calculate-the-percentage-of-accuracy-with-which-user-made-the-assigned-sound
+
+https://cohenpr-xpf.github.io/XPF/conv_resources/info/kbd.html
+
+https://cohenpr-xpf.github.io/XPF/Convert-to-IPA.html
+
+## IPA
+A tool for transcribing orthographic text as IPA (International Phonetic Alphabet) incl Kabardian
+[epitran](https://github.com/dmort27/epitran)
+
+https://github.com/persephone-tools/persephone
+
+
+https://stackoverflow.com/questions/68489707/
+is-there-a-python-library-i-could-use-to-convert-audio-to-phonemes
+
+https://stackoverflow.com/questions/30705028/convert-sound-to-list-of-phonemes-in-python
+
+https://github.com/xinjli/allosaurus
+
+https://github.com/crim-ca/speech_to_phonemes?tab=readme-ov-file
+
+https://github.com/ASR-project/Multilingual-PR
+
+
+https://github.com/AdolfVonKleist/Phonetisaurus
+
+
+https://espeak.sourceforge.net/
+
+
+https://github.com/topics/low-resource-languages?l=python
+
+https://github.com/RichardLitt/low-resource-languages?tab=readme-ov-file#automatic-speech-recognition-asr
+
+
+https://elpis.readthedocs.io/en/latest/
+
+
+https://www.reddit.com/r/linguistics/comments/7xnq4o/text_to_speech_for_dying_language/
+
+https://deepmind.google/discover/blog/wavenet-a-generative-model-for-raw-audio/
+
+
+https://www.lti.cs.cmu.edu/research/dissertations/2023/xinjianl_phd_lti_2023.pdf
+
+
+A SHORT GRAMMAR OF EAST CIRCASSIAN (KABARDIAN)
+
+https://circassianworld.com/pdf/A_Grammar_of_East_Circassian_Kabardian.pdf
+
+
+
+## Audio Recorder with JS
+
+
+https://github.com/Adityapanther/Audio-Recorder-App-in-Vanilla-javascript
+
+https://javascript.plainenglish.io/an-ultimate-guide-to-voice-recording-with-javascript-119e505780cd
+
+https://github.com/vocaroo/simple-audio-recorder
+
+https://www.youtube.com/watch?v=sbf6vQ8xym4
+
+https://miguelvieira.io/projects/KVFUHZVl0AZQhlKy27nn/videos/zZn0l7JTLbW3Vysl6QCm
+
+https://www.youtube.com/watch?v=B3wWIsNHPk4
+
+https://github.com/markjivko/markjivko.github.io/blob/master/tutorials/B3wWIsNHPk4/index.html
+
+https://www.youtube.com/watch?v=3OnMBtOyGkY
+
+https://www.youtube.com/watch?v=sbf6vQ8xym4
+
+https://www.youtube.com/watch?v=VwaR2VkvpzM
+
+## Flexbox template
+
+https://stackoverflow.com/questions/33947885/left-column-and-stacked-right-column-using-flexbox-css
+https://codepen.io/dloewen/pen/qOzogG
+
+## Audio button
+https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
+
+## Poem Translation
+https://lingvoforum.net/index.php/topic,8655.100.html?PHPSESSID=7075c0dbcd46a3312d74c86e6de9a7cd
+
+
+</details>
+
