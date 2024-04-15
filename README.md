@@ -1,4 +1,4 @@
-# [Circassian Language](https://kkumyk.github.io/circassian-language/)
+# [Circassian Адыгабзэ](https://kkumyk.github.io/circassian-language/)
 
 Circassian / Адыгабзэ is a site dedicated to the Cirassian languages and is created for two main purposes:
 <ol>
