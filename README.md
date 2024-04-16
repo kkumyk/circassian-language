@@ -172,7 +172,8 @@ The score of 70 is given for the [Kabardian Alphabet page](https://kkumyk.github
 - [W3C HTML Validator](https://validator.w3.org/nu/) was used to check for errors in the HTML code.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to check for errors in the CSS code.
 - [FabForm](https://fabform.io/) used for backend on the contact form.
-- [balsamiq](https://balsamiq.com/) used to create wireframes.
+- [Balsamiq](https://balsamiq.com/) used to create wire frames.
+- [Am I Responsive](https://ui.dev/amiresponsive) used to generate site's appearances on different devices and to check its responsiveness on them. 
 
 ## Credits
 
