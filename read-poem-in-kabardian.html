@@ -45,7 +45,7 @@
     <main>
         <div class="container">
             <div class="cell cell-1">
-                <audio id="myAudio" src='./assets/audio/poem/swallow.mp3' preload="auto"></audio>
+                <audio id="swallowPoem" src='./assets/audio/poem/swallow.mp3' preload="auto"></audio>
 
               <!-- <span id="line-1"></span><span id="line-2"></span><span id="line-3"></span><span id="line-4"></span><span id="line-5"></span><span id="line-6"></span><span id="line-7"></span><span id="line-8"></span> -->
 
@@ -72,8 +72,8 @@
             <p>
                 <span id="line6-1">Pts’aś</span><span id="line6-2">xwä </span><span id="line6-3">ts’y2kw’</span><span id="line6-4">khär </span>
                 <span id="line6-5"> q’o</span><span id="line6-6">lhä</span><span id="line6-7">täzh.</span>
-            </p>
-            </br>
+            </p></br>
+
             <p>
                 <span id="line7-1">ПцӀащ</span><span id="line7-2">хъуэ </span><span id="line7-3">цӀыкӀу</span><span id="line7-4">хэр </span><span id="line7-5">къыт</span><span id="line7-6">хуо</span><span id="line7-7">гу<span id="line7-8">фӀэ,</span>
             </p>
@@ -142,104 +142,6 @@
         </small>
     </footer>
 
-
-<script>
-let myAudio = document.getElementById("myAudio");
-let isPlaying = false;
-let timeoutIDs = []; // array to store timeout IDs
-
-// object to store original colours
-const originalColours = {};
-
-function togglePlay() {
-    if (isPlaying) {
-        myAudio.pause();
-        clearTimeouts(); // clear existing timeouts when pausing
-    } else {
-        myAudio.play();
-        const wordTimes = {
-            // Пцӏащхъуэ цӏыкӏу.
-            "line1-1": 1.6, "line1-2": 2, "line1-3": 2.5, "line1-4": 2.7,
-            // Pts’aśxwä ts’y2kw’.
-            "line2-1": 4.5,"line2-2": 5,"line2-3": 5.5,"line2-4": 5.6,
-            // Гъатхэр къосри, удзхэр къокӀ.
-            "line3-1": 7.6,"line3-2": 7.9,"line3-3": 8.6,"line3-4": 9,"line3-5": 9.7,"line3-6": 10,"line3-7": 10.7,"line3-8": 11,
-            // Ghatkhär q’osri, wdzkhär q’ok’.
-            "line4-1": 13.4,"line4-2": 13.7,"line4-3": 14.4,"line4-4": 14.9,"line4-5": 15.5,"line4-6": 15.9,"line4-7": 16.2,"line4-8": 16.6,
-            // ПцӀащхъуэ цӀыкӀухэр къолъэтэж.
-            "line5-1": 18.5,"line5-2": 18.9,"line5-3": 19.4,"line5-4": 19.9,"line5-5": 20.9,"line5-6": 21.2,"line5-7": 21.5,
-            // Pts’aśxwä ts’y2kw’khär q’olhätäzh.
-            "line6-1": 23.9,"line6-2": 24.4,"line6-3": 24.6,"line6-4": 25.1,"line6-5": 25.5,"line6-6": 26.1,"line6-7": 26.2,
-            // ПцӀащхъуэ цӀыкӀухэр къытхуогуфӀэ,
-            "line7-1": 28.5,"line7-2": 29.4,"line7-3": 30.2,"line7-4": 30.7,"line7-5": 31.5,"line7-6": 31.9,"line7-7": 32.0,"line7-8":32.5,
-            // Pts’aśxwä ts’y2kw’khär q’y2tkhwogwf’ä,
-            "line8-1": 34.0,"line8-2": 34.8,"line8-3": 35.0,"line8-4": 35.7,"line8-5": 36.1,"line8-6": 36.5,"line8-7": 37.2,"line8-8":73.7
-
-            // ПыгуфӀыкӀхэу къытхуосыж.
-
-            // Py2gwf’y2k’khäw q’y2tkhwosy2zh.
-
-            
-            // ПцӀащхъуэ цӀыкӀуу зи бзэр дахэ,
-
-            // Pts’aśxwä ts’y2kw’w zi bzär dakhä,
-
-            // Хугу уэстынщи, уэрэд жыӀэ.
-
-            // Khwgw wästy2nśi, wäräd zhy2ä.
-
-            // ЩӀыпӀэ жыжьэм щыплъэгъуахэр
-
-            // Ś’y2p’ä zhy2źäm śy2plhäghwakhär
-
-            // Пэжагъ хэлъу къыджеӀэж.
-
-            // Päzhagh khälhw q’y2dzhe’äzh.
-
-        };
-        Object.entries(wordTimes).forEach(([wordId, seconds]) => {
-            const element = document.getElementById(wordId);
-            // store original colour
-            originalColours[wordId] = element.style.color;
-            const timeoutID = setTimeout(function() {
-                element.style.color = "#2d706c";
-            }, (seconds - myAudio.currentTime) * 1000); // calculate remaining time
-            timeoutIDs.push(timeoutID); // store timeout ID
-        });
-    }
-    isPlaying = !isPlaying; // toggle isPlaying
-}
-
-// clear any existing timeouts when pausing the audio and create new timeouts when resuming the audio
-function clearTimeouts() {
-    // clear all stored timeouts
-    timeoutIDs.forEach(id => {
-        clearTimeout(id);
-    });
-    timeoutIDs = []; // clear the array
-}
-
-myAudio.onplaying = function() {
-    isPlaying = true;
-};
-
-myAudio.onpause = function() {
-    isPlaying = false;
-};
-
-function resetAudio() {
-    myAudio.pause();
-    myAudio.currentTime = 0;
-    isPlaying = false;
-    clearTimeouts(); // clear existing timeouts
-    
-    // restore original colours
-    Object.entries(originalColours).forEach(([wordId, color]) => {
-        document.getElementById(wordId).style.color = ""; // restore the default font colour
-    });
-}
-
-</script>
 
 <!-- links to js file -->
 <script src="./assets/js/poem.js"></script>
