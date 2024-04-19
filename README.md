@@ -1,6 +1,6 @@
-# [Circassian / Адыгабзэ](https://kkumyk.github.io/circassian-language/)
+# [Circassian Languages](https://kkumyk.github.io/circassian-language/)
 
-Circassian / Адыгабзэ is a site dedicated to the Cirassian languages and is created for two main purposes:
+This site dedicated to the Cirassian languages and is created for two main purposes:
 <ol>
 <li>to raise awareness about the challenges this language is currently facing, and</li>
 <li>to introduce an interactive alphabet as an alternative to the static alphabet pages available online for this language.</li>
