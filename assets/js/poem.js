@@ -184,15 +184,19 @@ let isRecording = false;
 let recorder = null;
 let chunks = []; // store anything we record in segments of an array;
 
-// get access to user's mics using media api;
+// setupAudio function sets up audio streaming by requesting access to the user's mic using media api;
+// it sets up audio streaming using the browser's media devices, such as a mic;
 function setupAudio() {
-    console.log("Setup");
     // checks if the media api is currently available;
+    // checks if the navigator.mediaDevices object and the getUserMedia method are supported by the browser;
+    // this method is used to get access to the user's camera and/or microphone.
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         navigator.mediaDevices
+            // call getUserMedia with the object indicating that only the audio access is asked for;
             .getUserMedia({
                 audio: true
             })
+            // if the user grants the audio access, the setupStream function is called;
             .then(setupStream)
             .catch(err => {
                 console.error(err)
