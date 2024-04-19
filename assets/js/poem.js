@@ -115,7 +115,7 @@ function togglePlay() {
                 linePart.style.color = "#2d706c"; // apply green colour to the current linePart after specified delay in milliseconds
             }, (seconds - swallowPoem.currentTime) * 1000); // calculate remaining time - the delay after which the green should be applied
 
-            timeoutIDs.push(timeoutID); // push (store) timeoutID into the timeoutIDs array
+            timeoutIDs.push(timeoutID); // store timeoutID by pushing it into the timeoutIDs array
         });
     }
     isPlaying = !isPlaying; // toggle isPlaying
@@ -130,6 +130,11 @@ function clearTimeouts() {
     timeoutIDs = []; // clear the timeoutIDs array
 }
 
+/*
+- the below three lines set the isPlaying variable to true when the poem audio starts to play;
+- add event listener by accessing the "onplaying" event handler property of the swallowPoem audio element;
+- the "onplaying" event handler property holds an anonymous function that will be executed when the "playing" event occurs;
+*/ 
 swallowPoem.onplaying = function() {
     isPlaying = true;
 };
@@ -154,41 +159,52 @@ function resetAudio() {
     });
 }
 
-
 /*
  * === Read and Record a Poem ===
  */
 
-const mic_btn = document.querySelector('#mic');
+/*
+- the querySelector() method returns the first HTML element within the document that matches the specified selector;
+- the selector is the first part of the CSS rule that is used to target HTML elements, classes, IDs and attributes;
+*/
+const micBtn = document.querySelector('#mic');
 const playback = document.querySelector('.playback');
 
-mic_btn.addEventListener('click', ToggleMic);
+/*
+- addEventListener() method sets up a function that will be called when the specified event is delivered;
+- the below line is calling toggleMic() function when the micBtn is clicked;
+- once the micBtn is clicked, the toggleMic() function is called and the recording will start;
+- the "click" parameter specifies the type of event to listen for which occurs when the user will click on the micBtn;
+*/
+micBtn.addEventListener('click', toggleMic); // toggleMic - function that starts recording;
 
-let can_record = false;
-let is_recording = false;
+let canRecord = false;
+let isRecording = false;
 
 let recorder = null;
 let chunks = []; // store anything we record in segments of an array;
 
 // get access to user's mics using media api;
-function SetupAudio() {
+function setupAudio() {
     console.log("Setup");
-    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) { // checks if the media api is currently available;
+    // checks if the media api is currently available;
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         navigator.mediaDevices
             .getUserMedia({
                 audio: true
             })
-            .then(SetupStream)
+            .then(setupStream)
             .catch(err => {
                 console.error(err)
             });
     }
 }
 
-SetupAudio();
+setupAudio();
+
 
 // record the audio
-function SetupStream(stream) {
+function setupStream(stream) {
     recorder = new MediaRecorder(stream);
 
     recorder.ondataavailable = e => {
@@ -203,21 +219,24 @@ function SetupStream(stream) {
         const audioURL = window.URL.createObjectURL(blob);
         playback.src = audioURL;
     }
-    can_record = true;
+    canRecord = true;
 }
 
 // start recording
-function ToggleMic() {
-    if (!can_record) return;
+function toggleMic() {
+    // if canRecord is falsy, and if so the function exists with the return statement making sure the function is not recording when not allowed;
+    // canRecord is set to true at the end of setupStream() function;
+    if (!canRecord) return;
+    isRecording = !isRecording; // set isRecording is true, set it to false;
 
-    is_recording = !is_recording;
-
-    if (is_recording) {
-        recorder.start(); // this will make the recorder listening to our stream of data;
-        mic_btn.classList.add("is-recording");
+    if (isRecording) { // if true, meaning the recording is currently active;
+        recorder.start(); // start recording using start() method of the recorder object;
+        // the line below updates the appearance of the mic button to indicate the recording is active;
+        micBtn.classList.add("is-recording"); // adds "is-recording" to the DOM element represented by the variable micBtn;
     } else {
-        recorder.stop();
-        mic_btn.classList.remove("is-recording");
+        // if recording is not active, stop any other recordings that might be there;
+        recorder.stop(); // ensures that all recordings on the page are stops regardless of the state of the current mic recording;
+        // return the mic button appearance to the default/non-recording state;
+        micBtn.classList.remove("is-recording"); // remove "is-recording" class from the DOM element represented by the mic button;
     }
-
 }
