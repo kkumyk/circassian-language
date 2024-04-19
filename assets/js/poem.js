@@ -1,6 +1,6 @@
 
 /*
- * === Play Poem and Highlight Text / Reset Audio and Remove Highlighting ===
+ * === Play/Stop/Reset Poem and Highlight Text Lines ===
  */
 
 let swallowPoem = document.getElementById("swallowPoem"); // get the audio HTML element by its ID
@@ -9,7 +9,7 @@ let timeoutIDs = [];        // set an array to store timeout IDs
 const originalColours = {}; // set an object to store default colours
 
 /*
- * --- Toggle Play ---
+ * --- Play, Stop and Reset Audio on Mouse Click ---
  */
 
 function togglePlay() {
@@ -202,27 +202,45 @@ function setupAudio() {
 
 setupAudio();
 
+/*
+ * --- Record User's Audio ---
+ */
 
-// record the audio
+/*
+- setupStream() function sets up a media recorder object;
+- it defines event listeners for when data becomes available and when recording stops;
+- once recording has stopped, it processes the recorded audio data, creates a URL for playback and sets up the audio source for playback;
+- lastly, it sets the "canRecord" flag to true after set up completes, indicating that recoding can be initiated;
+- the above is done to indicate on the UI that recording is now available;
+*/
 function setupStream(stream) {
+    // create a new MediaRecorder object (obj to record audio) named recorder which initialised with the "stream" passed as a parameter; 
     recorder = new MediaRecorder(stream);
 
-    recorder.ondataavailable = e => {
+    // add "ondataavailable" event listener function
+    // set up an event listener to the "dataavailable" event of the MediaRecorder object;
+    // when event data is there, push it into the chunks array to store recorded audio data;
+    recorder.ondataavailable = e => { // the "e" parameter represents the event object;
         chunks.push(e.data);
     }
-
-    recorder.onstop = e => {
+    // add "onstop" event listener function
+    // set up an event listener for the "stop" event of the MediaRecorder object;
+    recorder.onstop = e => { // the "e" parameter represents the event object;
+        // create a new "Blob" object (represents immutable raw data) called blob which initialised with the data stored in the chunks array;
         const blob = new Blob(chunks, {
             type: "audio/ogg; codecs=opus"
         });
-        chunks = [];
-        const audioURL = window.URL.createObjectURL(blob);
-        playback.src = audioURL;
+        chunks = []; // reset chunks array to empty array / clear out recorded audio;
+        const audioURL = window.URL.createObjectURL(blob); // create a URL representing the audio dta stored in the blob;
+        playback.src = audioURL; // set the src attribute of an HTML <audio> element with the playback class to the generated URL of the recorded audio;
     }
-    canRecord = true;
+    canRecord = true; // flag that the recording setup is complete and recording can now be initiated;
 }
 
-// start recording
+
+/*
+ * --- Start Recording ---
+ */
 function toggleMic() {
     // if canRecord is falsy, and if so the function exists with the return statement making sure the function is not recording when not allowed;
     // canRecord is set to true at the end of setupStream() function;
