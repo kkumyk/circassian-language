@@ -191,6 +191,7 @@ The content on the About page is based on the sources below:
 ### Code
 - Parts of the HTML and CSS was borrowed from the Code Institute's [Love Running](https://code-institute-org.github.io/love-running-2.0/index.html) main page.
 - [Newspaper Style Design by Silke V](https://codepen.io/silkine/pen/QWBxVX) was used on the About page.
+- [Mic Button Animation and Audio Recording Functionality](https://www.youtube.com/watch?v=3OnMBtOyGkY&themeRefresh=1) on the [Read and Record a Poem](https://kkumyk.github.io/circassian-language/read-poem-in-kabardian.html) page were adapted from the Youtube tutorial by [Tyler Potts](https://github.com/TylerPottsDev).
 
 ## Future Features
 Two features are planned for the site:
