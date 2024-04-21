@@ -1,17 +1,9 @@
- button {
-   /* remove default button styling: */
-   /* remove the default styling provided by the browser for complete visual control*/
-   appearance: none;
-   border: none;
-   /* remove the outline that appears around the button when it is focused */
-   outline: none;
-   background: none;
-   cursor: pointer;
- }
-
  .container {
    display: flex;
    flex-direction: column;
+   /* allows flex items to wrap onto multiple lines if needed, instead of fitting them all onto one line
+    here the poem in Kabardian appears next to the its English translation on the right column
+    */
    flex-wrap: wrap;
    height: 750px;
    max-width: 700px;
@@ -24,7 +16,7 @@
  }
 
  /* 
-  * === cell-1 box and its elements ===
+  * === Cell-1 ===
   */
  .cell-1 {
    flex-basis: 100%;
@@ -39,7 +31,7 @@
    font-size: 1.2rem;
  }
 
- /* play and reset icons  */
+ /* Play and Reset Icons  */
  span:hover .fa-volume-up,
  span:hover .fa-refresh {
    color: #2d706c;
@@ -47,7 +39,7 @@
  }
 
  /* 
-  * === cell-2 box and its elements ===
+  * === Cell-2 ===
   */
  .cell-2 {
    padding: 2.01rem;
@@ -62,16 +54,27 @@
    font-style: oblique;
  }
 
- /* the audio panel element */
+ /* HTML element containing the mic icon */
+ button {
+  /* remove default button styling: */
+  /* remove the default styling provided by the browser for complete visual control*/
+  appearance: none;
+  border: none;
+  /* remove the outline that appears around the button when it is focused */
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+ /* Audio Panel Element */
  .playback {
    margin-bottom: 1rem;
    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 2);
    border-radius: 999px;
  }
 
-
  /* 
-  * === cell-3 box and its elements ===
+  * === Cell-3 ===
   */
 
  .cell-3 {
@@ -90,12 +93,9 @@
    padding: 1rem 2.5rem;
  }
 
-
-
-
-
-
-
+ /* 
+  * === Mic Icon Styling ===
+  */
 
  .mic-toggle {
    position: relative;
@@ -105,8 +105,10 @@
    border-radius: 50%;
    background-color: #2d706c;
    margin-top: 2.7rem;
-   margin-bottom: 3.7rem;
+   margin-bottom: 3.3rem;
  }
+
+ /* Mic Icon Recording Pulsation Animation */
 
  .mic-toggle:after,
  .mic-toggle:before {
@@ -123,6 +125,7 @@
    border-radius: 50%;
  }
 
+ /* add a slightly delayed transition */
  .mic-toggle:after {
    transition: 0.4s;
  }
@@ -154,6 +157,7 @@
    animation: smoothPadBefore 0.6s ease-in alternate-reverse forwards infinite;
  }
 
+ /* add animations */
  @keyframes smoothPadAfter {
    0% {
      top: -2rem;
@@ -185,36 +189,6 @@
      bottom: -0.5rem;
    }
  }
-
-
-/* 
- @media (max-width: 500px) {
-   .container {
-     flex-wrap: nowrap;
-   }
-   .cell {
-     width: 100%;
-   }
-   .cell-1 {
-     order: 2;
-   }
-   .cell-2 {
-     order: 1;
-   }
-   .cell-3 {
-     order: 3;
-   }
- } */
-/* 
- Common Responsive Breakpoints
- Mobile: 360 x 640.
- Mobile: 375 x 667.
- Mobile: 360 x 720.
- iPhone X: 375 x 812.
- Pixel 2: 411 x 731.
- Tablet: 768 x 1024.
- Laptop: 1366 x 768.
- High-res laptop or desktop: 1920 x 1080. */
 
  @media (max-width: 500px) {
    main {
