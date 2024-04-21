@@ -170,22 +170,25 @@ function resetAudio() {
 const micBtn = document.querySelector('#mic');
 const playback = document.querySelector('.playback');
 
-/*
+/* Add Event Listener to the Mic:
 - addEventListener() method sets up a function that will be called when the specified event is delivered;
 - the below line is calling toggleMic() function when the micBtn is clicked;
 - once the micBtn is clicked, the toggleMic() function is called and the recording will start;
 - the "click" parameter specifies the type of event to listen for which occurs when the user will click on the micBtn;
 */
 micBtn.addEventListener('click', toggleMic); // toggleMic - function that starts recording;
-
+ 
 let canRecord = false;
 let isRecording = false;
 
-let recorder = null;
+let recorder = null; // the mic
 let chunks = []; // store anything we record in segments of an array;
 
-// setupAudio function sets up audio streaming by requesting access to the user's mic using media api;
-// it sets up audio streaming using the browser's media devices, such as a mic;
+/* Get Access to User's Mics by Using Media API:
+- setupAudio function sets up audio streaming by requesting access to the user's mic using Media API;
+- it sets up audio streaming using the browser's media devices, such as a mic;
+ */
+
 function setupAudio() {
     // checks if the media api is currently available;
     // checks if the navigator.mediaDevices object and the getUserMedia method are supported by the browser;
@@ -207,7 +210,7 @@ function setupAudio() {
 setupAudio();
 
 /*
- * --- Record User's Audio ---
+ * --- Make Recorder to Record User's Audio ---
  */
 
 /*
@@ -231,34 +234,39 @@ function setupStream(stream) {
     // set up an event listener for the "stop" event of the MediaRecorder object;
     recorder.onstop = e => { // the "e" parameter represents the event object;
         // create a new "Blob" object (represents immutable raw data) called blob which initialised with the data stored in the chunks array;
+        // create a Blob of data and define the type of data / audio file type it is:
         const blob = new Blob(chunks, {
             type: "audio/ogg; codecs=opus"
         });
-        chunks = []; // reset chunks array to empty array / clear out recorded audio;
+        chunks = []; // reset chunks array to empty array / clear out recorded audio as we no longer need it;
         const audioURL = window.URL.createObjectURL(blob); // create a URL representing the audio dta stored in the blob;
         playback.src = audioURL; // set the src attribute of an HTML <audio> element with the playback class to the generated URL of the recorded audio;
     }
     canRecord = true; // flag that the recording setup is complete and recording can now be initiated;
 }
 
-
 /*
  * --- Start Recording ---
  */
 function toggleMic() {
-    // if canRecord is falsy, and if so the function exists with the return statement making sure the function is not recording when not allowed;
-    // canRecord is set to true at the end of setupStream() function;
+
+    /*
+    - if canRecord is falsy (mic is not working/having issues), the function exists with the return statement
+      making sure the function is not recording when it is not allowed;
+    - canRecord is set to true at the end of setupStream() function;
+     */
     if (!canRecord) return;
     isRecording = !isRecording; // set isRecording is true, set it to false;
 
     if (isRecording) { // if true, meaning the recording is currently active;
-        recorder.start(); // start recording using start() method of the recorder object;
+        recorder.start(); // start recording using start() method of the recorder object / start recorder listening to our stream;
         // the line below updates the appearance of the mic button to indicate the recording is active;
-        micBtn.classList.add("is-recording"); // adds "is-recording" dynamically to the DOM element represented by the variable micBtn;
+        // adds "is-recording" dynamically to the DOM element represented by the variable micBtn and is used for pulsation animation;
+        micBtn.classList.add("is-recording"); 
     } else {
-        // if recording is not active, stop any other recordings that might be there;
+        // if recording is not active, stop any other recordings that might be there:
         recorder.stop(); // ensures that all recordings on the page are stops regardless of the state of the current mic recording;
-        // return the mic button appearance to the default/non-recording state;
+        // return the mic button animated appearance to the default non-recording/non-animated state / stop animation:
         micBtn.classList.remove("is-recording"); // remove "is-recording" class from the DOM element represented by the mic button;
     }
 }
