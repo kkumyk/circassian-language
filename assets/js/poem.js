@@ -254,7 +254,7 @@ function toggleMic() {
     if (isRecording) { // if true, meaning the recording is currently active;
         recorder.start(); // start recording using start() method of the recorder object;
         // the line below updates the appearance of the mic button to indicate the recording is active;
-        micBtn.classList.add("is-recording"); // adds "is-recording" to the DOM element represented by the variable micBtn;
+        micBtn.classList.add("is-recording"); // adds "is-recording" dynamically to the DOM element represented by the variable micBtn;
     } else {
         // if recording is not active, stop any other recordings that might be there;
         recorder.stop(); // ensures that all recordings on the page are stops regardless of the state of the current mic recording;
