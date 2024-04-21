@@ -185,8 +185,10 @@ The score of 70 is given for the [Kabardian Alphabet page](https://kkumyk.github
 The content on the About page is based on the sources below:
 - Open Caucasus Media, [Activists mark Circassian Language Day in Russia and Georgia](https://oc-media.org/activists-mark-circassian-language-day-in-russia-and-georgia/)
 - Open Caucasus Media, [Vulnerable and divided: the uncertain state of the Circassian language](https://oc-media.org/features/vulnerable-and-divided-the-uncertain-state-of-the-circassian-language/)
-- [A sad story about how the Kabardian language is forgotten](https://www.youtube.com/watch?v=emIvYbCygKM&t=24s)
+- [A story about how the Kabardian language is getting forgotten](https://www.youtube.com/watch?v=emIvYbCygKM&t=24s)
 - [A Grammar of the Kabardian Language by J Colarusso](https://library.oapen.org/bitstream/id/eb3cef03-30c0-4571-b5b3-11be2cd4f9e3/9781552386682.pdf)
+
+- Voice References: TODO
 
 ### Code
 - Parts of the HTML and CSS was borrowed from the Code Institute's [Love Running](https://code-institute-org.github.io/love-running-2.0/index.html) main page.
