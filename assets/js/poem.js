@@ -114,20 +114,49 @@ function togglePlay() {
             "line12-5": 57.1,
             "line12-6": 57.5,
             "line12-7": 57.9,
-            "line12-8": 58.0
-
+            "line12-8": 58.0,
             // Хугу уэстынщи, уэрэд жыӀэ.
-
+            "line13-1": 60.1,
+            "line13-2": 60.4,
+            "line13-3": 60.7,
+            "line13-4": 62.1,
+            "line13-5": 62.7,
+            "line13-6": 63.5,
+            "line13-7": 64.0,
             // Khwgw wästy2nśi, wäräd zhy2ä.
-
+            "line14-1": 65.1,
+            "line14-2": 65.4,
+            "line14-3": 65.7,
+            "line14-4": 66.1,
+            "line14-5": 67.1,
+            "line14-6": 67.5,
+            "line14-7": 68.0,
             // ЩӀыпӀэ жыжьэм щыплъэгъуахэр
-
+            "line15-1": 70.1,
+            "line15-2": 71.4,
+            "line15-3": 72.5,
+            "line15-4": 73.1,
+            "line15-5": 73.7,
+            "line15-6": 74.0,
             // Ś’y2p’ä zhy2źäm śy2plhäghwakhär
-
+            "line16-1": 75.1,
+            "line16-2": 75.7,
+            "line16-3": 76.4,
+            "line16-4": 76.9,
+            "line16-5": 77.1,
+            "line16-6": 78.0,
             // Пэжагъ хэлъу къыджеӀэж.
-
+            "line17-1": 79.1,
+            "line17-2": 79.7,
+            "line17-3": 80.7,
+            "line17-4": 81.1,
+            "line17-5": 82.7,
             // Päzhagh khälhw q’y2dzhe’äzh.
-
+            "line18-1": 84.1,
+            "line18-2": 84.7,
+            "line18-3": 85.2,
+            "line18-4": 85.8,
+            "line18-5": 86.0
         };
         // loop over lineIDs object
         Object.entries(lineIDs).forEach(([linePartId, seconds]) => {
