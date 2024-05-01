@@ -1,4 +1,4 @@
-# [Circassian Language](https://kkumyk.github.io/circassian-language/)
+# CIRCASSIAN LANGUAGE
 
 This site is dedicated to the Circassian language and is created for two main purposes:
 <ol>
@@ -6,6 +6,8 @@ This site is dedicated to the Circassian language and is created for two main pu
 <li>to introduce an interactive alphabet as an alternative to the static alphabet pages available online for this language.</li>
 </ol>
 This project was created using HTML, CSS and JavaScript.
+
+LIVE WEBSITE: [Link to the Deployed Site](https://kkumyk.github.io/circassian-language/)
 
 ![Circassian Language - different devices view](doc/testing/circassian-on-different-devices.webp)
 
