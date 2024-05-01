@@ -1,6 +1,6 @@
-# [Circassian Languages](https://kkumyk.github.io/circassian-language/)
+# [Circassian Language](https://kkumyk.github.io/circassian-language/)
 
-This site is dedicated to the Circassian languages and is created for two main purposes:
+This site is dedicated to the Circassian language and is created for two main purposes:
 <ol>
 <li>to raise awareness about the challenges this language is currently facing, and</li>
 <li>to introduce an interactive alphabet as an alternative to the static alphabet pages available online for this language.</li>
