@@ -99,47 +99,9 @@ The Contact page provides an option to connect with people concerned about the c
 
 ## Testing
 Please refer to [TESTING.md](doc/testing/TESTING.md) file for:
-- Manual Testing and Results
 - Validation of all languages
-- Lighthouse scores
-
-
-#### Comments
-The warnings on the [Kabardian Alphabet page](https://kkumyk.github.io/circassian-language/kabardian-alphabet.html) about special characters needing to be replaced with the Unicode are taken notes of and will be added at the later stage. 
-
-The CSS error on the alphabet page is coming from the imported <strong><italic>css/all.min.css</italic></strong> file that is used to load the sound icons. 
-
-### Lighthouse Reports
-
-<img src="doc/testing//lighthouse-hub.jpg" alt="Hub page CSS Validation" style="width:798px;"/>
-</br>
-<img src="doc/testing//lighthouse-about.jpg" alt="About CSS Validation" style="width:800px;"/>
-</br>
-<img src="doc/testing//lighthouse-alphabet.jpg" alt="Contact CSS Validation" style="width:800px;"/>
-</br>
-<img src="doc/testing//lighthouse-contact.jpg" alt="Alphabet CSS Validation" style="width:800px;"/>
-
-#### Comments
-The score of 70 is given for the [Kabardian Alphabet page](https://kkumyk.github.io/circassian-language/kabardian-alphabet.html). The tool recommends to reduce the use of the imported CSS files and resize images used on the site. This had been noted and will be done at the next stages. There is currently only one image on the Alphabet page. When more images are added, the image sizing will be addressed for all of them in one go.
-
-
-### Further Testing
-
-- The Website was tested on Google Chrome and Firefox.
-- The website was viewed on a variety of devices such as Desktop, Laptop and Android phones.
-
-### Accessibility
-
-- The one image on the [Kabardian Alphabet](https://kkumyk.github.io/circassian-language/kabardian-alphabet.html) contains an alt tag. Images for the remaining letters are currently being worked on. Once these are added to the site, they will be supplied with the alt tags.
-
-- [WEBP](https://developers.google.com/speed/webp) is used for images on the site.
-- The site is responsive to different screen sizes.
-- Semantic elements used throughout the site.
-
-### Bugs
-
-- There is an extra space on the right site on the [About page](https://kkumyk.github.io/circassian-language/about.html) which should be removed in the later versions.
-- Responsiveness for smaller devices needs further adjustments for the [About page](https://kkumyk.github.io/circassian-language/about.html) as the subheading is partly covered by the menu dropdown. Alternatively, the main text can be made fully invisible with JS when the dropdown menu is clicked and re-appear back again after the user clicked on the menu link, see [example on mobile](https://meduza.io/).
+- PageSpeed Insights scores
+- Manual Testing, Accessibility and Bugs
 
 ## Technologies
 
