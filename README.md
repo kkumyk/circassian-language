@@ -100,30 +100,15 @@ The Contact page provides an option to connect with people concerned about the c
 
 
 ## Testing
+Please refer to [TESTING.md]("doc/testing/TESTING.md") file for:
+- Manual Testing and Results
+- Validation of all languages
+- Lighthouse scores
 
-### HTML Validation
-<img src="doc/testing/hub-page-html-validation.jpg" alt="Hub page HTML Validation" style="width:800px;"/>
-</br>
-<img src="doc/testing//about-html-validation.jpg" alt="About HTML Validation" style="width:800px;"/>
-</br>
-<img src="doc/testing//alphabet-html-validation.jpg" alt="Alphabet HTML Validation" style="width:800px;"/>
-</br>
-<img src="doc/testing//contact-html-validation.jpg" alt="Contact HTML Validation" style="width:800px;"/>
 
 #### Comments
 The warnings on the [Kabardian Alphabet page](https://kkumyk.github.io/circassian-language/kabardian-alphabet.html) about special characters needing to be replaced with the Unicode are taken notes of and will be added at the later stage. 
 
-### CSS Validation
-
-<img src="doc/testing//hub-page-css-validation.jpg" alt="Hub page CSS Validation" style="width:798px;"/>
-</br>
-<img src="doc/testing//about-css-validation.jpg" alt="About CSS Validation" style="width:800px;"/>
-</br>
-<img src="doc/testing//alphabet-css-validation.jpg" alt="Alphabet CSS Validation" style="width:800px;"/>
-</br>
-<img src="doc/testing//contact-css-validation.jpg" alt="Contact CSS Validation" style="width:800px;"/>
-
-#### Comments
 The CSS error on the alphabet page is coming from the imported <strong><italic>css/all.min.css</italic></strong> file that is used to load the sound icons. 
 
 ### Lighthouse Reports
@@ -138,7 +123,6 @@ The CSS error on the alphabet page is coming from the imported <strong><italic>c
 
 #### Comments
 The score of 70 is given for the [Kabardian Alphabet page](https://kkumyk.github.io/circassian-language/kabardian-alphabet.html). The tool recommends to reduce the use of the imported CSS files and resize images used on the site. This had been noted and will be done at the next stages. There is currently only one image on the Alphabet page. When more images are added, the image sizing will be addressed for all of them in one go.
-
 
 
 ### Further Testing
