@@ -47,9 +47,10 @@ The user did most likely land on the site by accident as this was not a result o
 <font color="#2d706c">Green</font> is used on the site as it is the colour of the <a href="https://en.wikipedia.org/wiki/Circassian_flag#:~:text=It%20consists%20of%20a%20green,the%20designer%20of%20the%20flag.">Circassian flag</a>. 
 
 Further colours used:
-- <font color="#704214">Text</font>
-- <font color="#f7d4bb">Background colour for container boxes</font>
-- <font color="#FFF1E5">Background colour for pages</font>
+
+- <span style="color:#704214">Text</span>
+- <span style="color:#f7d4bb">Background colour for container boxes</span>
+- <span style="color:#FFF1E5">Background colour for pages</span>
 
 
 ### Wireframes
