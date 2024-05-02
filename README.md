@@ -100,7 +100,7 @@ The Contact page provides an option to connect with people concerned about the c
 
 
 ## Testing
-Please refer to [TESTING.md]("doc/testing/TESTING.md") file for:
+Please refer to [TESTING.md](doc/testing/TESTING.md) file for:
 - Manual Testing and Results
 - Validation of all languages
 - Lighthouse scores
