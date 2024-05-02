@@ -88,7 +88,7 @@
   font-size: 1.2rem;
 }
 
- #author {
+ #author-kabar, #author-eng {
    text-align: right;
    padding: 1rem 2.5rem;
  }
