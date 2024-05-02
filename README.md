@@ -26,8 +26,6 @@ LIVE WEBSITE: [Link to the Deployed Site](https://kkumyk.github.io/circassian-la
 <li><a href="#features">Features</a></li>
 <li><a href="#testing">Testing</a></li>
 <ul>
-<li><a href="#html-validation">HTML Validation</a></li>
-<li><a href="#css-validation">CSS Validation</a></li>
 <li><a href="#lighthouse-reports">Lighthouse Reports</a></li>
 <li><a href="#further-testing">Further Testing</a></li>
 <li><a href="#accessibility">Accessibility</a></li>
