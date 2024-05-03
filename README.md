@@ -1,16 +1,14 @@
+<!-- <a href="" target="_blank"></a> -->
 # CIRCASSIAN LANGUAGE
 
 This site is dedicated to the Circassian language and is created for two main purposes:
 <ol>
 <li>to raise awareness about the challenges this language is currently facing, and</li>
-<li>to introduce an interactive alphabet as an alternative to the static alphabet pages available online for this language.</li>
+<li>to introduce an interactive alphabet as an alternative to the static pages available online.</li>
 </ol>
-This project was created using HTML, CSS and JavaScript.
-
-LIVE WEBSITE: [Link to the Deployed Site](https://kkumyk.github.io/circassian-language/)
+This site was built using HTML, CSS and JavaScript: <a href="https://kkumyk.github.io/circassian-language/" target="_blank">DEPLOYED SITE</a>
 
 ![Circassian Language - different devices view](doc/testing/landing-page.png)
-
 
 ## Table of Contents
 <ol>
@@ -44,57 +42,39 @@ The user did most likely land on the site by accident as this was not a result o
 ## Design
 
 ### Colours
-<font color="#2d706c">Green</font> is used on the site as it is the colour of the <a href="https://en.wikipedia.org/wiki/Circassian_flag#:~:text=It%20consists%20of%20a%20green,the%20designer%20of%20the%20flag.">Circassian flag</a>. 
+- <font color="#2d706c">Green</font> is used on the site as it is the colour of the <a href="https://en.wikipedia.org/wiki/Circassian_flag#:~:text=It%20consists%20of%20a%20green,the%20designer%20of%20the%20flag." target="_blank">Circassian flag</a>: #2d706c
 
-Further colours used:
+- <span style="color:#704214">Text: #704214</span>
+- <span style="color:#f7d4bb">Background colour for container boxes: #f7d4bb</span>
+- <span style="color:#FFF1E5">Background colour for pages: #FFF1E5</span>
 
-- <span style="color:#704214">Text</span>
-- <span style="color:#f7d4bb">Background colour for container boxes</span>
-- <span style="color:#FFF1E5">Background colour for pages</span>
-
-
-### Wireframes
-
-<details>
-  <summary>See wireframes here</summary>
-
-  ### Hub page mockup
-  <img src="doc/hub-mockup.jpg" style="width:798px;"/>
-
-  ### About page mockup
-  <img src="doc/about-mockup.jpg" style="width:798px;"/>
-
-  ### Alphabet page mockup
-  <img src="doc/alphabet-mockup.jpg" style="width:798px;"/>
-
-  ### Contact page mockup
-  <img src="doc/contact-mockup.jpg" style="width:798px;"/>
-
-</details>
+<img src="doc/colours.png" style="width:698px;"/>
 
 ## Features
 
 ### Hub page
 The purpose of the Hub page is to give an overview of the site's contents.
-<img src="doc/features/doc-hub.png" style="width:798px;"/>
+<img src="doc/features/doc-hub.png" style="width:698px;"/>
 
 ### About page
 The About page is created in a newspaper style featuring the main challenges the Circassian language is currently facing.
 
-<img src="doc/features/doc-about.jpg" style="width:798px;"/>
+<img src="doc/features/doc-about.jpg" style="width:698px;"/>
 
 ### Alphabet page
-The Kabardian Alphabet page introduces one of the standards used for the Circassian language - the Kabardian - and lists the letters and word examples in both, Cyrillic and Latin, accompanied by their sounds.
-<img src="doc/features/doc-alphabet.jpg" style="width:798px;"/>
+This page introduces one of the standards used for the Circassian language - the Kabardian and lists the letters and word examples in both, Cyrillic and Latin, accompanied by their sounds.
+
+<img src="doc/features/doc-alphabet.jpg" style="width:698px;"/>
 
 ### Read and Record a Poem page
-On this page the user can listen to a poem read by two native speakers. They can also try to read the poem and record their own voice.
+On this page the user can listen to a poem read by two native speakers. They can also read the poem and record their voice.
 
- <img src="doc/features/doc-poem.png" style="width:798px;"/>
+ <img src="doc/features/doc-poem.png" style="width:698px;"/>
 
 ### Contact page
-The Contact page provides an option to connect with people concerned about the challenged the Circassian language is facing and share feedback and ideas.
-<img src="doc/features/doc-contact.jpg" style="width:798px;"/>
+The Contact page provides an option to connect with people concerned about the challenged the Circassian language is facing and share feedback and ideas on how to preserve it.
+
+<img src="doc/features/doc-contact.jpg" style="width:698px;"/>
 
 
 ## Testing
@@ -136,7 +116,9 @@ The content on the About page is based on the sources below:
 
 ### Voice Cover
 
-Voices used on the Kabardian Alphabet and Read and Record a Poem page were taken from the [adyghabza playlist](https://www.youtube.com/watch?v=r_qQCUDaz-I). 
+- [adyghabza playlist](https://www.youtube.com/watch?v=r_qQCUDaz-I): letters and poem recordings
+- [amaltus.com](https://amaltus.com/%D0%BA%D0%B0%D0%B1%D0%B0%D1%80%D0%B4%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82-%D0%B0%D1%83%D0%B4%D0%B8%D0%BE/): some word recordings
+- [Kabardian Phrases](https://archive.org/details/KabardianPhrases/whom+do+you+prefer+among+Circassian+writers.mp3): some word recordings
 
 ### Code
 - Parts of the HTML and CSS was borrowed from the Code Institute's [Love Running](https://code-institute-org.github.io/love-running-2.0/index.html) main page.
