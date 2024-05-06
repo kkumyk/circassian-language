@@ -66,7 +66,8 @@ This page introduces one of the standards used for the Circassian language - the
 
 <img src="doc/features/doc-alphabet.jpg" style="width:698px;"/>
 
-Letters in Cyrillic starting with the same letter in Latin transcription can be highlighted via keyboard. Letters marked up as belonging to one group will change their size and text colour when a corresponding keyboard key is pressed:
+Letters in Cyrillic starting with the same letter in Latin transcription can be highlighted via keyboard. Letters marked up as belonging to one group will change their size and text colour when a corresponding keyboard key is pressed.
+
 <img src="doc/features/doc-letters-group.png" style="width:698px;"/>
 
 ### Read and Record a Poem page
