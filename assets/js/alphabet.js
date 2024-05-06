@@ -63,7 +63,7 @@ document.addEventListener('keydown', function(event) { // set event listener to 
         // if the value of the "data-key" element matches the key that is pressed, apply the colour and font styles
         if (dataKey === keyPressed) {
             kbd.style.color = '#2d706c';
-            kbd.style.fontSize = '2.6rem';
+            kbd.style.fontSize = '2.5rem';
         }
     });
 });
